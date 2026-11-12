@@ -1,0 +1,45 @@
+# Configuración central de LimonLab Colima
+proyecto:
+  nombre: "LimonLab Colima"
+  fecha_inicio_historico: "2023-01-01"
+  zona_horaria: "America/Mexico_City"
+
+fuentes:
+  sniim:
+    url_base: "http://www.economia-sniim.gob.mx"
+    producto: "Limón con semilla"
+    origen: "Colima"
+    pausa_entre_peticiones_seg: 2
+    reintentos: 3
+    user_agent: "LimonLab-Colima/1.0 (proyecto academico TecNM Colima)"
+  open_meteo:
+    url: "https://archive-api.open-meteo.com/v1/archive"
+    ubicacion: "Tecomán, Colima"
+    latitud: 18.9089
+    longitud: -103.8747
+    variables_diarias:
+      - precipitation_sum
+      - temperature_2m_max
+      - temperature_2m_min
+      - temperature_2m_mean
+  banxico:
+    url: "https://www.banxico.org.mx/SieAPIRest/service/v1/series/{serie}/datos/{inicio}/{fin}"
+    serie: "SF43718"   # Tipo de cambio FIX
+    token_env: "BANXICO_TOKEN"
+
+calidad:
+  precio_min_kg: 2
+  precio_max_kg: 150
+  variacion_diaria_max: 0.50
+  temperatura_min: -5
+  temperatura_max: 50
+  tipo_cambio_min: 10
+  tipo_cambio_max: 40
+  frescura_max_dias: 7
+
+rutas:
+  bronze: "data/bronze"
+  silver: "data/silver"
+  gold: "data/gold"
+  quarantine: "data/quarantine"
+  logs: "logs"
