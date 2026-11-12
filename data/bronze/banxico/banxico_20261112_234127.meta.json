@@ -1,0 +1,11 @@
+{
+  "fuente": "banxico",
+  "archivo": "banxico_20261112_234127.json",
+  "fecha_captura": "2026-11-12T23:41:27",
+  "url": "https://www.banxico.org.mx/SieAPIRest/service/v1/series/SF43718/datos/2026-10-08/2026-11-12",
+  "serie": "SF43718",
+  "periodo_inicio": "2026-10-08",
+  "periodo_fin": "2026-11-12",
+  "registros": 25,
+  "status_http": 200
+}
