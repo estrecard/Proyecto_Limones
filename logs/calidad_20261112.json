@@ -1,9 +1,9 @@
 {
-  "fecha_ejecucion": "2026-11-12T01:02:35",
+  "fecha_ejecucion": "2026-11-12T01:07:39",
   "fuentes": {
     "sniim": {
-      "registros_bronce": 19721,
-      "reemplazados_por_captura_mas_reciente": 587,
+      "registros_bronce": 20152,
+      "reemplazados_por_captura_mas_reciente": 1018,
       "registros_evaluados": 19134,
       "registros_plata": 19133,
       "registros_cuarentena": 1,
@@ -92,8 +92,8 @@
       "cq10_actualidad_ok": true
     },
     "open_meteo": {
-      "registros_bronce": 1407,
-      "reemplazados_por_captura_mas_reciente": 0,
+      "registros_bronce": 1448,
+      "reemplazados_por_captura_mas_reciente": 41,
       "registros_evaluados": 1407,
       "registros_plata": 1407,
       "registros_cuarentena": 0,
@@ -160,8 +160,8 @@
       "cq10_actualidad_ok": true
     },
     "banxico": {
-      "registros_bronce": 970,
-      "reemplazados_por_captura_mas_reciente": 0,
+      "registros_bronce": 994,
+      "reemplazados_por_captura_mas_reciente": 24,
       "registros_evaluados": 970,
       "registros_plata": 970,
       "registros_cuarentena": 0,
