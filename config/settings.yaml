@@ -6,9 +6,17 @@ proyecto:
 
 fuentes:
   sniim:
-    url_base: "http://www.economia-sniim.gob.mx"
-    producto: "Limón con semilla"
+    url_resultados: "http://www.economia-sniim.gob.mx/NUEVO/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx"
+    productos:            # códigos internos del SNIIM (lista ddlProducto)
+      417: "Limón c/semilla # 2"
+      418: "Limón c/semilla # 3"
+      419: "Limón c/semilla # 4"
+      421: "Limón c/semilla # 5"
+      423: "Limón c/semilla sin clasificación"
+    origen_id: 8          # Colima
     origen: "Colima"
+    precios_por_id: 2     # 1 = presentación comercial, 2 = kilogramo calculado
+    registros_por_pagina: 1000
     pausa_entre_peticiones_seg: 2
     reintentos: 3
     user_agent: "LimonLab-Colima/1.0 (proyecto academico TecNM Colima)"

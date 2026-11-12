@@ -1,0 +1,14 @@
+{
+  "fuente": "sniim",
+  "archivo": "sniim_421_202304_20261112_003804.html",
+  "fecha_captura": "2026-11-12T00:38:04",
+  "url": "http://www.economia-sniim.gob.mx/NUEVO/Consultas/MercadosNacionales/PreciosDeMercado/Agricolas/ResultadosConsultaFechaFrutasYHortalizas.aspx?fechaInicio=01%2F04%2F2023&fechaFinal=30%2F04%2F2023&ProductoId=421&OrigenId=8&Origen=Colima&DestinoId=-1&Destino=Todos&PreciosPorId=2&RegistrosPorPagina=1000",
+  "producto_id": 421,
+  "producto": "Limón c/semilla # 5",
+  "origen": "Colima",
+  "periodo_inicio": "2023-04-01",
+  "periodo_fin": "2023-04-30",
+  "registros": 277,
+  "paginas": 1,
+  "status_http": 200
+}

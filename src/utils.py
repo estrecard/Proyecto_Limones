@@ -58,13 +58,15 @@ def peticion_con_reintentos(url, params=None, headers=None, reintentos=3, pausa=
     raise ultimo_error
 
 
-def guardar_bronce(fuente: str, contenido: str, extension: str, metadatos: dict) -> Path:
+def guardar_bronce(fuente: str, contenido: str, extension: str, metadatos: dict, etiqueta: str = "") -> Path:
     """Guarda la respuesta cruda SIN modificar en data/bronze/<fuente>/ y, junto a ella,
-    un archivo .meta.json con la trazabilidad (fuente, URL, fecha de captura, parámetros)."""
+    un archivo .meta.json con la trazabilidad (fuente, URL, fecha de captura, parámetros).
+    La etiqueta opcional (ej. producto y mes) evita que dos descargas del mismo segundo se pisen."""
     carpeta = ruta("bronze") / fuente
     carpeta.mkdir(parents=True, exist_ok=True)
     marca = datetime.now().strftime("%Y%m%d_%H%M%S")
-    archivo = carpeta / f"{fuente}_{marca}.{extension}"
+    base = f"{fuente}_{etiqueta}_{marca}" if etiqueta else f"{fuente}_{marca}"
+    archivo = carpeta / f"{base}.{extension}"
     archivo.write_text(contenido, encoding="utf-8")
 
     meta = {
@@ -73,7 +75,7 @@ def guardar_bronce(fuente: str, contenido: str, extension: str, metadatos: dict)
         "fecha_captura": datetime.now().isoformat(timespec="seconds"),
         **metadatos,
     }
-    (carpeta / f"{fuente}_{marca}.meta.json").write_text(
+    (carpeta / f"{base}.meta.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     return archivo
