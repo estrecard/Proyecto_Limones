@@ -1,0 +1,42 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Liza\Desktop\INGENIER═A DE DATOS\Unidad3\Proyecto_Limones\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Liza\Desktop\INGENIER═A DE DATOS\Unidad3\Proyecto_Limones
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0
+collecting ... collected 25 items
+
+tests/test_gates.py::test_registros_validos_pasan_todas_las_puertas PASSED [  4%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro0-CQ-01] PASSED [  8%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[banxico-registro1-CQ-01] PASSED [ 12%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro2-CQ-02] PASSED [ 16%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro3-CQ-02] PASSED [ 20%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro4-CQ-03] PASSED [ 24%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro5-CQ-03] PASSED [ 28%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro6-CQ-04] PASSED [ 32%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro7-CQ-06] PASSED [ 36%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro8-CQ-06] PASSED [ 40%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro9-CQ-07] PASSED [ 44%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[banxico-registro10-CQ-08] PASSED [ 48%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro11-CQ-11] PASSED [ 52%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro12-CQ-11] PASSED [ 56%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro13-CQ-11] PASSED [ 60%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro14-CQ-12] PASSED [ 64%]
+tests/test_gates.py::test_cq05_duplicado_conserva_el_primero PASSED      [ 68%]
+tests/test_gates.py::test_cq05_no_cuenta_registros_ya_rechazados PASSED  [ 72%]
+tests/test_gates.py::test_registro_con_varios_errores_lista_todas_las_reglas PASSED [ 76%]
+tests/test_gates.py::test_cq09_salto_de_precio_es_advertencia_no_rechazo PASSED [ 80%]
+tests/test_ingesta_y_plata.py::test_lector_sniim_con_pagina_real PASSED  [ 84%]
+tests/test_ingesta_y_plata.py::test_lector_sniim_sin_resultados_no_truena PASSED [ 88%]
+tests/test_ingesta_y_plata.py::test_meses_divide_el_periodo PASSED       [ 92%]
+tests/test_ingesta_y_plata.py::test_numero_convierte_texto_y_deja_vacio_lo_invalido PASSED [ 96%]
+tests/test_ingesta_y_plata.py::test_consolidar_capturas_conserva_la_mas_reciente PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_gates.py: 27 warnings
+  C:\Users\Liza\Desktop\INGENIER═A DE DATOS\Unidad3\Proyecto_Limones\src\quality\gates.py:158: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+    mascara = r.evaluar(base).reindex(df.index).fillna(False).astype(bool)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 25 passed, 27 warnings in 2.65s =======================
