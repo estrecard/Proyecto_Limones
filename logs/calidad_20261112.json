@@ -1,0 +1,222 @@
+{
+  "fecha_ejecucion": "2026-11-12T01:02:35",
+  "fuentes": {
+    "sniim": {
+      "registros_bronce": 19721,
+      "reemplazados_por_captura_mas_reciente": 587,
+      "registros_evaluados": 19134,
+      "registros_plata": 19133,
+      "registros_cuarentena": 1,
+      "tasa_aceptacion_pct": 99.99,
+      "registros_con_advertencia": 57,
+      "fecha_min": "2023-01-02",
+      "fecha_max": "2026-11-11",
+      "frescura_dias": 1,
+      "completitud_pct": {
+        "producto": 100.0,
+        "calidad": 100.0,
+        "origen": 100.0,
+        "fecha_texto": 100.0,
+        "presentacion": 100.0,
+        "destino": 100.0,
+        "precio_min": 100.0,
+        "precio_max": 100.0,
+        "precio_frec": 100.0,
+        "observaciones": 0.12,
+        "seccion": 100.0,
+        "producto_id": 100.0,
+        "fuente": 100.0,
+        "fecha_captura": 100.0,
+        "archivo_origen": 100.0,
+        "fecha": 100.0,
+        "estado_destino": 100.0
+      },
+      "reglas": [
+        {
+          "codigo": "CQ-12",
+          "dimension": "Trazabilidad",
+          "tipo": "bloqueante",
+          "descripcion": "Cada registro conserva fuente, fecha_captura y archivo_origen",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-01",
+          "dimension": "Completitud",
+          "tipo": "bloqueante",
+          "descripcion": "Campos obligatorios no nulos: fecha, producto, destino, precio_min, precio_max, precio_frec",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-02",
+          "dimension": "Exactitud sintáctica",
+          "tipo": "bloqueante",
+          "descripcion": "Fecha válida y no futura",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-11",
+          "dimension": "Conformidad",
+          "tipo": "bloqueante",
+          "descripcion": "Producto y origen del catálogo; destino con formato 'Estado: Mercado'",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-03",
+          "dimension": "Exactitud semántica",
+          "tipo": "bloqueante",
+          "descripcion": "2 <= precio $/kg <= 150",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-04",
+          "dimension": "Consistencia",
+          "tipo": "bloqueante",
+          "descripcion": "precio_min <= precio_frec <= precio_max",
+          "registros_que_fallan": 1
+        },
+        {
+          "codigo": "CQ-05",
+          "dimension": "Unicidad",
+          "tipo": "bloqueante",
+          "descripcion": "Sin duplicados por llave (fecha + producto + destino + presentacion); se conserva el primero",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-09",
+          "dimension": "Credibilidad",
+          "tipo": "advertencia",
+          "descripcion": "Variación diaria del precio frecuente <= 50%",
+          "registros_que_fallan": 57
+        }
+      ],
+      "cq10_actualidad_ok": true
+    },
+    "open_meteo": {
+      "registros_bronce": 1407,
+      "reemplazados_por_captura_mas_reciente": 0,
+      "registros_evaluados": 1407,
+      "registros_plata": 1407,
+      "registros_cuarentena": 0,
+      "tasa_aceptacion_pct": 100.0,
+      "registros_con_advertencia": 0,
+      "fecha_min": "2023-01-01",
+      "fecha_max": "2026-11-07",
+      "frescura_dias": 5,
+      "completitud_pct": {
+        "fecha_texto": 100.0,
+        "precipitacion_mm": 100.0,
+        "temp_max": 100.0,
+        "temp_min": 100.0,
+        "temp_media": 100.0,
+        "fuente": 100.0,
+        "fecha_captura": 100.0,
+        "archivo_origen": 100.0,
+        "fecha": 100.0
+      },
+      "reglas": [
+        {
+          "codigo": "CQ-12",
+          "dimension": "Trazabilidad",
+          "tipo": "bloqueante",
+          "descripcion": "Cada registro conserva fuente, fecha_captura y archivo_origen",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-01",
+          "dimension": "Completitud",
+          "tipo": "bloqueante",
+          "descripcion": "Campos obligatorios no nulos: fecha, precipitacion_mm, temp_max, temp_min, temp_media",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-02",
+          "dimension": "Exactitud sintáctica",
+          "tipo": "bloqueante",
+          "descripcion": "Fecha válida y no futura",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-06",
+          "dimension": "Exactitud semántica",
+          "tipo": "bloqueante",
+          "descripcion": "precipitación >= 0; -5 <= temperatura <= 50 °C",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-07",
+          "dimension": "Consistencia",
+          "tipo": "bloqueante",
+          "descripcion": "temp_min <= temp_media <= temp_max",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-05",
+          "dimension": "Unicidad",
+          "tipo": "bloqueante",
+          "descripcion": "Sin duplicados por llave (fecha); se conserva el primero",
+          "registros_que_fallan": 0
+        }
+      ],
+      "cq10_actualidad_ok": true
+    },
+    "banxico": {
+      "registros_bronce": 970,
+      "reemplazados_por_captura_mas_reciente": 0,
+      "registros_evaluados": 970,
+      "registros_plata": 970,
+      "registros_cuarentena": 0,
+      "tasa_aceptacion_pct": 100.0,
+      "registros_con_advertencia": 0,
+      "fecha_min": "2023-01-02",
+      "fecha_max": "2026-11-11",
+      "frescura_dias": 1,
+      "completitud_pct": {
+        "fecha_texto": 100.0,
+        "tipo_cambio_texto": 100.0,
+        "fuente": 100.0,
+        "fecha_captura": 100.0,
+        "archivo_origen": 100.0,
+        "fecha": 100.0,
+        "tipo_cambio": 100.0
+      },
+      "reglas": [
+        {
+          "codigo": "CQ-12",
+          "dimension": "Trazabilidad",
+          "tipo": "bloqueante",
+          "descripcion": "Cada registro conserva fuente, fecha_captura y archivo_origen",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-01",
+          "dimension": "Completitud",
+          "tipo": "bloqueante",
+          "descripcion": "Campos obligatorios no nulos: fecha, tipo_cambio",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-02",
+          "dimension": "Exactitud sintáctica",
+          "tipo": "bloqueante",
+          "descripcion": "Fecha válida y no futura",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-08",
+          "dimension": "Exactitud semántica",
+          "tipo": "bloqueante",
+          "descripcion": "10 <= tipo de cambio <= 40 MXN/USD",
+          "registros_que_fallan": 0
+        },
+        {
+          "codigo": "CQ-05",
+          "dimension": "Unicidad",
+          "tipo": "bloqueante",
+          "descripcion": "Sin duplicados por llave (fecha); se conserva el primero",
+          "registros_que_fallan": 0
+        }
+      ],
+      "cq10_actualidad_ok": true
+    }
+  }
+}
