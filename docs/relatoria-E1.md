@@ -53,9 +53,9 @@ los registros inválidos a cuarentena con su motivo, sin borrar nada.
 
 ## 6. Aprendizajes
 
-- +
-- $a1 = Read-Host "Aprendizaje 1"
-- 
+- Los datos reales no se comportan como en los ejemplos de clase: el precio del limón se repite igual muchos días, y por eso los métodos de atípicos daban resultados absurdos hasta que adapté el cálculo.
+- Los datos faltantes no siempre son al azar: al probarlo descubrí que dependen del día de la semana y del precio, por eso no conviene rellenar todos los huecos.
+- Las pruebas automáticas sí sirven: una prueba encontró un error en la limpieza de las observaciones antes de que afectara los datos.
 
 ## 7. Siguientes pasos
 
