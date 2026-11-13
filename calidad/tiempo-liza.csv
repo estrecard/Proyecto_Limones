@@ -1,0 +1,13 @@
+fecha,inicio,fin,interrupcion_min,delta_min,fase,actividad,comentarios
+2026-11-10,21:04,21:10,0,6,Planeación,Lectura del proyecto y elección del tema (observatorio del limón),Estimado; ajustar
+2026-11-10,21:10,21:50,0,40,Planeación,Diseño del laboratorio: pregunta; fuentes; arquitectura medallón; acta,Estimado; ajustar
+2026-11-10,22:20,23:10,10,40,Entorno,Verificación de Git/Python/VS Code; carpetas; entorno virtual,Incluye corrección de defectos D01-D03
+2026-11-11,23:20,23:59,5,34,Entorno,Repositorio en GitHub; primer commit y push; tag e0; token Banxico,Incluye D04-D05; commit 23:34
+2026-11-12,00:01,00:08,0,7,Codificación,Ingesta Banxico y Open-Meteo a Bronce,Commits 00:05 y 00:08
+2026-11-12,00:10,00:28,0,18,Diseño,Análisis del HTML del SNIIM (formulario; parámetros; tabla de resultados),
+2026-11-12,00:28,00:53,8,17,Codificación,Scraper SNIIM y descarga histórica (235 peticiones),Incluye D06 y D10; commit 00:52
+2026-11-12,00:55,01:05,0,10,Codificación,Puertas de calidad CQ-01 a CQ-12; capa Plata; reporte,Incluye D07-D09 y D11-D12; commit 01:04
+2026-11-12,01:05,01:08,0,3,Codificación,Orquestador pipeline.py,Commit 01:08
+2026-11-12,01:08,01:12,0,4,Pruebas,25 pruebas automáticas con pytest,Incluye D13; commit 01:11
+2026-11-12,01:12,01:16,0,4,Codificación,Automatización con GitHub Actions,Commit 01:15
+2026-11-12,16:47,17:11,0,24,Documentación,Preparación de la entrevista; revisión de robots.txt,Estimado; ajustar

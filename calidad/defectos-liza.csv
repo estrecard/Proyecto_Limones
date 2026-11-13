@@ -1,0 +1,15 @@
+id,fecha,tipo,fase_inyectado,fase_removido,tiempo_correccion_min,defecto_relacionado,descripcion
+D01,2026-11-10,100 Entorno,Entorno,Entorno,10,,El comando 'code' no se reconoce: falta code.cmd en la carpeta bin de VS Code; se abre la carpeta desde el menú
+D02,2026-11-10,40 Asignación,Entorno,Entorno,5,,Archivos del proyecto creados en Unidad3 y no en Proyecto_Limones (faltó cd); se movieron con Move-Item
+D03,2026-11-10,40 Asignación,Entorno,Entorno,4,D02,Entorno virtual .venv creado en la carpeta equivocada; se borró y se recreó dentro del proyecto
+D04,2026-11-11,30 Build/Paquete,Entorno,Entorno,10,,git push falla con 'Repository not found': la URL del remoto tenía TU_USUARIO; se corrigió con git remote set-url
+D05,2026-11-11,20 Sintaxis,Entorno,Entorno,2,,Se pegó en PowerShell la salida esperada de git como si fuera comando
+D06,2026-11-12,80 Función,Codificación,Pruebas,5,,Nombres de archivo de Bronce repetidos cuando dos descargas ocurren en el mismo segundo; se agregó etiqueta producto_mes
+D07,2026-11-12,80 Función,Codificación,Pruebas,5,,La consolidación de capturas descartaba duplicados del mismo archivo sin registrarlos; ahora los detecta CQ-05
+D08,2026-11-12,80 Función,Codificación,Pruebas,3,,CQ-09 comparaba contra registros ya rechazados; ahora evalúa solo registros válidos
+D09,2026-11-12,100 Entorno,Codificación,Codificación,3,,Escritura .parquet falla si pyarrow no está disponible; se agregó manejo de error y respaldo en CSV
+D10,2026-11-12,90 Sistema,Codificación,Codificación,9,,Descarga del SNIIM trabada tras suspensión de la laptop; se reanudó solo el tramo faltante (producto 423; mar-nov 2026)
+D11,2026-11-12,100 Entorno,Codificación,Codificación,3,,Control inteligente de aplicaciones de Windows bloquea DLL de pandas 3; se instaló pandas 2.x
+D12,2026-11-12,100 Entorno,Codificación,Codificación,2,D11,Windows bloquea pip.exe; se usa python -m pip
+D13,2026-11-12,20 Sintaxis,Codificación,Codificación,2,,Comillas anidadas en comando python -c fallan en PowerShell; se creó script src/quality/reporte.py
+D14,2026-11-12,70 Datos,Pruebas,Pruebas,2,,Prueba de CQ-01 usaba None en lugar de NaN (tipo de dato distinto al de la capa Plata)
