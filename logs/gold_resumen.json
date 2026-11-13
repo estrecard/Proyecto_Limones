@@ -1,0 +1,203 @@
+{
+  "fecha": "13/11/2026 11:03",
+  "conflictos": {
+    "registros_plata": 19150,
+    "llaves_unicas": 15214,
+    "llaves_con_varias_presentaciones": 3000,
+    "presentaciones": {
+      "Caja de 20 kg.": 6609,
+      "Caja de 15 kg.": 3504,
+      "Kilogramo": 3270,
+      "Arpilla de 15 kg.": 2498,
+      "Caja de 19 kg.": 2330,
+      "Caja de 13 kg.": 500,
+      "Arpilla de 13 kg.": 436,
+      "Caja de 25 kg.": 3
+    },
+    "observaciones_texto_distintos": 17,
+    "observaciones_categorias": {
+      "Sin observación": 19127,
+      "Baja": 10,
+      "Alza": 8,
+      "Otra": 5
+    }
+  },
+  "faltantes": {
+    "dias_habiles_calendario": 972,
+    "celdas_panel": 16613,
+    "faltantes": 1399,
+    "pct_faltante": 8.42,
+    "pct_por_temporada": {
+      "Alta oferta (may-sep)": 8.75,
+      "Baja oferta (ene-abr)": 8.03,
+      "Transición (oct-dic)": 8.33
+    },
+    "pct_por_dia_semana": {
+      "Jueves": 10.66,
+      "Lunes": 11.36,
+      "Martes": 4.85,
+      "Miércoles": 10.47,
+      "Viernes": 4.95
+    },
+    "series_mas_incompletas": {
+      "Colima: Centros de distribución de Colima | Limón c/semilla # 5": 58.9,
+      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 5": 58.2,
+      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3": 43.8,
+      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 4": 4.3,
+      "Sinaloa: Zona de Abasto de Mazatlán | Limón c/semilla # 5": 3.9,
+      "Durango: Centro de Distribución y Abasto de Gómez Palacio | Limón c/semilla # 5": 3.7
+    },
+    "pruebas": {
+      "temporada": {
+        "chi2": 2.17,
+        "gl": 2,
+        "p_valor": 0.3375446721975149
+      },
+      "dia_semana": {
+        "chi2": 183.72,
+        "gl": 4,
+        "p_valor": 1.181716857028324e-38
+      },
+      "precio_previo": {
+        "mediana_antes_de_hueco": 20.53,
+        "mediana_sin_hueco": 24.0,
+        "p_valor": 3.3528591216011295e-06
+      }
+    },
+    "faltantes_otras_fuentes": {
+      "open_meteo": "0 días faltantes (serie diaria completa)",
+      "banxico": "fines de semana y festivos: el FIX no se publica (faltante estructural)"
+    }
+  },
+  "atipicos": {
+    "registros": 15214,
+    "pct_residuo_cero": 76.7,
+    "residuos_distintos_de_cero": 3552,
+    "mediana_pct": 0.2,
+    "mad_pct": 6.72,
+    "limites_iqr_pct": [
+      -26.7,
+      27.0
+    ],
+    "umbral_z_pct": 35.1,
+    "marcados_z_robusto": 62,
+    "marcados_iqr": 132,
+    "marcados_ambos": 62,
+    "persistentes_no_corregidos": 59,
+    "marcados_ambos_corregidos": 3,
+    "pct_corregidos": 0.02,
+    "ejemplos": [
+      {
+        "fecha": "28/02/2023",
+        "destino": "Jalisco: Mercado Felipe Ángeles de Guadalajara",
+        "calibre": "#5",
+        "precio_frec": 40.0,
+        "tendencia_local": 20.0,
+        "z_robusto": 10.02
+      },
+      {
+        "fecha": "05/06/2023",
+        "destino": "Sonora: Central de Abasto de Cd. Obregón",
+        "calibre": "#5",
+        "precio_frec": 35.68,
+        "tendencia_local": 22.89,
+        "z_robusto": 5.59
+      },
+      {
+        "fecha": "11/03/2025",
+        "destino": "Jalisco: Mercado Felipe Ángeles de Guadalajara",
+        "calibre": "#5",
+        "precio_frec": 36.67,
+        "tendencia_local": 26.0,
+        "z_robusto": 4.1
+      }
+    ]
+  },
+  "reduccion": {
+    "registros_diarios": 15214,
+    "registros_semanales": 3433,
+    "factor_reduccion": 4.4,
+    "series_validas": 19,
+    "series_descartadas": {
+      "Aguascalientes: Central de Abasto de Aguascalientes | Limón c/semilla # 5": 1,
+      "Sinaloa: Zona de Abasto de Mazatlán | Limón c/semilla # 5": 22
+    },
+    "variables_eliminadas_constantes": [
+      "calidad (siempre 'Primera')",
+      "origen (siempre 'Colima')",
+      "seccion (siempre 'Frutas')",
+      "fuente"
+    ],
+    "variables_eliminadas_tecnicas": [
+      "fecha_captura",
+      "archivo_origen",
+      "producto_id",
+      "advertencias"
+    ]
+  },
+  "imputacion": {
+    "semanas_vacias_antes": 152,
+    "imputadas_interpolacion": 11,
+    "vacias_despues": 141,
+    "tipo_cambio_dias_locf": 440
+  },
+  "integracion": {
+    "filas": 3433,
+    "semanas_sin_clima": 15,
+    "semanas_sin_tipo_cambio": 0
+  },
+  "discretizacion": {
+    "lluvia_30d_cortes_mm": [
+      4.0,
+      86.0
+    ],
+    "precio_cortes_kg": [
+      20.8,
+      27.5
+    ],
+    "regiones": {
+      "Centro-Norte": 3,
+      "Golfo-Sureste": 2,
+      "Noroeste": 3,
+      "Norte": 5,
+      "Occidente": 3
+    },
+    "temporadas": {
+      "Alta oferta (may-sep)": 1518,
+      "Baja oferta (ene-abr)": 1154,
+      "Transición (oct-dic)": 761
+    }
+  },
+  "normalizacion": {
+    "precio": {
+      "min": 9.33,
+      "max": 74.664,
+      "media": 25.3637,
+      "desv_std": 8.3018
+    },
+    "lluvia_30d_mm": {
+      "min": 0.0,
+      "max": 438.6,
+      "media": 76.8637,
+      "desv_std": 101.1846
+    },
+    "lluvia_semana_mm": {
+      "min": 0.0,
+      "max": 269.8,
+      "media": 18.2818,
+      "desv_std": 33.9259
+    },
+    "temp_media": {
+      "min": 21.4,
+      "max": 30.4714,
+      "media": 26.2984,
+      "desv_std": 1.77
+    },
+    "tipo_cambio": {
+      "min": 16.5262,
+      "max": 20.6838,
+      "media": 18.232,
+      "desv_std": 1.124
+    }
+  }
+}

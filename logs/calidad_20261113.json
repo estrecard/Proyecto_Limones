@@ -1,5 +1,5 @@
 {
-  "fecha_ejecucion": "2026-11-13T06:49:31",
+  "fecha_ejecucion": "2026-11-13T11:02:39",
   "fuentes": {
     "sniim": {
       "registros_bronce": 21030,
@@ -33,59 +33,17 @@
       },
       "reglas": [
         {
-          "codigo": "CQ-12",
-          "dimension": "Trazabilidad",
-          "tipo": "bloqueante",
-          "descripcion": "Cada registro conserva fuente, fecha_captura y archivo_origen",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-01",
-          "dimension": "Completitud",
-          "tipo": "bloqueante",
-          "descripcion": "Campos obligatorios no nulos: fecha, producto, destino, precio_min, precio_max, precio_frec",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-02",
-          "dimension": "Exactitud sintáctica",
-          "tipo": "bloqueante",
-          "descripcion": "Fecha válida y no futura",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-11",
-          "dimension": "Conformidad",
-          "tipo": "bloqueante",
-          "descripcion": "Producto y origen del catálogo; destino con formato 'Estado: Mercado'",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-03",
-          "dimension": "Exactitud semántica",
-          "tipo": "bloqueante",
-          "descripcion": "2 <= precio $/kg <= 150",
-          "registros_que_fallan": 0
-        },
-        {
           "codigo": "CQ-04",
           "dimension": "Consistencia",
           "tipo": "bloqueante",
-          "descripcion": "precio_min <= precio_frec <= precio_max",
+          "descripcion": "Consistencia: no se cumple precio_min <= precio_frec <= precio_max",
           "registros_que_fallan": 1
-        },
-        {
-          "codigo": "CQ-05",
-          "dimension": "Unicidad",
-          "tipo": "bloqueante",
-          "descripcion": "Sin duplicados por llave (fecha + producto + destino + presentacion); se conserva el primero",
-          "registros_que_fallan": 0
         },
         {
           "codigo": "CQ-09",
           "dimension": "Credibilidad",
           "tipo": "advertencia",
-          "descripcion": "Variación diaria del precio frecuente <= 50%",
+          "descripcion": "Credibilidad: variación diaria del precio frecuente > 50%",
           "registros_que_fallan": 57
         }
       ],
@@ -115,45 +73,10 @@
       },
       "reglas": [
         {
-          "codigo": "CQ-12",
-          "dimension": "Trazabilidad",
-          "tipo": "bloqueante",
-          "descripcion": "Cada registro conserva fuente, fecha_captura y archivo_origen",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-01",
-          "dimension": "Completitud",
-          "tipo": "bloqueante",
-          "descripcion": "Campos obligatorios no nulos: fecha, precipitacion_mm, temp_max, temp_min, temp_media",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-02",
-          "dimension": "Exactitud sintáctica",
-          "tipo": "bloqueante",
-          "descripcion": "Fecha válida y no futura",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-06",
-          "dimension": "Exactitud semántica",
-          "tipo": "bloqueante",
-          "descripcion": "precipitación >= 0; -5 <= temperatura <= 50 °C",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-07",
-          "dimension": "Consistencia",
-          "tipo": "bloqueante",
-          "descripcion": "temp_min <= temp_media <= temp_max",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-05",
-          "dimension": "Unicidad",
-          "tipo": "bloqueante",
-          "descripcion": "Sin duplicados por llave (fecha); se conserva el primero",
+          "codigo": "CQ-09",
+          "dimension": "Credibilidad",
+          "tipo": "advertencia",
+          "descripcion": "Credibilidad: variación diaria del precio frecuente > 50%",
           "registros_que_fallan": 0
         }
       ],
@@ -181,38 +104,10 @@
       },
       "reglas": [
         {
-          "codigo": "CQ-12",
-          "dimension": "Trazabilidad",
-          "tipo": "bloqueante",
-          "descripcion": "Cada registro conserva fuente, fecha_captura y archivo_origen",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-01",
-          "dimension": "Completitud",
-          "tipo": "bloqueante",
-          "descripcion": "Campos obligatorios no nulos: fecha, tipo_cambio",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-02",
-          "dimension": "Exactitud sintáctica",
-          "tipo": "bloqueante",
-          "descripcion": "Fecha válida y no futura",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-08",
-          "dimension": "Exactitud semántica",
-          "tipo": "bloqueante",
-          "descripcion": "10 <= tipo de cambio <= 40 MXN/USD",
-          "registros_que_fallan": 0
-        },
-        {
-          "codigo": "CQ-05",
-          "dimension": "Unicidad",
-          "tipo": "bloqueante",
-          "descripcion": "Sin duplicados por llave (fecha); se conserva el primero",
+          "codigo": "CQ-09",
+          "dimension": "Credibilidad",
+          "tipo": "advertencia",
+          "descripcion": "Credibilidad: variación diaria del precio frecuente > 50%",
           "registros_que_fallan": 0
         }
       ],

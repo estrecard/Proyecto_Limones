@@ -33,3 +33,17 @@ Se guardan en `logs/calidad_AAAAMMDD.json` y se muestran en el observatorio (E3)
 1. Nunca se borran datos. Lo rechazado se guarda con `regla_fallida`, `motivo` y `fecha_rechazo`.
 2. Bronce es inmutable. Si una regla cambia, Plata se regenera desde Bronce.
 3. Los umbrales viven en `config/settings.yaml` para ajustarlos sin tocar el código.
+## Implementación (E1): puerta de calidad con Pandera
+
+Desde la E1 las reglas se implementan con **Pandera** (`src/quality/gates.py`): un `DataFrameSchema` por fuente define
+columnas, tipos (con conversión estricta), nulos permitidos, rangos y reglas entre columnas. Cada `Check` lleva el código
+de la regla (por ejemplo `CQ-04`). La validación se ejecuta en modo *lazy*, que reúne todas las fallas con el índice del
+registro; con eso cada registro inválido va a `data/quarantine/` con `regla_fallida`, `motivo` y `fecha_rechazo`.
+
+| Regla nueva | Dimensión | Descripción |
+|---|---|---|
+| CQ-ESQ | Conformidad de esquema | Un valor no se pudo convertir al tipo esperado (texto donde va número, etc.) |
+
+- La unicidad (CQ-05) se evalúa en un segundo esquema, solo sobre los registros que pasaron el primero.
+- CQ-09 (advertencia) y CQ-10 (actualidad) se calculan con pandas porque no rechazan registros.
+- Si falla la **estructura** (por ejemplo, falta una columna completa), el pipeline se detiene con error: no es un problema de registros sino de la fuente.

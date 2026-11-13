@@ -30,7 +30,7 @@ jobs:
       - name: Pruebas automáticas (pytest)
         run: python -m pytest
 
-      - name: Ejecutar pipeline (modo incremental)
+      - name: Ejecutar pipeline (Bronce → Plata → Oro, modo incremental)
         id: pipeline
         env:
           BANXICO_TOKEN: ${{ secrets.BANXICO_TOKEN }}
@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data logs
+          git add data logs docs/E1/reporte_limpieza.md
           if git diff --cached --quiet; then
             echo "Sin cambios en los datos."
           else

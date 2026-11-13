@@ -1,4 +1,4 @@
-﻿pandas>=2.2,<3
+pandas>=2.2,<3
 requests>=2.31
 beautifulsoup4>=4.12
 lxml>=5.0
@@ -10,3 +10,4 @@ scipy>=1.11
 statsmodels>=0.14
 plotly>=5.18
 streamlit>=1.30
+pandera>=0.20

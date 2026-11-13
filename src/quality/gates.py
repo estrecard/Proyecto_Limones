@@ -1,175 +1,220 @@
-"""Puertas de calidad (ISO/IEC 25012) del plan docs/plan_calidad.md.
+"""Puerta de calidad automática con Pandera (ISO/IEC 25012) — reglas CQ-01 a CQ-12 de docs/plan_calidad.md.
 
-Cada regla recibe un DataFrame y devuelve una Serie booleana: True = el registro FALLA la regla.
-- Reglas BLOQUEANTES: el registro va a cuarentena.
-- Reglas de ADVERTENCIA: el registro pasa a Plata, marcado en la columna 'advertencias'.
+Cada fuente tiene un esquema Pandera (columnas, tipos, nulos, rangos y reglas entre columnas).
+La validación se hace en modo "lazy": Pandera junta TODAS las fallas con el índice del registro,
+y con eso cada registro inválido se envía a cuarentena con el código y el motivo de cada regla
+que no cumplió. Nunca se borra nada en silencio.
+
+- Reglas BLOQUEANTES → cuarentena.
+- CQ-09 (advertencia) → el registro pasa a Plata marcado en la columna 'advertencias'.
 """
-from dataclasses import dataclass
+import re
 from datetime import date
-from typing import Callable
 
 import pandas as pd
+
+try:  # Pandera >= 0.24 recomienda el submódulo pandas
+    import pandera.pandas as pa
+except ImportError:  # versiones anteriores
+    import pandera as pa
+from pandera.errors import SchemaErrors
 
 from src.utils import cargar_config
 
 CAL = cargar_config()["calidad"]
 TRAZABILIDAD = ["fuente", "fecha_captura", "archivo_origen"]
 
-
-@dataclass
-class Regla:
-    codigo: str
-    dimension: str
-    tipo: str  # "bloqueante" | "advertencia"
-    descripcion: str
-    evaluar: Callable[[pd.DataFrame], pd.Series]
-
-
-# ----------------------------------------------------------------------------- reglas genéricas
-def cq01_completitud(columnas):
-    return Regla("CQ-01", "Completitud", "bloqueante",
-                 f"Campos obligatorios no nulos: {', '.join(columnas)}",
-                 lambda df: df[columnas].isna().any(axis=1))
-
-
-def cq02_fecha_valida():
-    def evaluar(df):
-        hoy = pd.Timestamp(date.today())
-        return df["fecha"].isna() | (df["fecha"] > hoy)
-    return Regla("CQ-02", "Exactitud sintáctica", "bloqueante", "Fecha válida y no futura", evaluar)
+DESCRIPCIONES = {
+    "CQ-01": "Completitud: campo obligatorio vacío",
+    "CQ-02": "Exactitud sintáctica: fecha inválida o futura",
+    "CQ-03": f"Exactitud semántica: precio fuera de [{CAL['precio_min_kg']}, {CAL['precio_max_kg']}] $/kg",
+    "CQ-04": "Consistencia: no se cumple precio_min <= precio_frec <= precio_max",
+    "CQ-05": "Unicidad: registro duplicado (se conserva el primero)",
+    "CQ-06": f"Exactitud semántica: lluvia < 0 o temperatura fuera de [{CAL['temperatura_min']}, {CAL['temperatura_max']}] °C",
+    "CQ-07": "Consistencia: no se cumple temp_min <= temp_media <= temp_max",
+    "CQ-08": f"Exactitud semántica: tipo de cambio fuera de [{CAL['tipo_cambio_min']}, {CAL['tipo_cambio_max']}]",
+    "CQ-09": f"Credibilidad: variación diaria del precio frecuente > {CAL['variacion_diaria_max']:.0%}",
+    "CQ-11": "Conformidad: producto, origen o destino fuera del catálogo",
+    "CQ-12": "Trazabilidad: falta fuente, fecha_captura o archivo_origen",
+    "CQ-ESQ": "Esquema: tipo de dato inválido (no se pudo convertir)",
+}
+DIMENSION = {"CQ-01": "Completitud", "CQ-02": "Exactitud sintáctica", "CQ-03": "Exactitud semántica",
+             "CQ-04": "Consistencia", "CQ-05": "Unicidad", "CQ-06": "Exactitud semántica",
+             "CQ-07": "Consistencia", "CQ-08": "Exactitud semántica", "CQ-09": "Credibilidad",
+             "CQ-11": "Conformidad", "CQ-12": "Trazabilidad", "CQ-ESQ": "Conformidad de esquema"}
 
 
-def cq05_unicidad(llave):
-    return Regla("CQ-05", "Unicidad", "bloqueante",
-                 f"Sin duplicados por llave ({' + '.join(llave)}); se conserva el primero",
-                 lambda df: df.duplicated(subset=llave, keep="first"))
+def regla(codigo, funcion, element_wise=False):
+    """Crea un Check de Pandera identificado con el código de la regla."""
+    return pa.Check(funcion, element_wise=element_wise, name=codigo, error=f"{codigo}: {DESCRIPCIONES[codigo]}")
 
 
-def cq12_trazabilidad():
-    return Regla("CQ-12", "Trazabilidad", "bloqueante",
-                 "Cada registro conserva fuente, fecha_captura y archivo_origen",
-                 lambda df: df[TRAZABILIDAD].isna().any(axis=1))
+def es_fecha(x):
+    return isinstance(x, (pd.Timestamp, date))
 
 
-# ----------------------------------------------------------------------------- reglas SNIIM
-def cq03_rango_precio():
-    def evaluar(df):
-        cols = ["precio_min", "precio_max", "precio_frec"]
-        fuera = (df[cols] < CAL["precio_min_kg"]) | (df[cols] > CAL["precio_max_kg"])
-        return fuera.any(axis=1)
-    return Regla("CQ-03", "Exactitud semántica", "bloqueante",
-                 f"{CAL['precio_min_kg']} <= precio $/kg <= {CAL['precio_max_kg']}", evaluar)
+def no_futura(x):
+    return pd.Timestamp(x) <= pd.Timestamp(date.today())
 
 
-def cq04_consistencia_precios():
-    return Regla("CQ-04", "Consistencia", "bloqueante",
-                 "precio_min <= precio_frec <= precio_max",
-                 lambda df: ~((df["precio_min"] <= df["precio_frec"]) & (df["precio_frec"] <= df["precio_max"])))
+def texto(checks=()):
+    return pa.Column(None, nullable=False,
+                     checks=[regla("CQ-ESQ", lambda x: isinstance(x, str), element_wise=True), *checks])
 
 
-def cq09_variacion_diaria():
-    def evaluar(df):
-        orden = df.sort_values("fecha")
-        grupo = orden.groupby(["producto", "destino", "presentacion"])["precio_frec"]
-        variacion = (orden["precio_frec"] / grupo.shift(1) - 1).abs()
-        return (variacion > CAL["variacion_diaria_max"]).reindex(df.index).fillna(False)
-    return Regla("CQ-09", "Credibilidad", "advertencia",
-                 f"Variación diaria del precio frecuente <= {CAL['variacion_diaria_max']:.0%}", evaluar)
+def numero(checks=()):
+    return pa.Column(float, nullable=False, coerce=True, checks=list(checks))
 
 
-def cq11_conformidad(productos_validos, origen_valido):
-    def evaluar(df):
-        producto_ok = df["producto"].isin(productos_validos)
-        origen_ok = df["origen"] == origen_valido
-        destino_ok = df["destino"].fillna("").str.contains(":", regex=False)
-        return ~(producto_ok & origen_ok & destino_ok)
-    return Regla("CQ-11", "Conformidad", "bloqueante",
-                 "Producto y origen del catálogo; destino con formato 'Estado: Mercado'", evaluar)
+def columnas_trazabilidad():
+    return {c: texto() for c in TRAZABILIDAD}
 
 
-# ----------------------------------------------------------------------------- reglas Open-Meteo
-def cq06_rango_clima():
-    def evaluar(df):
-        t = df[["temp_min", "temp_media", "temp_max"]]
-        return (df["precipitacion_mm"] < 0) | ((t < CAL["temperatura_min"]) | (t > CAL["temperatura_max"])).any(axis=1)
-    return Regla("CQ-06", "Exactitud semántica", "bloqueante",
-                 f"precipitación >= 0; {CAL['temperatura_min']} <= temperatura <= {CAL['temperatura_max']} °C", evaluar)
+# ----------------------------------------------------------------------------- esquemas por fuente
+def esquema_sniim():
+    cfg = cargar_config()["fuentes"]["sniim"]
+    productos = list(cfg["productos"].values())
+    en_rango = lambda s: s.between(CAL["precio_min_kg"], CAL["precio_max_kg"])
+    return {
+        "esquema": pa.DataFrameSchema(
+            {
+                "fecha": pa.Column(None, nullable=False, checks=[
+                    regla("CQ-02", es_fecha, element_wise=True), regla("CQ-02", no_futura, element_wise=True)]),
+                "producto": texto(checks=[regla("CQ-11", lambda s: s.isin(productos))]),
+                "origen": texto(checks=[regla("CQ-11", lambda s: s == cfg["origen"])]),
+                "destino": texto(checks=[regla("CQ-11", lambda s: s.str.contains(":", regex=False))]),
+                "presentacion": pa.Column(None, nullable=True),
+                "precio_min": numero([regla("CQ-03", en_rango)]),
+                "precio_max": numero([regla("CQ-03", en_rango)]),
+                "precio_frec": numero([regla("CQ-03", en_rango)]),
+                **columnas_trazabilidad(),
+            },
+            checks=[regla("CQ-04", lambda df: (df["precio_min"] <= df["precio_frec"]) & (df["precio_frec"] <= df["precio_max"]))],
+            strict=False,  # Plata conserva columnas adicionales (calidad, sección, observaciones...)
+            name="sniim",
+        ),
+        "llave": ["fecha", "producto", "destino", "presentacion"],
+        "advertencias": cq09_variacion_diaria,
+    }
 
 
-def cq07_consistencia_temperaturas():
-    return Regla("CQ-07", "Consistencia", "bloqueante", "temp_min <= temp_media <= temp_max",
-                 lambda df: ~((df["temp_min"] <= df["temp_media"]) & (df["temp_media"] <= df["temp_max"])))
+def esquema_open_meteo():
+    temp = lambda s: s.between(CAL["temperatura_min"], CAL["temperatura_max"])
+    return {
+        "esquema": pa.DataFrameSchema(
+            {
+                "fecha": pa.Column(None, nullable=False, checks=[
+                    regla("CQ-02", es_fecha, element_wise=True), regla("CQ-02", no_futura, element_wise=True)]),
+                "precipitacion_mm": numero([regla("CQ-06", lambda s: s >= 0)]),
+                "temp_min": numero([regla("CQ-06", temp)]),
+                "temp_media": numero([regla("CQ-06", temp)]),
+                "temp_max": numero([regla("CQ-06", temp)]),
+                **columnas_trazabilidad(),
+            },
+            checks=[regla("CQ-07", lambda df: (df["temp_min"] <= df["temp_media"]) & (df["temp_media"] <= df["temp_max"]))],
+            strict=False,
+            name="open_meteo",
+        ),
+        "llave": ["fecha"],
+        "advertencias": None,
+    }
 
 
-# ----------------------------------------------------------------------------- reglas Banxico
-def cq08_rango_tipo_cambio():
-    return Regla("CQ-08", "Exactitud semántica", "bloqueante",
-                 f"{CAL['tipo_cambio_min']} <= tipo de cambio <= {CAL['tipo_cambio_max']} MXN/USD",
-                 lambda df: (df["tipo_cambio"] < CAL["tipo_cambio_min"]) | (df["tipo_cambio"] > CAL["tipo_cambio_max"]))
+def esquema_banxico():
+    return {
+        "esquema": pa.DataFrameSchema(
+            {
+                "fecha": pa.Column(None, nullable=False, checks=[
+                    regla("CQ-02", es_fecha, element_wise=True), regla("CQ-02", no_futura, element_wise=True)]),
+                "tipo_cambio": numero([regla("CQ-08", lambda s: s.between(CAL["tipo_cambio_min"], CAL["tipo_cambio_max"]))]),
+                **columnas_trazabilidad(),
+            },
+            strict=False,
+            name="banxico",
+        ),
+        "llave": ["fecha"],
+        "advertencias": None,
+    }
 
 
-# ----------------------------------------------------------------------------- catálogo por fuente
-def reglas_de(fuente: str) -> list:
-    cfg = cargar_config()["fuentes"]
-    if fuente == "sniim":
-        return [
-            cq12_trazabilidad(),
-            cq01_completitud(["fecha", "producto", "destino", "precio_min", "precio_max", "precio_frec"]),
-            cq02_fecha_valida(),
-            cq11_conformidad(list(cfg["sniim"]["productos"].values()), cfg["sniim"]["origen"]),
-            cq03_rango_precio(),
-            cq04_consistencia_precios(),
-            cq05_unicidad(["fecha", "producto", "destino", "presentacion"]),
-            cq09_variacion_diaria(),
-        ]
-    if fuente == "open_meteo":
-        return [
-            cq12_trazabilidad(),
-            cq01_completitud(["fecha", "precipitacion_mm", "temp_max", "temp_min", "temp_media"]),
-            cq02_fecha_valida(),
-            cq06_rango_clima(),
-            cq07_consistencia_temperaturas(),
-            cq05_unicidad(["fecha"]),
-        ]
-    if fuente == "banxico":
-        return [
-            cq12_trazabilidad(),
-            cq01_completitud(["fecha", "tipo_cambio"]),
-            cq02_fecha_valida(),
-            cq08_rango_tipo_cambio(),
-            cq05_unicidad(["fecha"]),
-        ]
-    raise ValueError(f"Fuente desconocida: {fuente}")
+def reglas_de(fuente: str) -> dict:
+    esquemas = {"sniim": esquema_sniim, "open_meteo": esquema_open_meteo, "banxico": esquema_banxico}
+    if fuente not in esquemas:
+        raise ValueError(f"Fuente desconocida: {fuente}")
+    return esquemas[fuente]()
+
+
+# ----------------------------------------------------------------------------- advertencia CQ-09
+def cq09_variacion_diaria(df: pd.DataFrame) -> pd.Series:
+    orden = df.sort_values("fecha")
+    grupo = orden.groupby(["producto", "destino", "presentacion"], dropna=False)["precio_frec"]
+    variacion = (orden["precio_frec"] / grupo.shift(1) - 1).abs()
+    return (variacion > CAL["variacion_diaria_max"]).reindex(df.index).fillna(False)
 
 
 # ----------------------------------------------------------------------------- motor
-def aplicar_puertas(df: pd.DataFrame, reglas: list):
-    """Evalúa todas las reglas. Devuelve (aceptados, cuarentena, resumen_por_regla).
-    Un registro que falla varias reglas bloqueantes lista todos los códigos."""
-    df = df.copy()
-    fallas = pd.Series([[] for _ in range(len(df))], index=df.index)
-    avisos = pd.Series([[] for _ in range(len(df))], index=df.index)
-    resumen = []
+def codigo_de_falla(columna, check) -> str:
+    """Traduce una falla de Pandera al código de regla del plan de calidad."""
+    m = re.search(r"CQ-(\d+|ESQ)", str(check))
+    if m:
+        return m.group(0)
+    if str(check) == "not_nullable":
+        if columna in TRAZABILIDAD:
+            return "CQ-12"
+        if columna == "fecha":
+            return "CQ-02"
+        return "CQ-01"
+    return "CQ-ESQ"  # coerce_dtype u otra falla de tipo
 
-    for r in reglas:
-        # Unicidad y advertencias se evalúan solo entre los registros que siguen siendo válidos
-        # (así un dato ya rechazado no "cuenta" como duplicado ni como precio de referencia)
-        base = df[fallas.str.len() == 0] if (r.codigo == "CQ-05" or r.tipo == "advertencia") else df
-        mascara = r.evaluar(base).reindex(df.index).fillna(False).astype(bool)
-        destino = fallas if r.tipo == "bloqueante" else avisos
-        for i in df.index[mascara]:
-            destino[i] = destino[i] + [r.codigo]
-        resumen.append({"codigo": r.codigo, "dimension": r.dimension, "tipo": r.tipo,
-                        "descripcion": r.descripcion, "registros_que_fallan": int(mascara.sum())})
 
-    rechazados = fallas.str.len() > 0
-    descripciones = {r.codigo: r.descripcion for r in reglas}
+def fallas_por_registro(df: pd.DataFrame, esquema) -> dict:
+    """Valida con Pandera (lazy) y devuelve {índice: {códigos de reglas que falló}}."""
+    try:
+        esquema.validate(df, lazy=True)
+        return {}
+    except SchemaErrors as err:
+        fc = err.failure_cases
+        sin_indice = fc[fc["index"].isna()]
+        if len(sin_indice):  # falla de estructura (ej. falta una columna completa): no es un problema de registros
+            raise RuntimeError(f"Error de esquema en {esquema.name}:\n{sin_indice[['column', 'check']].to_string()}")
+        fallas = {}
+        for _, f in fc.iterrows():
+            fallas.setdefault(f["index"], set()).add(codigo_de_falla(f["column"], f["check"]))
+        return fallas
 
+
+def aplicar_puertas(df: pd.DataFrame, reglas: dict):
+    """Aplica la puerta de calidad. Devuelve (aceptados, cuarentena, resumen_por_regla)."""
+    df = df.reset_index(drop=True).copy()
+    esquema = reglas["esquema"]
+
+    # 1) Esquema, tipos, nulos, rangos y reglas entre columnas
+    fallas = fallas_por_registro(df, esquema)
+
+    # 2) Unicidad, evaluada solo entre los registros que siguen siendo válidos
+    validos = df.drop(index=list(fallas))
+    unicidad = pa.DataFrameSchema(checks=[regla("CQ-05", lambda d: ~d.duplicated(subset=reglas["llave"], keep="first"))])
+    for i, cods in fallas_por_registro(validos, unicidad).items():
+        fallas.setdefault(i, set()).update(cods)
+
+    rechazados = df.index.isin(list(fallas))
     cuarentena = df[rechazados].copy()
-    cuarentena["regla_fallida"] = fallas[rechazados].str.join(";")
-    cuarentena["motivo"] = fallas[rechazados].apply(lambda cs: " | ".join(descripciones[c] for c in cs))
+    cuarentena["regla_fallida"] = [";".join(sorted(fallas[i])) for i in cuarentena.index]
+    cuarentena["motivo"] = [" | ".join(DESCRIPCIONES[c] for c in sorted(fallas[i])) for i in cuarentena.index]
     cuarentena["fecha_rechazo"] = pd.Timestamp.now().isoformat(timespec="seconds")
 
+    # 3) Advertencias (no bloquean): CQ-09
     aceptados = df[~rechazados].copy()
-    aceptados["advertencias"] = avisos[~rechazados].str.join(";")
+    aceptados["advertencias"] = ""
+    if reglas["advertencias"] is not None and len(aceptados):
+        aceptados.loc[reglas["advertencias"](aceptados), "advertencias"] = "CQ-09"
+
+    conteo = {}
+    for cods in fallas.values():
+        for c in cods:
+            conteo[c] = conteo.get(c, 0) + 1
+    if len(aceptados):
+        conteo["CQ-09"] = int((aceptados["advertencias"] == "CQ-09").sum())
+    resumen = [{"codigo": c, "dimension": DIMENSION[c], "tipo": "advertencia" if c == "CQ-09" else "bloqueante",
+                "descripcion": DESCRIPCIONES[c], "registros_que_fallan": n} for c, n in sorted(conteo.items())]
     return aceptados, cuarentena, resumen

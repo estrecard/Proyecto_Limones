@@ -1,0 +1,43 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Liza\Desktop\INGENIER═A DE DATOS\Unidad3\Proyecto_Limones\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Liza\Desktop\INGENIER═A DE DATOS\Unidad3\Proyecto_Limones
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, typeguard-4.6.0
+collecting ... collected 32 items
+
+tests/test_gates.py::test_registros_validos_pasan_todas_las_puertas PASSED [  3%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro0-CQ-01] PASSED [  6%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[banxico-registro1-CQ-01] PASSED [  9%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro2-CQ-02] PASSED [ 12%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro3-CQ-02] PASSED [ 15%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro4-CQ-03] PASSED [ 18%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro5-CQ-03] PASSED [ 21%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro6-CQ-04] PASSED [ 25%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro7-CQ-06] PASSED [ 28%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro8-CQ-06] PASSED [ 31%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro9-CQ-07] PASSED [ 34%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[banxico-registro10-CQ-08] PASSED [ 37%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro11-CQ-11] PASSED [ 40%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro12-CQ-11] PASSED [ 43%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro13-CQ-11] PASSED [ 46%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro14-CQ-12] PASSED [ 50%]
+tests/test_gates.py::test_cq05_duplicado_conserva_el_primero PASSED      [ 53%]
+tests/test_gates.py::test_cq05_no_cuenta_registros_ya_rechazados PASSED  [ 56%]
+tests/test_gates.py::test_registro_con_varios_errores_lista_todas_las_reglas PASSED [ 59%]
+tests/test_gates.py::test_cq09_salto_de_precio_es_advertencia_no_rechazo PASSED [ 62%]
+tests/test_gold.py::test_tendencia_observacion_corrige_texto_libre PASSED [ 65%]
+tests/test_gold.py::test_temporada_del_limon PASSED                      [ 68%]
+tests/test_gold.py::test_varias_presentaciones_mismo_dia_se_consolidan_con_mediana PASSED [ 71%]
+tests/test_gold.py::test_atipico_aislado_se_corrige_y_cambio_de_nivel_no PASSED [ 75%]
+tests/test_gold.py::test_imputa_huecos_cortos_y_no_los_largos PASSED     [ 78%]
+tests/test_gold.py::test_tipo_de_cambio_locf_en_fin_de_semana PASSED     [ 81%]
+tests/test_gold.py::test_normalizacion_minmax_y_z PASSED                 [ 84%]
+tests/test_ingesta_y_plata.py::test_lector_sniim_con_pagina_real PASSED  [ 87%]
+tests/test_ingesta_y_plata.py::test_lector_sniim_sin_resultados_no_truena PASSED [ 90%]
+tests/test_ingesta_y_plata.py::test_meses_divide_el_periodo PASSED       [ 93%]
+tests/test_ingesta_y_plata.py::test_numero_convierte_texto_y_deja_vacio_lo_invalido PASSED [ 96%]
+tests/test_ingesta_y_plata.py::test_consolidar_capturas_conserva_la_mas_reciente PASSED [100%]
+
+============================= 32 passed in 3.04s ==============================

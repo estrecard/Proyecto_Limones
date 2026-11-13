@@ -1,4 +1,4 @@
-"""Orquestador de LimónLab Colima: Ingesta (Bronce) → Puertas de calidad (Plata / Cuarentena).
+"""Orquestador de LimónLab Colima: Ingesta (Bronce) → Puerta de calidad Pandera (Plata / Cuarentena) → Limpieza e integración (Oro).
 
 Modos:
     python -m src.pipeline                      # incremental: solo lo reciente (para la ejecución diaria)
@@ -16,7 +16,7 @@ import time
 from datetime import date, datetime, timedelta
 
 from src.ingest import banxico, open_meteo, sniim
-from src.transform import silver
+from src.transform import gold, silver
 from src.utils import cargar_config, obtener_logger, ruta
 
 logger = obtener_logger("pipeline")
@@ -74,7 +74,19 @@ def main(argv=None):
         logger.error(f"Falló la capa Plata: {e}")
         bitacora["errores"].append(f"plata: {e}")
 
-    # 3. Bitácora de la ejecución
+    # 3. Plata → Oro (limpieza estadística, integración, discretización y normalización)
+    if not any(e.startswith("plata") for e in bitacora["errores"]):
+        logger.info("--- Capa Oro: limpieza e integración")
+        try:
+            rep_oro = gold.main()
+            bitacora["oro"] = {"atipicos_corregidos": rep_oro["atipicos"]["marcados_ambos_corregidos"],
+                               "semanas_imputadas": rep_oro["imputacion"]["imputadas_interpolacion"],
+                               "filas_semanales": rep_oro["integracion"]["filas"]}
+        except Exception as e:
+            logger.error(f"Falló la capa Oro: {e}")
+            bitacora["errores"].append(f"oro: {e}")
+
+    # 4. Bitácora de la ejecución
     bitacora["duracion_seg"] = round(time.time() - inicio_ejecucion, 1)
     bitacora["estado"] = "error" if bitacora["errores"] else "ok"
     salida = ruta("logs") / "ejecuciones.jsonl"
