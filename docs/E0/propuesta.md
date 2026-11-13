@@ -164,6 +164,18 @@ Disallow: Sicia
 | Datos crudos | `data/bronze/sniim/` (235 archivos HTML + metadatos), `data/bronze/open_meteo/`, `data/bronze/banxico/` |
 | Antes de cada ejecución | Se corren 25 pruebas automáticas (`pytest`); si fallan, no se capturan datos |
 
+### 5.1 Resultados de la primera carga y de las ejecuciones automáticas
+
+Reporte `logs/calidad_20261113.json`, generado por la ejecución automática del 13/11/2026:
+
+| Fuente | Registros evaluados | Aceptados (Plata) | Cuarentena | Advertencias | Periodo | Frescura |
+|---|---|---|---|---|---|---|
+| SNIIM | 19,151 | 19,150 | 1 (CQ-04: precio mínimo mayor que el frecuente) | 57 (CQ-09: salto de precio > 50 %) | 02/01/2023 – 12/11/2026 | 1 día |
+| Open-Meteo | 1,408 | 1,408 | 0 | 0 | 01/01/2023 – 08/11/2026 | 5 días |
+| Banxico | 971 | 971 | 0 | 0 | 02/01/2023 – 12/11/2026 | 1 día |
+
+Bitácora de ejecuciones (`logs/ejecuciones.jsonl`): 4 ejecuciones, todas con estado **ok**, incluidas 2 ejecuciones en GitHub Actions.
+
 ---
 
 ## 6. Sistema de calidad inicial (PSP)

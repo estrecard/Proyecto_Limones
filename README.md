@@ -5,7 +5,7 @@ Tecnológico Nacional de México, campus Colima
 
 | Asignatura | Docente |
 |---|---|
-| Ingeniería de Datos | (nombre del docente) |
+| Ingeniería de Datos | Armando Roman Gallardo Heredia |
 | Análisis Estadístico para Ciencia de Datos | Mtro. Joel |
 | Calidad en los Sistemas de Información | Mtra. Isis |
 
@@ -51,6 +51,8 @@ flowchart LR
 
 Detalle en [`docs/catalogo_fuentes.md`](docs/catalogo_fuentes.md).
 
+**Atribución:** datos meteorológicos de [Open-Meteo.com](https://open-meteo.com/) (CC BY 4.0); precios del SNIIM, Secretaría de Economía; tipo de cambio de Banco de México (SIE).
+
 ## Estructura del repositorio
 
 ```
@@ -74,22 +76,23 @@ Proyecto_Limones/
 
 ## Entregas
 
-| Etiqueta | Entrega | Estado |
-|---|---|---|
-| `e0` | Acta de constitución y diseño del laboratorio | Entregada |
-| `e1` | Pipeline Bronce → Plata con puertas de calidad | Pendiente |
-| `e2` | Capa Oro y diccionario de datos | Pendiente |
-| `e3` | Observatorio en línea | Pendiente |
-| `e4` | Modelado estadístico e informe final | Pendiente |
+| Etiqueta | Entrega | Peso | Estado |
+|---|---|---|---|
+| `e0` | Propuesta, máquina de captura (Bronce) y sistema de calidad inicial — [`docs/E0/`](docs/E0/) | 10 % | Entregada (entrevista de campo pendiente) |
+| `e1` | Pronóstico de la variable objetivo | 40 % | Pendiente |
+| `e2` | Experimento con factores | 20 % | Pendiente |
+| `e3` | Comparación de grupos multivariados | 15 % | Pendiente |
+| `e4` | Por definir según rúbrica | 15 % | Pendiente |
 
 Detalle en [`docs/plan_entregas.md`](docs/plan_entregas.md).
 
-## Cómo ejecutar (a partir de E1)
+## Cómo ejecutar
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 copy .env.example .env   # y pega tu token de Banxico
-python -m src.pipeline   # disponible desde E1
+python -m pytest         # 25 pruebas automáticas
+python -m src.pipeline   # captura incremental + capa Plata
 ```

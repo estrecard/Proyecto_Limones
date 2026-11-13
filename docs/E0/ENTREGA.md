@@ -8,7 +8,7 @@
 | Repositorio | https://github.com/estrecard/Proyecto_Limones |
 | Etiqueta | `e0` → https://github.com/estrecard/Proyecto_Limones/tree/e0 |
 | Fecha de entrega | 12/11/2026 |
-| Docentes | NOMBRE_DOCENTE (Ingeniería de Datos) · Mtro. Joel (Análisis Estadístico) · Mtra. Isis (Calidad en los Sistemas de Información) |
+| Docentes | Armando Roman Gallardo Heredia (Ingeniería de Datos) · Mtro. Joel (Análisis Estadístico) · Mtra. Isis (Calidad en los Sistemas de Información) |
 
 ## 1. Entregables y ubicación
 
@@ -59,7 +59,7 @@ python -m src.quality.reporte      # resumen de calidad
 
 - Ejecución exitosa de GitHub Actions: https://github.com/estrecard/Proyecto_Limones/actions/runs/43330815751 · captura en [`evidencia/actions.png`](evidencia/actions.png)
 - Pruebas automáticas: [`docs/evidencia_pruebas_e1.txt`](../evidencia_pruebas_e1.txt) (25 pruebas aprobadas)
-- Reporte de calidad: `logs/calidad_AAAAMMDD.json`
+- Reporte de calidad: [`logs/calidad_20261113.json`](../../logs/calidad_20261113.json)
 - Bitácora de ejecuciones: `logs/ejecuciones.jsonl`
 
 ## 6. Observaciones
