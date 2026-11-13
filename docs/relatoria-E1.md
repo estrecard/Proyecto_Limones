@@ -1,8 +1,8 @@
 # Relatoría de la etapa E1 — LimónLab Colima
 
-> **Borrador.** Revísalo y ajústalo con tus propias palabras: la relatoría cuenta cómo viviste la etapa.
 
-**Integrante:** Liza la foránea · **Periodo:** 12 al [dd] de noviembre de 2026
+
+**Integrante:** Liza la foránea · **Periodo:** 12 al 13 de noviembre de 2026
 
 ## 1. Objetivo de la etapa
 
@@ -53,8 +53,9 @@ los registros inválidos a cuarentena con su motivo, sin borrar nada.
 
 ## 6. Aprendizajes
 
-- [Escribe aquí 2 o 3 aprendizajes personales. Por ejemplo: qué técnica entendiste mejor al aplicarla a datos reales,
-  qué te sorprendió de los datos o qué harías diferente.]
+- +
+- $a1 = Read-Host "Aprendizaje 1"
+- 
 
 ## 7. Siguientes pasos
 

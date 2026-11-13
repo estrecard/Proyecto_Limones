@@ -40,4 +40,4 @@ tests/test_ingesta_y_plata.py::test_meses_divide_el_periodo PASSED       [ 93%]
 tests/test_ingesta_y_plata.py::test_numero_convierte_texto_y_deja_vacio_lo_invalido PASSED [ 96%]
 tests/test_ingesta_y_plata.py::test_consolidar_capturas_conserva_la_mas_reciente PASSED [100%]
 
-============================= 32 passed in 3.04s ==============================
+============================= 32 passed in 3.59s ==============================

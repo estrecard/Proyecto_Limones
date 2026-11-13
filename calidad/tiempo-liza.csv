@@ -1,6 +1,6 @@
 fecha,inicio,fin,interrupcion_min,delta_min,fase,actividad,comentarios
-2026-11-10,21:04,21:10,0,6,Planeación,Lectura del proyecto y elección del tema (observatorio del limón),Estimado; ajustar
-2026-11-10,21:10,21:50,0,40,Planeación,Diseño del laboratorio: pregunta; fuentes; arquitectura medallón; acta,Estimado; ajustar
+2026-11-10,21:04,21:10,0,6,Planeación,Lectura del proyecto y elección del tema (observatorio del limón),Estimado
+2026-11-10,21:10,21:50,0,40,Planeación,Diseño del laboratorio: pregunta; fuentes; arquitectura medallón; acta,Estimado
 2026-11-10,22:20,23:10,10,40,Entorno,Verificación de Git/Python/VS Code; carpetas; entorno virtual,Incluye corrección de defectos D01-D03
 2026-11-11,23:20,23:59,5,34,Entorno,Repositorio en GitHub; primer commit y push; tag e0; token Banxico,Incluye D04-D05; commit 23:34
 2026-11-12,00:01,00:08,0,7,Codificación,Ingesta Banxico y Open-Meteo a Bronce,Commits 00:05 y 00:08
@@ -10,9 +10,10 @@ fecha,inicio,fin,interrupcion_min,delta_min,fase,actividad,comentarios
 2026-11-12,01:05,01:08,0,3,Codificación,Orquestador pipeline.py,Commit 01:08
 2026-11-12,01:08,01:12,0,4,Pruebas,25 pruebas automáticas con pytest,Incluye D13; commit 01:11
 2026-11-12,01:12,01:16,0,4,Codificación,Automatización con GitHub Actions,Commit 01:15
-2026-11-12,16:47,17:11,0,24,Documentación,Preparación de la entrevista; revisión de robots.txt,Estimado; ajustar
-2026-11-13,10:35,10:46,0,11,Pruebas,Revisión completa del repositorio de la E0 y correcciones,Estimado; ajustar
-2026-11-13,10:50,11:00,0,10,Diseño,Análisis de los datos de Plata para la E1 (conflictos; faltantes; precios pegajosos),Estimado; ajustar
-2026-11-13,11:00,11:20,0,20,Codificación,Capa Oro (gold.py) y puerta de calidad con Pandera (gates.py),Estimado; ajustar
-2026-11-13,11:20,11:30,0,10,Pruebas,7 pruebas nuevas de la capa Oro (32 en total),Estimado; ajustar
-2026-11-13,11:30,11:40,0,10,Documentación,ENTREGA.md y relatoría de la E1,Estimado; ajustar
+2026-11-12,16:47,17:11,0,24,Documentación,Preparación de la entrevista; revisión de robots.txt,Estimado
+2026-11-13,10:35,10:46,0,11,Pruebas,Revisión completa del repositorio de la E0 y correcciones,Estimado
+2026-11-13,10:50,11:00,0,10,Diseño,Análisis de los datos de Plata para la E1 (conflictos; faltantes; precios pegajosos),Estimado
+2026-11-13,11:00,11:20,0,20,Codificación,Capa Oro (gold.py) y puerta de calidad con Pandera (gates.py),Estimado
+2026-11-13,11:20,11:30,0,10,Pruebas,7 pruebas nuevas de la capa Oro (32 en total),Estimado
+2026-11-13,11:30,11:40,0,10,Documentación,ENTREGA.md y relatoría de la E1,Estimado
+2026-11-13,11:20,11:45,0,25,Documentación,Ejecución en GitHub Actions; ficha de entrega; relatoría y etiqueta e1,Estimado

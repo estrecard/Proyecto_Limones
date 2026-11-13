@@ -7,7 +7,7 @@
 | Integrante | Liza la foránea (trabajo individual) · GitHub: `estrecard` |
 | Repositorio | https://github.com/estrecard/Proyecto_Limones |
 | Etiqueta | `e1` → https://github.com/estrecard/Proyecto_Limones/tree/e1 |
-| Fecha de entrega | [dd/mm/2026] |
+| Fecha de entrega | 13/11/2026 |
 | Docentes | Armando Roman Gallardo Heredia (Ingeniería de Datos) · Mtro. Joel (Análisis Estadístico) · Mtra. Isis (Calidad en los Sistemas de Información) |
 
 ## 1. Entregables y ubicación
@@ -73,7 +73,7 @@ python -m src.pipeline               # captura incremental + Plata + Oro
 
 ## 6. Evidencias
 
-- Ejecución de GitHub Actions con la capa Oro: [enlace a la ejecución]
-- Pruebas: `docs/E1/evidencia_pruebas.txt`
+- Ejecuciones de GitHub Actions (Bronce → Plata → Oro), manuales y programadas: https://github.com/estrecard/Proyecto_Limones/actions/workflows/pipeline.yml
+- Pruebas: [`docs/E1/evidencia_pruebas.txt`](evidencia_pruebas.txt) (32 pruebas aprobadas)
 - Reporte de calidad: `logs/calidad_AAAAMMDD.json` · Resumen de Oro: `logs/gold_resumen.json`
 - Registros en cuarentena: `data/quarantine/sniim_cuarentena.csv`

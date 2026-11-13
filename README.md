@@ -79,7 +79,7 @@ Proyecto_Limones/
 | Etiqueta | Entrega | Peso | Estado |
 |---|---|---|---|
 | `e0` | Propuesta, máquina de captura (Bronce) y sistema de calidad inicial — [`docs/E0/`](docs/E0/) | 10 % | Entregada (entrevista de campo pendiente) |
-| `e1` | Pronóstico de la variable objetivo | 40 % | Pendiente |
+| `e1` | Limpieza estadística, puerta de calidad Pandera y capa Oro — [`docs/E1/`](docs/E1/) | 40 % | Entregada |
 | `e2` | Experimento con factores | 20 % | Pendiente |
 | `e3` | Comparación de grupos multivariados | 15 % | Pendiente |
 | `e4` | Por definir según rúbrica | 15 % | Pendiente |
