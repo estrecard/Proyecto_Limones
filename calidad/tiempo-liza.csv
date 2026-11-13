@@ -16,4 +16,4 @@ fecha,inicio,fin,interrupcion_min,delta_min,fase,actividad,comentarios
 2026-11-13,11:00,11:20,0,20,Codificación,Capa Oro (gold.py) y puerta de calidad con Pandera (gates.py),Estimado
 2026-11-13,11:20,11:30,0,10,Pruebas,7 pruebas nuevas de la capa Oro (32 en total),Estimado
 2026-11-13,11:30,11:40,0,10,Documentación,ENTREGA.md y relatoría de la E1,Estimado
-2026-11-13,11:20,11:45,0,25,Documentación,Ejecución en GitHub Actions; ficha de entrega; relatoría y etiqueta e1,Estimado
+2026-11-13,11:40,12:00,0,20,Documentación,Ejecución en GitHub Actions; ficha de entrega; relatoría y etiqueta e1,Estimado
