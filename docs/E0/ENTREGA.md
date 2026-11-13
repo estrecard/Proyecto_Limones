@@ -7,15 +7,16 @@
 | Integrante | Liza la foránea (trabajo individual) · GitHub: `estrecard` |
 | Repositorio | https://github.com/estrecard/Proyecto_Limones |
 | Etiqueta | `e0` → https://github.com/estrecard/Proyecto_Limones/tree/e0 |
-| Fecha de entrega | [dd/mm/2026] |
-| Docentes | [Docente de Ingeniería de Datos] · Mtro. Joel (Análisis Estadístico) · Mtra. Isis (Calidad en los Sistemas de Información) |
+| Fecha de entrega | 12/11/2026 |
+| Docentes | NOMBRE_DOCENTE (Ingeniería de Datos) · Mtro. Joel (Análisis Estadístico) · Mtra. Isis (Calidad en los Sistemas de Información) |
 
 ## 1. Entregables y ubicación
 
 | # | Entregable solicitado | Ubicación en el repositorio | Estado |
 |---|---|---|---|
-| 1 | Propuesta del observatorio (ficha, entrevista, 3 preguntas analíticas, plan de recopilación con análisis ético y legal) | [`docs/E0/propuesta.md`](propuesta.md) · [`docs/E0/entrevista.md`](entrevista.md) | [✅ / 🟡] |
-| 2a | Extractor ético ejecutándose automáticamente con GitHub Actions | [`.github/workflows/pipeline.yml`](../../.github/workflows/pipeline.yml) · [`src/pipeline.py`](../../src/pipeline.py) · [`src/ingest/`](../../src/ingest/) | [✅ / 🟡] |
+| 1 | Propuesta del observatorio: ficha, 3 preguntas analíticas y plan de recopilación con análisis ético y legal | [`docs/E0/propuesta.md`](propuesta.md) | ✅ |
+| 1 | Entrevista de campo (≥ 15 min) | [`docs/E0/entrevista.md`](entrevista.md) | 🟡 Pendiente |
+| 2a | Extractor ético ejecutándose automáticamente con GitHub Actions | [`.github/workflows/pipeline.yml`](../../.github/workflows/pipeline.yml) · [`src/pipeline.py`](../../src/pipeline.py) · [`src/ingest/`](../../src/ingest/) | ✅ |
 | 2b | Serie histórica en crudo con ≥ 36 periodos | [`data/bronze/`](../../data/bronze/) — 47 meses (ene 2023 – nov 2026) | ✅ |
 | 3a | Registros PSP abiertos | [`calidad/tiempo-liza.csv`](../../calidad/tiempo-liza.csv) · [`calidad/defectos-liza.csv`](../../calidad/defectos-liza.csv) | ✅ |
 | 3b | 3 objetivos de calidad medibles | [`docs/E0/propuesta.md` §6.2](propuesta.md#62-objetivos-de-calidad-medibles) | ✅ |
@@ -56,13 +57,14 @@ python -m src.quality.reporte      # resumen de calidad
 
 ## 5. Evidencias
 
-- Ejecución de GitHub Actions: [enlace a la ejecución exitosa en la pestaña Actions] · captura en `docs/E0/evidencia/`
+- Ejecución exitosa de GitHub Actions: https://github.com/estrecard/Proyecto_Limones/actions/runs/43330815751 · captura en [`evidencia/actions.png`](evidencia/actions.png)
 - Pruebas automáticas: [`docs/evidencia_pruebas_e1.txt`](../evidencia_pruebas_e1.txt) (25 pruebas aprobadas)
 - Reporte de calidad: `logs/calidad_AAAAMMDD.json`
 - Bitácora de ejecuciones: `logs/ejecuciones.jsonl`
 
 ## 6. Observaciones
 
+- Entrega posterior a la fecha límite (09/11/2026).
+- La entrevista de campo está pendiente; se agregará a `docs/E0/entrevista.md` y a la sección 2 de la propuesta, y se actualizará la etiqueta `e0`.
 - Además de lo solicitado para la E0, el repositorio ya incluye la capa Plata con puertas de calidad (CQ-01 a CQ-12), la cuarentena y 25 pruebas automáticas.
-- [Si aplica: "Entrega posterior a la fecha límite (9/11/2026), con autorización del docente del dd/mm/2026".]
 - Limitación conocida: en la computadora local, el Control inteligente de aplicaciones de Windows bloquea `pyarrow`, así que la capa Plata se guarda en CSV (con Parquet cuando está disponible, como en GitHub Actions).
