@@ -2,8 +2,8 @@
   "precio": {
     "min": 9.33,
     "max": 74.664,
-    "media": 25.3637,
-    "desv_std": 8.3018
+    "media": 25.3643,
+    "desv_std": 8.3017
   },
   "lluvia_30d_mm": {
     "min": 0.0,

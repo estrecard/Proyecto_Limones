@@ -1,17 +1,17 @@
 {
-  "fecha_ejecucion": "2026-11-13T11:02:39",
+  "fecha_ejecucion": "2026-11-13T17:23:47",
   "fuentes": {
     "sniim": {
-      "registros_bronce": 21030,
-      "reemplazados_por_captura_mas_reciente": 1879,
-      "registros_evaluados": 19151,
-      "registros_plata": 19150,
+      "registros_bronce": 21477,
+      "reemplazados_por_captura_mas_reciente": 2309,
+      "registros_evaluados": 19168,
+      "registros_plata": 19167,
       "registros_cuarentena": 1,
       "tasa_aceptacion_pct": 99.99,
       "registros_con_advertencia": 57,
       "fecha_min": "2023-01-02",
-      "fecha_max": "2026-11-12",
-      "frescura_dias": 1,
+      "fecha_max": "2026-11-13",
+      "frescura_dias": 0,
       "completitud_pct": {
         "producto": 100.0,
         "calidad": 100.0,
@@ -50,8 +50,8 @@
       "cq10_actualidad_ok": true
     },
     "open_meteo": {
-      "registros_bronce": 1530,
-      "reemplazados_por_captura_mas_reciente": 122,
+      "registros_bronce": 1571,
+      "reemplazados_por_captura_mas_reciente": 163,
       "registros_evaluados": 1408,
       "registros_plata": 1408,
       "registros_cuarentena": 0,
@@ -83,8 +83,8 @@
       "cq10_actualidad_ok": true
     },
     "banxico": {
-      "registros_bronce": 1043,
-      "reemplazados_por_captura_mas_reciente": 72,
+      "registros_bronce": 1067,
+      "reemplazados_por_captura_mas_reciente": 96,
       "registros_evaluados": 971,
       "registros_plata": 971,
       "registros_cuarentena": 0,

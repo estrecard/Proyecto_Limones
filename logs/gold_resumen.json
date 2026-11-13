@@ -1,67 +1,67 @@
 {
-  "fecha": "13/11/2026 11:03",
+  "fecha": "13/11/2026 17:23",
   "conflictos": {
-    "registros_plata": 19150,
-    "llaves_unicas": 15214,
-    "llaves_con_varias_presentaciones": 3000,
+    "registros_plata": 19167,
+    "llaves_unicas": 15228,
+    "llaves_con_varias_presentaciones": 3002,
     "presentaciones": {
-      "Caja de 20 kg.": 6609,
-      "Caja de 15 kg.": 3504,
-      "Kilogramo": 3270,
-      "Arpilla de 15 kg.": 2498,
-      "Caja de 19 kg.": 2330,
-      "Caja de 13 kg.": 500,
+      "Caja de 20 kg.": 6614,
+      "Caja de 15 kg.": 3506,
+      "Kilogramo": 3274,
+      "Arpilla de 15 kg.": 2501,
+      "Caja de 19 kg.": 2332,
+      "Caja de 13 kg.": 501,
       "Arpilla de 13 kg.": 436,
       "Caja de 25 kg.": 3
     },
     "observaciones_texto_distintos": 17,
     "observaciones_categorias": {
-      "Sin observación": 19127,
+      "Sin observación": 19144,
       "Baja": 10,
       "Alza": 8,
       "Otra": 5
     }
   },
   "faltantes": {
-    "dias_habiles_calendario": 972,
-    "celdas_panel": 16613,
-    "faltantes": 1399,
-    "pct_faltante": 8.42,
+    "dias_habiles_calendario": 973,
+    "celdas_panel": 16629,
+    "faltantes": 1401,
+    "pct_faltante": 8.43,
     "pct_por_temporada": {
       "Alta oferta (may-sep)": 8.75,
       "Baja oferta (ene-abr)": 8.03,
-      "Transición (oct-dic)": 8.33
+      "Transición (oct-dic)": 8.35
     },
     "pct_por_dia_semana": {
-      "Jueves": 10.66,
+      "Jueves": 10.69,
       "Lunes": 11.36,
       "Martes": 4.85,
-      "Miércoles": 10.47,
-      "Viernes": 4.95
+      "Miércoles": 10.5,
+      "Viernes": 4.93
     },
     "series_mas_incompletas": {
-      "Colima: Centros de distribución de Colima | Limón c/semilla # 5": 58.9,
+      "Colima: Centros de distribución de Colima | Limón c/semilla # 5": 59.0,
       "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 5": 58.2,
-      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3": 43.8,
+      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3": 43.7,
       "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 4": 4.3,
       "Sinaloa: Zona de Abasto de Mazatlán | Limón c/semilla # 5": 3.9,
       "Durango: Centro de Distribución y Abasto de Gómez Palacio | Limón c/semilla # 5": 3.7
     },
     "pruebas": {
       "temporada": {
-        "chi2": 2.17,
+        "chi2": 2.16,
         "gl": 2,
-        "p_valor": 0.3375446721975149
+        "p_valor": 0.34010369491115844
       },
       "dia_semana": {
-        "chi2": 183.72,
+        "chi2": 185.5,
         "gl": 4,
-        "p_valor": 1.181716857028324e-38
+        "p_valor": 4.902388683310364e-39
       },
       "precio_previo": {
         "mediana_antes_de_hueco": 20.53,
         "mediana_sin_hueco": 24.0,
-        "p_valor": 3.3528591216011295e-06
+        "p_valor": 2.1404354682732683e-06
       }
     },
     "faltantes_otras_fuentes": {
@@ -70,22 +70,22 @@
     }
   },
   "atipicos": {
-    "registros": 15214,
-    "pct_residuo_cero": 76.7,
-    "residuos_distintos_de_cero": 3552,
-    "mediana_pct": 0.2,
-    "mad_pct": 6.72,
+    "registros": 15228,
+    "pct_residuo_cero": 76.6,
+    "residuos_distintos_de_cero": 3559,
+    "mediana_pct": 0.38,
+    "mad_pct": 6.76,
     "limites_iqr_pct": [
       -26.7,
-      27.0
+      27.1
     ],
-    "umbral_z_pct": 35.1,
-    "marcados_z_robusto": 62,
-    "marcados_iqr": 132,
-    "marcados_ambos": 62,
+    "umbral_z_pct": 35.5,
+    "marcados_z_robusto": 63,
+    "marcados_iqr": 133,
+    "marcados_ambos": 63,
     "persistentes_no_corregidos": 59,
-    "marcados_ambos_corregidos": 3,
-    "pct_corregidos": 0.02,
+    "marcados_ambos_corregidos": 4,
+    "pct_corregidos": 0.03,
     "ejemplos": [
       {
         "fecha": "28/02/2023",
@@ -93,7 +93,7 @@
         "calibre": "#5",
         "precio_frec": 40.0,
         "tendencia_local": 20.0,
-        "z_robusto": 10.02
+        "z_robusto": 9.93
       },
       {
         "fecha": "05/06/2023",
@@ -101,7 +101,15 @@
         "calibre": "#5",
         "precio_frec": 35.68,
         "tendencia_local": 22.89,
-        "z_robusto": 5.59
+        "z_robusto": 5.53
+      },
+      {
+        "fecha": "13/11/2026",
+        "destino": "Colima: Centros de distribución de Colima",
+        "calibre": "#5",
+        "precio_frec": 22.0,
+        "tendencia_local": 37.0,
+        "z_robusto": -4.08
       },
       {
         "fecha": "11/03/2025",
@@ -109,12 +117,12 @@
         "calibre": "#5",
         "precio_frec": 36.67,
         "tendencia_local": 26.0,
-        "z_robusto": 4.1
+        "z_robusto": 4.05
       }
     ]
   },
   "reduccion": {
-    "registros_diarios": 15214,
+    "registros_diarios": 15228,
     "registros_semanales": 3433,
     "factor_reduccion": 4.4,
     "series_validas": 19,
@@ -172,8 +180,8 @@
     "precio": {
       "min": 9.33,
       "max": 74.664,
-      "media": 25.3637,
-      "desv_std": 8.3018
+      "media": 25.3643,
+      "desv_std": 8.3017
     },
     "lluvia_30d_mm": {
       "min": 0.0,
