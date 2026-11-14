@@ -1,0 +1,117 @@
+{
+  "fecha_ejecucion": "2026-11-14T06:27:04",
+  "fuentes": {
+    "sniim": {
+      "registros_bronce": 21906,
+      "reemplazados_por_captura_mas_reciente": 2737,
+      "registros_evaluados": 19169,
+      "registros_plata": 19168,
+      "registros_cuarentena": 1,
+      "tasa_aceptacion_pct": 99.99,
+      "registros_con_advertencia": 57,
+      "fecha_min": "2023-01-02",
+      "fecha_max": "2026-11-13",
+      "frescura_dias": 1,
+      "completitud_pct": {
+        "producto": 100.0,
+        "calidad": 100.0,
+        "origen": 100.0,
+        "fecha_texto": 100.0,
+        "presentacion": 100.0,
+        "destino": 100.0,
+        "precio_min": 100.0,
+        "precio_max": 100.0,
+        "precio_frec": 100.0,
+        "observaciones": 0.12,
+        "seccion": 100.0,
+        "producto_id": 100.0,
+        "fuente": 100.0,
+        "fecha_captura": 100.0,
+        "archivo_origen": 100.0,
+        "fecha": 100.0,
+        "estado_destino": 100.0
+      },
+      "reglas": [
+        {
+          "codigo": "CQ-04",
+          "dimension": "Consistencia",
+          "tipo": "bloqueante",
+          "descripcion": "Consistencia: no se cumple precio_min <= precio_frec <= precio_max",
+          "registros_que_fallan": 1
+        },
+        {
+          "codigo": "CQ-09",
+          "dimension": "Credibilidad",
+          "tipo": "advertencia",
+          "descripcion": "Credibilidad: variación diaria del precio frecuente > 50%",
+          "registros_que_fallan": 57
+        }
+      ],
+      "cq10_actualidad_ok": true
+    },
+    "open_meteo": {
+      "registros_bronce": 1612,
+      "reemplazados_por_captura_mas_reciente": 203,
+      "registros_evaluados": 1409,
+      "registros_plata": 1409,
+      "registros_cuarentena": 0,
+      "tasa_aceptacion_pct": 100.0,
+      "registros_con_advertencia": 0,
+      "fecha_min": "2023-01-01",
+      "fecha_max": "2026-11-09",
+      "frescura_dias": 5,
+      "completitud_pct": {
+        "fecha_texto": 100.0,
+        "precipitacion_mm": 100.0,
+        "temp_max": 100.0,
+        "temp_min": 100.0,
+        "temp_media": 100.0,
+        "fuente": 100.0,
+        "fecha_captura": 100.0,
+        "archivo_origen": 100.0,
+        "fecha": 100.0
+      },
+      "reglas": [
+        {
+          "codigo": "CQ-09",
+          "dimension": "Credibilidad",
+          "tipo": "advertencia",
+          "descripcion": "Credibilidad: variación diaria del precio frecuente > 50%",
+          "registros_que_fallan": 0
+        }
+      ],
+      "cq10_actualidad_ok": true
+    },
+    "banxico": {
+      "registros_bronce": 1091,
+      "reemplazados_por_captura_mas_reciente": 119,
+      "registros_evaluados": 972,
+      "registros_plata": 972,
+      "registros_cuarentena": 0,
+      "tasa_aceptacion_pct": 100.0,
+      "registros_con_advertencia": 0,
+      "fecha_min": "2023-01-02",
+      "fecha_max": "2026-11-13",
+      "frescura_dias": 1,
+      "completitud_pct": {
+        "fecha_texto": 100.0,
+        "tipo_cambio_texto": 100.0,
+        "fuente": 100.0,
+        "fecha_captura": 100.0,
+        "archivo_origen": 100.0,
+        "fecha": 100.0,
+        "tipo_cambio": 100.0
+      },
+      "reglas": [
+        {
+          "codigo": "CQ-09",
+          "dimension": "Credibilidad",
+          "tipo": "advertencia",
+          "descripcion": "Credibilidad: variación diaria del precio frecuente > 50%",
+          "registros_que_fallan": 0
+        }
+      ],
+      "cq10_actualidad_ok": true
+    }
+  }
+}

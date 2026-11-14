@@ -1,0 +1,13 @@
+{
+  "fuente": "open_meteo",
+  "archivo": "open_meteo_20261114_062703.json",
+  "fecha_captura": "2026-11-14T06:27:03",
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=18.9089&longitude=-103.8747&start_date=2026-09-30&end_date=2026-11-09&daily=precipitation_sum%2Ctemperature_2m_max%2Ctemperature_2m_min%2Ctemperature_2m_mean&timezone=America%2FMexico_City",
+  "ubicacion": "Tecomán, Colima",
+  "latitud": 18.9089,
+  "longitud": -103.8747,
+  "periodo_inicio": "2026-09-30",
+  "periodo_fin": "2026-11-09",
+  "registros": 41,
+  "status_http": 200
+}
