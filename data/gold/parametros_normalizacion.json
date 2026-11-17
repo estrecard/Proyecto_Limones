@@ -8,8 +8,8 @@
   "lluvia_30d_mm": {
     "min": 0.0,
     "max": 438.6,
-    "media": 77.0679,
-    "desv_std": 101.0103
+    "media": 76.7642,
+    "desv_std": 100.9744
   },
   "lluvia_semana_mm": {
     "min": 0.0,
@@ -20,8 +20,8 @@
   "temp_media": {
     "min": 21.4,
     "max": 30.4714,
-    "media": 26.2997,
-    "desv_std": 1.7662
+    "media": 26.3007,
+    "desv_std": 1.7664
   },
   "tipo_cambio": {
     "min": 16.5262,

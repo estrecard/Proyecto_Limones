@@ -1,6 +1,6 @@
 # Reporte de limpieza y preprocesamiento — E1
 
-*Generado automáticamente por `src/transform/gold.py` el 14/11/2026 06:27.*
+*Generado automáticamente por `src/transform/gold.py` el 17/11/2026 07:57.*
 
 ## 1. Resolución de conflictos de esquema (SNIIM)
 
@@ -138,7 +138,7 @@ así que esos valores se completan solos en la siguiente ejecución automática.
 | Producto | calibre (#3, #4, #5, S/C) → **tamaño** (Mediano, Grande, Sin clasificar) |
 
 Discretización por terciles:
-- `lluvia_30d_nivel`: Baja / Media / Alta, cortes en [4.0, 86.2] mm.
+- `lluvia_30d_nivel`: Baja / Media / Alta, cortes en [4.0, 86.0] mm.
 - `precio_nivel`: Bajo / Medio / Alto, cortes en [20.8, 27.5] $/kg.
 
 ## 8. Normalización y estandarización
@@ -148,9 +148,9 @@ Para cada variable continua se agregan dos columnas: `_minmax` = (x − min)/(ma
 | Variable | Mín | Máx | Media | Desv. estándar |
 |---|---|---|---|---|
 | precio | 9.33 | 74.664 | 25.3642 | 8.3017 |
-| lluvia_30d_mm | 0.0 | 438.6 | 77.0679 | 101.0103 |
+| lluvia_30d_mm | 0.0 | 438.6 | 76.7642 | 100.9744 |
 | lluvia_semana_mm | 0.0 | 269.8 | 18.202 | 33.8731 |
-| temp_media | 21.4 | 30.4714 | 26.2997 | 1.7662 |
+| temp_media | 21.4 | 30.4714 | 26.3007 | 1.7664 |
 | tipo_cambio | 16.5262 | 20.6838 | 18.2319 | 1.124 |
 
 Los parámetros se guardan en `data/gold/parametros_normalizacion.json`. **Nota para el modelado (E1/E3):** al entrenar un modelo,

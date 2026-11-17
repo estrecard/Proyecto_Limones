@@ -1,5 +1,5 @@
 {
-  "fecha": "14/11/2026 06:27",
+  "fecha": "17/11/2026 07:57",
   "conflictos": {
     "registros_plata": 19168,
     "llaves_unicas": 15229,
@@ -165,7 +165,7 @@
   "discretizacion": {
     "lluvia_30d_cortes_mm": [
       4.0,
-      86.2
+      86.0
     ],
     "precio_cortes_kg": [
       20.8,
@@ -194,8 +194,8 @@
     "lluvia_30d_mm": {
       "min": 0.0,
       "max": 438.6,
-      "media": 77.0679,
-      "desv_std": 101.0103
+      "media": 76.7642,
+      "desv_std": 100.9744
     },
     "lluvia_semana_mm": {
       "min": 0.0,
@@ -206,8 +206,8 @@
     "temp_media": {
       "min": 21.4,
       "max": 30.4714,
-      "media": 26.2997,
-      "desv_std": 1.7662
+      "media": 26.3007,
+      "desv_std": 1.7664
     },
     "tipo_cambio": {
       "min": 16.5262,
