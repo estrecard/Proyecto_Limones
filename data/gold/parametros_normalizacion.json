@@ -2,31 +2,31 @@
   "precio": {
     "min": 9.33,
     "max": 74.664,
-    "media": 25.342,
-    "desv_std": 8.2958
+    "media": 25.3354,
+    "desv_std": 8.2922
   },
   "lluvia_30d_mm": {
     "min": 0.0,
     "max": 438.6,
-    "media": 76.7184,
-    "desv_std": 100.9871
+    "media": 76.5364,
+    "desv_std": 100.8047
   },
   "lluvia_semana_mm": {
     "min": 0.0,
     "max": 269.8,
-    "media": 18.2133,
-    "desv_std": 33.8674
+    "media": 18.1341,
+    "desv_std": 33.8149
   },
   "temp_media": {
     "min": 21.4,
     "max": 30.4714,
-    "media": 26.3,
-    "desv_std": 1.7663
+    "media": 26.297,
+    "desv_std": 1.763
   },
   "tipo_cambio": {
     "min": 16.5262,
     "max": 20.6838,
-    "media": 18.2338,
-    "desv_std": 1.1219
+    "media": 18.2341,
+    "desv_std": 1.122
   }
 }
