@@ -1,14 +1,14 @@
-# Entrega E2 · LimónLab Colima — Observatorio del Limón de Colima
+﻿# Entrega E2 · LimónLab Colima — Observatorio del Limón de Colima
 
 **Equipo:** Estrella Elizabeth Cárdenas Cuevas (Liza la foránea), modalidad individual autorizada · **Etiqueta:** `e2` ·
 **Tablero:** mapa interactivo en [`dashboard/mapa_mercados.html`](../../dashboard/mapa_mercados.html) (tablero público en construcción) ·
-**Repositorio:** https://github.com/estrecard/Proyecto_Limones · **Fecha:** [dd/mm/2026]
+**Repositorio:** https://github.com/estrecard/Proyecto_Limones · **Fecha:** 22/11/2026
 
 ## Resumen en tres líneas
 
 1. Se integró una **fuente geoespacial** (servicios web del INEGI —Catálogo Único de Claves Geoestadísticas y API del DENUE— + GeoPandas): ubicación de 18 mercados, distancia a Tecomán y comercios de frutas y verduras a 5 km por **unión espacial**, con un **mapa interactivo**.
 2. Se escribió la **declaración de ética y legalidad** por fuente; se **descartó Nominatim** porque su robots.txt lo prohíbe, y los datos de contacto de comercios se eliminan antes de guardar.
-3. Cada registro de la capa Oro es **rastreable hasta su archivo de Bronce y su fecha de captura**: [X] % de trazabilidad medida automáticamente en cada ejecución.
+3. Cada registro de la capa Oro es **rastreable hasta su archivo de Bronce y su fecha de captura**: 100.0 % de trazabilidad medida automáticamente en cada ejecución.
 
 ## Ingeniería de Datos
 
@@ -46,4 +46,4 @@
 
 ## Issues de la entrega anterior
 
-[Lista de issues abiertos por los docentes en GitHub y el commit que cierra cada uno. Si no hay issues, escribir "Sin issues abiertos al dd/mm/2026".]
+Sin issues abiertos al 22/11/2026.

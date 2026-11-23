@@ -1,6 +1,6 @@
-# Relatoría E2 · LimónLab Colima
+﻿# Relatoría E2 · LimónLab Colima
 
-**Equipo:** Estrella Elizabeth Cárdenas Cuevas (Liza la foránea), individual · **Periodo:** 21 al [dd] de noviembre de 2026
+**Equipo:** Estrella Elizabeth Cárdenas Cuevas (Liza la foránea), individual · **Periodo:** 21 al 22 de noviembre de 2026
 
 ## 1. Qué nos propusimos
 
@@ -19,8 +19,8 @@ valores de la capa Oro** se pueda rastrear hasta su archivo de Bronce y su fecha
 | 21/11 | 5 pruebas nuevas y ajuste de 4 pruebas de Oro (37 en total) | Liza | 15 min |
 | 21/11 | Declaración de ética, ficha de entrega y relatoría | Liza | 25 min |
 | 21/11 | Primera ejecución: el pipeline se detiene solo porque el robots.txt de Overpass prohíbe `/api/`; se verifica el archivo a mano | Liza | 10 min |
-| 22/11 | Cambio a INEGI (Catálogo Único + DENUE): extractor `inegi_geo.py`, token del DENUE oculto, pruebas y ética actualizadas | Liza | [min] |
-| [dd/11] | Primera captura del INEGI, ejecución en GitHub Actions y etiqueta `e2` | Liza | [min] |
+| 22/11 | Cambio a INEGI (Catálogo Único + DENUE): extractor `inegi_geo.py`, token del DENUE oculto, pruebas y ética actualizadas | Liza | 60 |
+| 22/11 | Primera captura del INEGI, ejecución en GitHub Actions y etiqueta `e2` | Liza | 20 |
 
 Los tiempos salen de [`calidad/tiempo-liza.csv`](../calidad/tiempo-liza.csv).
 
@@ -47,13 +47,13 @@ Los tiempos salen de [`calidad/tiempo-liza.csv`](../calidad/tiempo-liza.csv).
 ## 5. Qué aprendimos
 
 ### Ingeniería de Datos
-[Escribe aquí con tus palabras. Ejemplo: que para medir distancias hay que pasar las coordenadas de grados a un sistema en metros (EPSG:6372), y que una unión espacial permite contar cuántos comercios caen dentro de un radio.]
+Aprendí que revisar el robots.txt no se puede dejar a la memoria. Diseñé la fuente con Overpass y, en la primera ejecución, el propio pipeline se detuvo porque su robots.txt prohíbe /api/. En lugar de buscar un servidor espejo, cambié a los servicios del INEGI, que son oficiales y de libre uso. También aprendí que para medir distancias hay que pasar las coordenadas de grados a metros (EPSG:6372) y que una unión espacial permite contar cuántas fruterías caen dentro de un radio de 5 km.
 
 ### Análisis Estadístico
-[Escribe aquí con tus palabras. Ejemplo: cómo la distancia a Tecomán podría entrar como factor o covariable en el experimento o en el análisis multivariado.]
+Entendí que la geografía puede explicar parte de la variación del precio del limón. La distancia a Tecomán y el número de fruterías cercanas pueden usarse como covariables, o como un factor con dos niveles (cerca y lejos) en el diseño factorial. También que el conteo del DENUE es un indicador relativo y no un censo, así que hay que interpretarlo con cuidado.
 
 ### Calidad en los Sistemas de Información
-[Escribe aquí con tus palabras. Ejemplo: que el linaje convierte "confía en mí" en "compruébalo tú": cualquier cifra se rastrea hasta la URL y la hora en que se capturó.]
+Aprendí que el linaje convierte un dato de "confía en mí" en "compruébalo tú": cualquier precio de la capa Oro se puede rastrear hasta su archivo de Bronce, la URL y la hora en que se capturó. Además, las pruebas automáticas me permiten demostrar que no se guardan datos personales ni el token del DENUE, en lugar de solo afirmarlo.
 
 ## 6. Evidencias
 
@@ -61,7 +61,7 @@ Los tiempos salen de [`calidad/tiempo-liza.csv`](../calidad/tiempo-liza.csv).
 - Mapa: [`dashboard/mapa_mercados.html`](../dashboard/mapa_mercados.html)
 - Linaje: [`logs/linaje_resumen.json`](../logs/linaje_resumen.json)
 - Ética: [`docs/etica-datos.md`](etica-datos.md)
-- Ejecución en GitHub Actions: [enlace a la ejecución]
+- Ejecución en GitHub Actions: [Ejecución #10](https://github.com/estrecard/Proyecto_Limones/actions/runs/45099121957)
 
 ## Uso de IA generativa
 
