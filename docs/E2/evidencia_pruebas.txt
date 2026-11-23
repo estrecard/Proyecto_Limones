@@ -1,0 +1,50 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Liza\Desktop\INGENIER═A DE DATOS\Unidad3\Proyecto_Limones\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Liza\Desktop\INGENIER═A DE DATOS\Unidad3\Proyecto_Limones
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.16.0, typeguard-4.6.0
+collecting ... collected 39 items
+
+tests/test_e2.py::test_anonimizar_quita_nombres_contacto_y_domicilio PASSED [  2%]
+tests/test_e2.py::test_elegir_localidad_mas_poblada_de_la_entidad PASSED [  5%]
+tests/test_e2.py::test_extraer_respeta_robots_y_no_consulta PASSED       [  7%]
+tests/test_e2.py::test_extraer_anonimiza_oculta_token_y_usa_cache PASSED [ 10%]
+tests/test_e2.py::test_sin_token_ubica_ciudades_pero_no_pide_comercios PASSED [ 12%]
+tests/test_e2.py::test_geopandas_distancia_y_union_espacial PASSED       [ 15%]
+tests/test_e2.py::test_validar_linaje_detecta_registros_sin_origen PASSED [ 17%]
+tests/test_gates.py::test_registros_validos_pasan_todas_las_puertas PASSED [ 20%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro0-CQ-01] PASSED [ 23%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[banxico-registro1-CQ-01] PASSED [ 25%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro2-CQ-02] PASSED [ 28%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro3-CQ-02] PASSED [ 30%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro4-CQ-03] PASSED [ 33%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro5-CQ-03] PASSED [ 35%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro6-CQ-04] PASSED [ 38%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro7-CQ-06] PASSED [ 41%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro8-CQ-06] PASSED [ 43%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[open_meteo-registro9-CQ-07] PASSED [ 46%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[banxico-registro10-CQ-08] PASSED [ 48%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro11-CQ-11] PASSED [ 51%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro12-CQ-11] PASSED [ 53%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro13-CQ-11] PASSED [ 56%]
+tests/test_gates.py::test_regla_bloqueante_manda_a_cuarentena[sniim-registro14-CQ-12] PASSED [ 58%]
+tests/test_gates.py::test_cq05_duplicado_conserva_el_primero PASSED      [ 61%]
+tests/test_gates.py::test_cq05_no_cuenta_registros_ya_rechazados PASSED  [ 64%]
+tests/test_gates.py::test_registro_con_varios_errores_lista_todas_las_reglas PASSED [ 66%]
+tests/test_gates.py::test_cq09_salto_de_precio_es_advertencia_no_rechazo PASSED [ 69%]
+tests/test_gold.py::test_tendencia_observacion_corrige_texto_libre PASSED [ 71%]
+tests/test_gold.py::test_temporada_del_limon PASSED                      [ 74%]
+tests/test_gold.py::test_varias_presentaciones_mismo_dia_se_consolidan_con_mediana PASSED [ 76%]
+tests/test_gold.py::test_atipico_aislado_se_corrige_y_cambio_de_nivel_no PASSED [ 79%]
+tests/test_gold.py::test_imputa_huecos_cortos_y_no_los_largos PASSED     [ 82%]
+tests/test_gold.py::test_tipo_de_cambio_locf_en_fin_de_semana PASSED     [ 84%]
+tests/test_gold.py::test_normalizacion_minmax_y_z PASSED                 [ 87%]
+tests/test_ingesta_y_plata.py::test_lector_sniim_con_pagina_real PASSED  [ 89%]
+tests/test_ingesta_y_plata.py::test_lector_sniim_sin_resultados_no_truena PASSED [ 92%]
+tests/test_ingesta_y_plata.py::test_meses_divide_el_periodo PASSED       [ 94%]
+tests/test_ingesta_y_plata.py::test_numero_convierte_texto_y_deja_vacio_lo_invalido PASSED [ 97%]
+tests/test_ingesta_y_plata.py::test_consolidar_capturas_conserva_la_mas_reciente PASSED [100%]
+
+============================= 39 passed in 3.90s ==============================

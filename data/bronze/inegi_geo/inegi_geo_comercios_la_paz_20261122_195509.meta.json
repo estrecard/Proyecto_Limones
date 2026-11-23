@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_la_paz_20261122_195509.json",
+  "fecha_captura": "2026-11-22T19:55:09",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/24.148745,-110.30659/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "La Paz",
+  "registros": 100,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 24.148745,
+    "lon": -110.30659,
+    "cvegeo": "030030001",
+    "nomgeo": "La Paz",
+    "pob_total": 250141.0,
+    "archivo": "inegi_geo_ciudad_la_paz_20261122_000215.json",
+    "fecha_captura": "2026-11-22T00:02:15"
+  }
+}

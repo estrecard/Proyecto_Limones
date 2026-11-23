@@ -1,0 +1,20 @@
+﻿destino,ciudad,cve_ent,cvegeo,localidad_inegi,poblacion,tipo,lat,lon,archivo_bronce_ciudad,fecha_captura_ciudad
+Aguascalientes: Central de Abasto de Aguascalientes,Aguascalientes,01,010010001,Aguascalientes,863893.0,mercado,21.8798228,-102.2960467,inegi_geo_ciudad_aguascalientes_20261122_000210.json,2026-11-22T00:02:10
+Aguascalientes: Centro Comercial Agropecuario de Aguascalientes,Aguascalientes,01,010010001,Aguascalientes,863893.0,mercado,21.8798228,-102.2960467,inegi_geo_ciudad_aguascalientes_20261122_000210.json,2026-11-22T00:02:10
+Baja California Sur: Unión de Comerciantes de La Paz,La Paz,03,030030001,La Paz,250141.0,mercado,24.148745,-110.30659,inegi_geo_ciudad_la_paz_20261122_000215.json,2026-11-22T00:02:15
+Chihuahua: Central de Abasto de Chihuahua,Chihuahua,08,080190001,Chihuahua,925762.0,mercado,28.6367939,-106.0763067,inegi_geo_ciudad_chihuahua_20261122_000219.json,2026-11-22T00:02:19
+Chihuahua: Mercado de Abasto de Cd. Juárez,Juárez,08,080370001,Juárez,1501551.0,mercado,31.7464653,-106.4850186,inegi_geo_ciudad_juarez_20261122_000222.json,2026-11-22T00:02:22
+"Coahuila: Central de Abasto de La Laguna, Torreón",Torreón,05,050350001,Torreón,690193.0,mercado,25.5417533,-103.4530606,inegi_geo_ciudad_torreon_20261122_000226.json,2026-11-22T00:02:26
+Colima: Centros de distribución de Colima,Colima,06,060020001,Colima,146965.0,mercado,19.2429222,-103.7281189,inegi_geo_ciudad_colima_20261122_000229.json,2026-11-22T00:02:29
+Durango: Centro de Distribución y Abasto de Gómez Palacio,Gómez Palacio,10,100070001,Gómez Palacio,301742.0,mercado,25.5701072,-103.4964169,inegi_geo_ciudad_gomez_palacio_20261122_000234.json,2026-11-22T00:02:34
+Jalisco: Mercado Felipe Ángeles de Guadalajara,Guadalajara,14,140390001,Guadalajara,1385621.0,mercado,20.6763889,-103.3422222,inegi_geo_ciudad_guadalajara_20261122_000237.json,2026-11-22T00:02:37
+Jalisco: Mercado de Abasto de Guadalajara,Guadalajara,14,140390001,Guadalajara,1385621.0,mercado,20.6763889,-103.3422222,inegi_geo_ciudad_guadalajara_20261122_000237.json,2026-11-22T00:02:37
+Nuevo León: Mercado de Abasto Estrella de San Nicolás de los Garza,San Nicolás de los Garza,19,190460001,San Nicolás de los Garza,412199.0,mercado,25.7552528,-100.2895861,inegi_geo_ciudad_san_nicolas_de_los_garza_20261122_000240.json,2026-11-22T00:02:40
+San Luis Potosí: Centro de Abasto de San Luis Potosí,San Luis Potosí,24,240280001,San Luis Potosí,845941.0,mercado,22.151655,-100.9769581,inegi_geo_ciudad_san_luis_potosi_20261122_000244.json,2026-11-22T00:02:44
+Sinaloa: Zona de Abasto de Mazatlán,Mazatlán,25,250120001,Mazatlán,441975.0,mercado,23.2003158,-106.4222214,inegi_geo_ciudad_mazatlan_20261122_000247.json,2026-11-22T00:02:47
+Sonora: Central de Abasto de Cd. Obregón,Ciudad Obregón,26,260180001,Ciudad Obregón,329404.0,mercado,27.4964889,-109.9327161,inegi_geo_ciudad_ciudad_obregon_20261122_000251.json,2026-11-22T00:02:51
+Sonora: Mercado de Abasto Francisco I. Madero de Hermosillo,Hermosillo,26,260300001,Hermosillo,855563.0,mercado,29.0748997,-110.9585347,inegi_geo_ciudad_hermosillo_20261122_000254.json,2026-11-22T00:02:54
+Tabasco: Central de Abasto de Villahermosa,Villahermosa,27,270040001,Villahermosa,340060.0,mercado,17.9878375,-92.9194161,inegi_geo_ciudad_villahermosa_20261122_000258.json,2026-11-22T00:02:58
+Veracruz: Mercado Malibrán,Veracruz,30,301930001,Veracruz,405952.0,mercado,19.1903233,-96.1530275,inegi_geo_ciudad_veracruz_20261122_000301.json,2026-11-22T00:03:01
+Zacatecas: Mercado de Abasto de Zacatecas,Zacatecas,32,320560001,Zacatecas,138444.0,mercado,22.7760961,-102.5718364,inegi_geo_ciudad_zacatecas_20261122_000304.json,2026-11-22T00:03:04
+ORIGEN: Tecomán,Tecomán,06,060090001,Tecomán,88337.0,origen,18.9105028,-103.8735475,inegi_geo_ciudad_tecoman_20261122_000206.json,2026-11-22T00:02:06

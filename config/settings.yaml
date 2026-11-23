@@ -35,6 +35,41 @@ fuentes:
     serie: "SF43718"   # Tipo de cambio FIX
     token_env: "BANXICO_TOKEN"
 
+  inegi_geo:
+    # Fuente especializada E2. OpenStreetMap/Overpass se descartó: su robots.txt prohíbe /api/ (21/11/2026)
+    url_localidades: "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar"   # Catálogo Único, sin token
+    url_denue: "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar"         # DENUE, token en .env (DENUE_TOKEN)
+    user_agent: "LimonLab-Colima/1.0 (proyecto academico TecNM Colima; github.com/estrecard/Proyecto_Limones)"
+    pausa_entre_peticiones_seg: 2
+    reintentos: 3
+    condicion_denue: "frutas"     # palabra buscada; luego se filtra por clase de actividad (frutas y verduras)
+    radio_comercios_m: 5000       # máximo que permite la API del DENUE
+    crs_metrico: "EPSG:6372"      # México ITRF2008 / LCC (metros) para distancias y buffers
+    licencia: "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)"
+    origen:
+      nombre: "Tecomán"
+      ciudad: "Tecomán"
+      cve_ent: "06"
+    mercados:                     # destino del SNIIM → localidad y clave de entidad del INEGI
+      "Aguascalientes: Central de Abasto de Aguascalientes": {ciudad: "Aguascalientes", cve_ent: "01"}
+      "Aguascalientes: Centro Comercial Agropecuario de Aguascalientes": {ciudad: "Aguascalientes", cve_ent: "01"}
+      "Baja California Sur: Unión de Comerciantes de La Paz": {ciudad: "La Paz", cve_ent: "03"}
+      "Chihuahua: Central de Abasto de Chihuahua": {ciudad: "Chihuahua", cve_ent: "08"}
+      "Chihuahua: Mercado de Abasto de Cd. Juárez": {ciudad: "Juárez", cve_ent: "08"}
+      "Coahuila: Central de Abasto de La Laguna, Torreón": {ciudad: "Torreón", cve_ent: "05"}
+      "Colima: Centros de distribución de Colima": {ciudad: "Colima", cve_ent: "06"}
+      "Durango: Centro de Distribución y Abasto de Gómez Palacio": {ciudad: "Gómez Palacio", cve_ent: "10"}
+      "Jalisco: Mercado Felipe Ángeles de Guadalajara": {ciudad: "Guadalajara", cve_ent: "14"}
+      "Jalisco: Mercado de Abasto de Guadalajara": {ciudad: "Guadalajara", cve_ent: "14"}
+      "Nuevo León: Mercado de Abasto Estrella de San Nicolás de los Garza": {ciudad: "San Nicolás de los Garza", cve_ent: "19"}
+      "San Luis Potosí: Centro de Abasto de San Luis Potosí": {ciudad: "San Luis Potosí", cve_ent: "24"}
+      "Sinaloa: Zona de Abasto de Mazatlán": {ciudad: "Mazatlán", cve_ent: "25"}
+      "Sonora: Central de Abasto de Cd. Obregón": {ciudad: "Ciudad Obregón", cve_ent: "26"}
+      "Sonora: Mercado de Abasto Francisco I. Madero de Hermosillo": {ciudad: "Hermosillo", cve_ent: "26"}
+      "Tabasco: Central de Abasto de Villahermosa": {ciudad: "Villahermosa", cve_ent: "27"}
+      "Veracruz: Mercado Malibrán": {ciudad: "Veracruz", cve_ent: "30"}
+      "Zacatecas: Mercado de Abasto de Zacatecas": {ciudad: "Zacatecas", cve_ent: "32"}
+
 calidad:
   precio_min_kg: 2
   precio_max_kg: 150

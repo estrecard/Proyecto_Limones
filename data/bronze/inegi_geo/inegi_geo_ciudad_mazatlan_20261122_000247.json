@@ -1,0 +1,59 @@
+{
+ "registros": [
+  {
+   "cvegeo": "250120001",
+   "cve_ent": "25",
+   "cve_mun": "012",
+   "cve_loc": "0001",
+   "nomgeo": "Mazatlán",
+   "ambito": "URBANO",
+   "latitud": "23.2003158",
+   "longitud": "-106.4222214",
+   "pob_total": "441975"
+  },
+  {
+   "cvegeo": "250121468",
+   "cve_ent": "25",
+   "cve_mun": "012",
+   "cve_loc": "1468",
+   "nomgeo": "Mazatlán Logistic Center [Parque Industrial]",
+   "ambito": "RURAL",
+   "latitud": "23.3622403",
+   "longitud": "-106.4792975",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "250063398",
+   "cve_ent": "25",
+   "cve_mun": "006",
+   "cve_loc": "3398",
+   "nomgeo": "Mazatlán [Granja Acuícola]",
+   "ambito": "RURAL",
+   "latitud": "24.1087244",
+   "longitud": "-107.1289089",
+   "pob_total": "4"
+  },
+  {
+   "cvegeo": "250121470",
+   "cve_ent": "25",
+   "cve_mun": "012",
+   "cve_loc": "1470",
+   "nomgeo": "Mazatlán [Parque Industrial]",
+   "ambito": "RURAL",
+   "latitud": "23.1935347",
+   "longitud": "-106.2825253",
+   "pob_total": "5"
+  },
+  {
+   "cvegeo": "250121469",
+   "cve_ent": "25",
+   "cve_mun": "012",
+   "cve_loc": "1469",
+   "nomgeo": "Logística y Distribución Integral Mazatlán [Parque Industrial]",
+   "ambito": "RURAL",
+   "latitud": "23.1977919",
+   "longitud": "-106.3528017",
+   "pob_total": "0"
+  }
+ ]
+}

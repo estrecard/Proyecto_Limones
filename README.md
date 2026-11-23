@@ -48,10 +48,11 @@ flowchart LR
 | SNIIM – Secretaría de Economía | Web scraping | Precio mín/máx/frecuente del limón por central, origen y presentación |
 | Open-Meteo (Historical Weather API) | API REST, sin clave | Precipitación y temperatura diarias en Tecomán, Colima |
 | Banxico SIE (serie SF43718) | API REST, token gratuito | Tipo de cambio FIX USD/MXN |
+| INEGI: Catálogo Único + API del DENUE — *fuente geoespacial E2* | API REST, con caché (DENUE con token) | Ubicación de mercados, distancia a Tecomán y comercios de frutas y verduras a 5 km (GeoPandas) |
 
 Detalle en [`docs/catalogo_fuentes.md`](docs/catalogo_fuentes.md).
 
-**Atribución:** datos meteorológicos de [Open-Meteo.com](https://open-meteo.com/) (CC BY 4.0); precios del SNIIM, Secretaría de Economía; tipo de cambio de Banco de México (SIE).
+**Atribución:** datos meteorológicos de [Open-Meteo.com](https://open-meteo.com/) (CC BY 4.0); precios del SNIIM, Secretaría de Economía; tipo de cambio de Banco de México (SIE); datos geográficos: Fuente INEGI, Catálogo Único de Claves Geoestadísticas y DENUE; mapa base © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). Declaración completa: [`docs/etica-datos.md`](docs/etica-datos.md).
 
 ## Estructura del repositorio
 
@@ -80,7 +81,7 @@ Proyecto_Limones/
 |---|---|---|---|
 | `e0` | Propuesta, máquina de captura (Bronce) y sistema de calidad inicial — [`docs/E0/`](docs/E0/) | 10 % | Entregada (entrevista de campo pendiente) |
 | `e1` | Limpieza estadística, puerta de calidad Pandera y capa Oro — [`docs/E1/`](docs/E1/) | 40 % | Entregada |
-| `e2` | Experimento con factores | 20 % | Pendiente |
+| `e2` | Fuente geoespacial (INEGI + GeoPandas), ética y linaje — [`docs/E2/`](docs/E2/) | 20 % | En curso |
 | `e3` | Comparación de grupos multivariados | 15 % | Pendiente |
 | `e4` | Por definir según rúbrica | 15 % | Pendiente |
 

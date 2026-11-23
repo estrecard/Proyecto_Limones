@@ -1,0 +1,147 @@
+{
+ "registros": [
+  {
+   "cvegeo": "141200208",
+   "cve_ent": "14",
+   "cve_mun": "120",
+   "cve_loc": "0208",
+   "nomgeo": "Universidad de Guadalajara [Club Deportivo]",
+   "ambito": "RURAL",
+   "latitud": "20.7796703",
+   "longitud": "-103.6055722",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "140390001",
+   "cve_ent": "14",
+   "cve_mun": "039",
+   "cve_loc": "0001",
+   "nomgeo": "Guadalajara",
+   "ambito": "URBANO",
+   "latitud": "20.6763889",
+   "longitud": "-103.3422222",
+   "pob_total": "1385621"
+  },
+  {
+   "cvegeo": "140500054",
+   "cve_ent": "14",
+   "cve_mun": "050",
+   "cve_loc": "0054",
+   "nomgeo": "Crucero Carretera Guadalajara Morelia",
+   "ambito": "RURAL",
+   "latitud": "20.2819556",
+   "longitud": "-103.4492911",
+   "pob_total": "6"
+  },
+  {
+   "cvegeo": "140290193",
+   "cve_ent": "14",
+   "cve_mun": "029",
+   "cve_loc": "0193",
+   "nomgeo": "Seminario Auxiliar de Guadalajara en Cuquío",
+   "ambito": "RURAL",
+   "latitud": "20.9525000",
+   "longitud": "-103.0263889",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "140060106",
+   "cve_ent": "14",
+   "cve_mun": "006",
+   "cve_loc": "0106",
+   "nomgeo": "Universidad de Guadalajara [Campo Experimental Agrícola]",
+   "ambito": "RURAL",
+   "latitud": "20.5346733",
+   "longitud": "-103.9681050",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "140060120",
+   "cve_ent": "14",
+   "cve_mun": "006",
+   "cve_loc": "0120",
+   "nomgeo": "Ninguno [Maquinaria Agrícola de Guadalajara]",
+   "ambito": "RURAL",
+   "latitud": "20.5274272",
+   "longitud": "-104.0210031",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "140430212",
+   "cve_ent": "14",
+   "cve_mun": "043",
+   "cve_loc": "0212",
+   "nomgeo": "Albergues de la Huerta [Universidad de Guadalajara]",
+   "ambito": "RURAL",
+   "latitud": "19.5033636",
+   "longitud": "-104.5492575",
+   "pob_total": "1"
+  },
+  {
+   "cvegeo": "141200751",
+   "cve_ent": "14",
+   "cve_mun": "120",
+   "cve_loc": "0751",
+   "nomgeo": "Guadalajara [Technology Park]",
+   "ambito": "RURAL",
+   "latitud": "20.7269444",
+   "longitud": "-103.4933333",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "140830146",
+   "cve_ent": "14",
+   "cve_mun": "083",
+   "cve_loc": "0146",
+   "nomgeo": "Laboratorio Meteorológico Universidad de Guadalajara",
+   "ambito": "RURAL",
+   "latitud": "20.5739414",
+   "longitud": "-103.6352111",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "140970783",
+   "cve_ent": "14",
+   "cve_mun": "097",
+   "cve_loc": "0783",
+   "nomgeo": "Autódromo Guadalajara",
+   "ambito": "RURAL",
+   "latitud": "20.5318583",
+   "longitud": "-103.3447325",
+   "pob_total": "14"
+  },
+  {
+   "cvegeo": "141200570",
+   "cve_ent": "14",
+   "cve_mun": "120",
+   "cve_loc": "0570",
+   "nomgeo": "Ninguno [Maxipista Guadalajara-Tepic]",
+   "ambito": "RURAL",
+   "latitud": "20.7777503",
+   "longitud": "-103.6595575",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "141200610",
+   "cve_ent": "14",
+   "cve_mun": "120",
+   "cve_loc": "0610",
+   "nomgeo": "Refractarios Guadalajara",
+   "ambito": "RURAL",
+   "latitud": "20.8462486",
+   "longitud": "-103.4468728",
+   "pob_total": "5"
+  },
+  {
+   "cvegeo": "140970757",
+   "cve_ent": "14",
+   "cve_mun": "097",
+   "cve_loc": "0757",
+   "nomgeo": "Advance Guadalajara [Parque Industrial ]",
+   "ambito": "RURAL",
+   "latitud": "20.4798839",
+   "longitud": "-103.2629456",
+   "pob_total": "-"
+  }
+ ]
+}

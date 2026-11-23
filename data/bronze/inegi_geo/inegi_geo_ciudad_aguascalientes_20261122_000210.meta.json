@@ -1,0 +1,13 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_ciudad_aguascalientes_20261122_000210.json",
+  "fecha_captura": "2026-11-22T00:02:10",
+  "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/Aguascalientes",
+  "tipo_consulta": "ciudad",
+  "lugar": "Aguascalientes",
+  "registros": 10,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": false,
+  "cve_ent": "01"
+}

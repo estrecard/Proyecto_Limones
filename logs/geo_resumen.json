@@ -1,0 +1,9 @@
+{
+  "mercados_ubicados": 18,
+  "comercios_validos": 6429,
+  "rechazados_lugares": 0,
+  "rechazados_comercios": 0,
+  "distancia_km_min": 39.8,
+  "distancia_km_max": 1441.8,
+  "crs_metrico": "EPSG:6372"
+}

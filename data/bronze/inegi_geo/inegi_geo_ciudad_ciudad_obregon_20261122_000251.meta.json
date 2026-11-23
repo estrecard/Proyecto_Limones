@@ -1,0 +1,13 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_ciudad_ciudad_obregon_20261122_000251.json",
+  "fecha_captura": "2026-11-22T00:02:51",
+  "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/Ciudad%20Obreg%C3%B3n",
+  "tipo_consulta": "ciudad",
+  "lugar": "Ciudad Obregón",
+  "registros": 3,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": false,
+  "cve_ent": "26"
+}

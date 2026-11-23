@@ -50,6 +50,20 @@ https://archive-api.open-meteo.com/v1/archive?latitude=18.9089&longitude=-103.87
 | Frecuencia | Diaria (días hábiles bancarios) |
 | Particularidad | Los días sin publicación vienen como `"N/E"` y se tratan en Plata |
 
+## F4 — INEGI: Catálogo Único de Claves Geoestadísticas y API del DENUE (fuente especializada E2)
+
+| Campo | Valor |
+|---|---|
+| Endpoint localidades | `https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/{texto}` (sin token) |
+| Endpoint comercios | `https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/{condicion}/{lat},{lon}/{metros}/{token}` |
+| Método | **API REST** (JSON). El token del DENUE es gratuito: https://www.inegi.org.mx/servicios/api_denue.html |
+| Campos usados | Localidades: `cvegeo`, `nomgeo`, `latitud`, `longitud`, `pob_total`. DENUE: `Id`, `Clase_actividad`, `Estrato`, `Latitud`, `Longitud` |
+| Campos eliminados antes de Bronce | Nombre, razón social, domicilio, teléfono, correo y sitio web |
+| Radio | 5,000 m (máximo de la API) |
+| Frecuencia | Una captura con caché; refresco manual mensual (`--refrescar`) |
+| Licencia | Términos de Libre Uso de la Información del INEGI (citar la fuente) |
+| Descartadas | Nominatim y Overpass (OpenStreetMap): sus robots.txt prohíben las rutas de consulta |
+
 ## Llave de integración (capa Oro)
 
 Todas las fuentes se unen por **fecha** (`AAAA-MM-DD`). El SNIIM agrega la **central de abasto**. El clima y el tipo de cambio se replican para todas las centrales de un mismo día.

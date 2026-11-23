@@ -10,7 +10,9 @@ def registro(fecha, precio, presentacion="Kilogramo", destino="Jalisco: Mercado 
              producto="Limón c/semilla # 5", obs=None):
     return {"fecha": pd.Timestamp(fecha), "producto": producto, "destino": destino, "presentacion": presentacion,
             "precio_min": precio - 1, "precio_max": precio + 1, "precio_frec": precio,
-            "observaciones": obs, "estado_destino": destino.split(":")[0]}
+            "observaciones": obs, "estado_destino": destino.split(":")[0],
+            "archivo_origen": "sniim_prueba.html", "fecha_captura": "2026-11-12T00:00:00",
+            "id_registro": f"sniim-{fecha}-{presentacion}-{precio}"}
 
 
 def test_tendencia_observacion_corrige_texto_libre():
@@ -68,21 +70,25 @@ def test_imputa_huecos_cortos_y_no_los_largos():
             continue
         filas.append({"fecha": s, "destino": "Jalisco: Mercado de Abasto de Guadalajara", "producto": "Limón c/semilla # 5",
                       "precio_frec_limpio": 20.0 + i, "precio_min": 19.0, "precio_max": 25.0 + i,
-                      "atipico": False, "estado": "Jalisco", "calibre": "#5"})
+                      "atipico": False, "estado": "Jalisco", "calibre": "#5",
+                      "archivos_bronce": "sniim_prueba.html", "fecha_captura": "2026-11-12T00:00:00"})
     rep = {}
     w = semanal_sniim(pd.DataFrame(filas), rep)
     assert w.loc[[5, 6], "imputado"].all()                     # hueco corto: interpolado
     assert w.loc[5, "precio"] == 25.0
     assert w.loc[15:19, "precio"].isna().all()                 # hueco largo: se deja vacío (posible MNAR)
     assert rep["imputacion"]["imputadas_interpolacion"] == 2
+    assert list(w.loc[[4, 5, 15], "origen_valor"]) == ["observado", "imputado", "sin_dato"]   # linaje del valor
 
 
 def test_tipo_de_cambio_locf_en_fin_de_semana():
-    b = pd.DataFrame({"fecha": pd.to_datetime(["2026-11-06", "2026-11-09"]), "tipo_cambio": [18.0, 18.6]})
+    b = pd.DataFrame({"fecha": pd.to_datetime(["2026-11-06", "2026-11-09"]), "tipo_cambio": [18.0, 18.6],
+                      "archivo_origen": ["banxico_prueba.json"] * 2, "fecha_captura": ["2026-11-12T00:00:00"] * 2})
     rep = {"imputacion": {}}
     w = semanal_dolar(b, rep)
     assert rep["imputacion"]["tipo_cambio_dias_locf"] == 2      # sábado y domingo
     assert w.iloc[0]["tipo_cambio"] == 18.0                     # semana del 2 al 8 usa el viernes para el fin de semana
+    assert w.iloc[0]["archivo_bronce_banxico"] == "banxico_prueba.json"   # linaje del tipo de cambio
 
 
 def test_normalizacion_minmax_y_z():

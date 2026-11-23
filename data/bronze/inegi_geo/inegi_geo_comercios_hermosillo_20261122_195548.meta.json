@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_hermosillo_20261122_195548.json",
+  "fecha_captura": "2026-11-22T19:55:48",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/29.0748997,-110.9585347/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "Hermosillo",
+  "registros": 82,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 29.0748997,
+    "lon": -110.9585347,
+    "cvegeo": "260300001",
+    "nomgeo": "Hermosillo",
+    "pob_total": 855563.0,
+    "archivo": "inegi_geo_ciudad_hermosillo_20261122_000254.json",
+    "fecha_captura": "2026-11-22T00:02:54"
+  }
+}

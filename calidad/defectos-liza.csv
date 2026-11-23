@@ -17,3 +17,6 @@ D15,2026-11-13,80 Función,Diseño,Pruebas,10,,Detección de atípicos inútil c
 D16,2026-11-13,80 Función,Diseño,Pruebas,5,D15,Cambios de nivel de varios días se corregían como ruido; se agregó regla de persistencia (solo se corrigen rachas <= 2 días)
 D17,2026-11-13,50 Interfaz,Codificación,Revisión,2,,Parámetro checks duplicado en la función texto() del esquema Pandera
 D18,2026-11-13,80 Función,Codificación,Pruebas,2,,La expresión regular de observaciones no reconocía 'A LA ALAZA'; detectado por prueba automática
+D19,2026-11-21,60 Verificación,Diseño,Revisión,10,,El primer diseño usaba Nominatim sin revisar su robots.txt (prohíbe /search); se cambió a Overpass y se agregó la revisión automática de robots.txt
+D20,2026-11-21,50 Interfaz,Codificación,Pruebas,5,,Las nuevas columnas de linaje rompieron 4 pruebas de la capa Oro (datos de ejemplo sin archivo_origen ni fecha_captura)
+D21,2026-11-21,60 Verificación,Diseño,Pruebas,10,D19,El diseño usaba Overpass sin revisar su robots.txt a mano (prohíbe /api/); el candado automático lo detectó en la primera ejecución y se cambió la fuente a INEGI

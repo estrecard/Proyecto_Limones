@@ -1,0 +1,114 @@
+{
+ "registros": [
+  {
+   "cvegeo": "010050507",
+   "cve_ent": "01",
+   "cve_mun": "005",
+   "cve_loc": "0507",
+   "nomgeo": "Parque Industrial del Valle de Aguascalientes (PIVA)",
+   "ambito": "RURAL",
+   "latitud": "21.9649586",
+   "longitud": "-102.2829114",
+   "pob_total": "1"
+  },
+  {
+   "cvegeo": "010010001",
+   "cve_ent": "01",
+   "cve_mun": "001",
+   "cve_loc": "0001",
+   "nomgeo": "Aguascalientes",
+   "ambito": "URBANO",
+   "latitud": "21.8798228",
+   "longitud": "-102.2960467",
+   "pob_total": "863893"
+  },
+  {
+   "cvegeo": "010050427",
+   "cve_ent": "01",
+   "cve_mun": "005",
+   "cve_loc": "0427",
+   "nomgeo": "Paseos de Aguascalientes",
+   "ambito": "URBANO",
+   "latitud": "21.9688092",
+   "longitud": "-102.2964317",
+   "pob_total": "5191"
+  },
+  {
+   "cvegeo": "010012405",
+   "cve_ent": "01",
+   "cve_mun": "001",
+   "cve_loc": "2405",
+   "nomgeo": "Aguascalientes [Hípico]",
+   "ambito": "RURAL",
+   "latitud": "21.9142369",
+   "longitud": "-102.3616306",
+   "pob_total": "7"
+  },
+  {
+   "cvegeo": "010070444",
+   "cve_ent": "01",
+   "cve_mun": "007",
+   "cve_loc": "0444",
+   "nomgeo": "Diocesano de Aguascalientes [Seminario]",
+   "ambito": "RURAL",
+   "latitud": "22.1730075",
+   "longitud": "-102.3417231",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "010110144",
+   "cve_ent": "01",
+   "cve_mun": "011",
+   "cve_loc": "0144",
+   "nomgeo": "Aguascalientes Express",
+   "ambito": "RURAL",
+   "latitud": "22.0662658",
+   "longitud": "-102.2821378",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "010110129",
+   "cve_ent": "01",
+   "cve_mun": "011",
+   "cve_loc": "0129",
+   "nomgeo": "Valle de Aguascalientes",
+   "ambito": "RURAL",
+   "latitud": "21.9730153",
+   "longitud": "-102.2658028",
+   "pob_total": "1089"
+  },
+  {
+   "cvegeo": "010010755",
+   "cve_ent": "01",
+   "cve_mun": "001",
+   "cve_loc": "0755",
+   "nomgeo": "Asociación Local Ganadera de Aguascalientes (Cerro del Niágara)",
+   "ambito": "RURAL",
+   "latitud": "21.8033233",
+   "longitud": "-102.3918786",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "010012030",
+   "cve_ent": "01",
+   "cve_mun": "001",
+   "cve_loc": "2030",
+   "nomgeo": "Granja Margarita (Viñedos Aguascalientes)",
+   "ambito": "RURAL",
+   "latitud": "21.8492811",
+   "longitud": "-102.3466586",
+   "pob_total": "6"
+  },
+  {
+   "cvegeo": "010020007",
+   "cve_ent": "01",
+   "cve_mun": "002",
+   "cve_loc": "0007",
+   "nomgeo": "Bimbaletes Aguascalientes (El Álamo)",
+   "ambito": "RURAL",
+   "latitud": "22.2352106",
+   "longitud": "-102.0183117",
+   "pob_total": "1399"
+  }
+ ]
+}

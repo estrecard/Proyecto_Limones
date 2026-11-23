@@ -1,0 +1,279 @@
+{
+ "registros": [
+  {
+   "cvegeo": "080340010",
+   "cve_ent": "08",
+   "cve_mun": "034",
+   "cve_loc": "0010",
+   "nomgeo": "Benito Juárez",
+   "ambito": "RURAL",
+   "latitud": "29.7500025",
+   "longitud": "-107.9352758",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080370001",
+   "cve_ent": "08",
+   "cve_mun": "037",
+   "cve_loc": "0001",
+   "nomgeo": "Juárez",
+   "ambito": "URBANO",
+   "latitud": "31.7464653",
+   "longitud": "-106.4850186",
+   "pob_total": "1501551"
+  },
+  {
+   "cvegeo": "080150358",
+   "cve_ent": "08",
+   "cve_mun": "015",
+   "cve_loc": "0358",
+   "nomgeo": "Rancho de Alonso Juárez",
+   "ambito": "RURAL",
+   "latitud": "29.4613922",
+   "longitud": "-105.0824600",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080100005",
+   "cve_ent": "08",
+   "cve_mun": "010",
+   "cve_loc": "0005",
+   "nomgeo": "Ejido Benito Juárez",
+   "ambito": "URBANO",
+   "latitud": "30.1500214",
+   "longitud": "-106.8845122",
+   "pob_total": "6528"
+  },
+  {
+   "cvegeo": "080010664",
+   "cve_ent": "08",
+   "cve_mun": "001",
+   "cve_loc": "0664",
+   "nomgeo": "Ejido Juárez (El Colorado)",
+   "ambito": "RURAL",
+   "latitud": "30.4106436",
+   "longitud": "-106.8921708",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080050010",
+   "cve_ent": "08",
+   "cve_mun": "005",
+   "cve_loc": "0010",
+   "nomgeo": "Benito Juárez",
+   "ambito": "RURAL",
+   "latitud": "31.4464997",
+   "longitud": "-107.4322356",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080191465",
+   "cve_ent": "08",
+   "cve_mun": "019",
+   "cve_loc": "1465",
+   "nomgeo": "Rancho de Armando Valles Juárez",
+   "ambito": "RURAL",
+   "latitud": "29.2297097",
+   "longitud": "-106.0923139",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080191173",
+   "cve_ent": "08",
+   "cve_mun": "019",
+   "cve_loc": "1173",
+   "nomgeo": "Gerónimo Juárez",
+   "ambito": "RURAL",
+   "latitud": "29.0856517",
+   "longitud": "-106.2523522",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080280338",
+   "cve_ent": "08",
+   "cve_mun": "028",
+   "cve_loc": "0338",
+   "nomgeo": "Valle de Juárez [Agroindustrial]",
+   "ambito": "RURAL",
+   "latitud": "31.3759894",
+   "longitud": "-106.0502800",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080280560",
+   "cve_ent": "08",
+   "cve_mun": "028",
+   "cve_loc": "0560",
+   "nomgeo": "Ejido Juárez y Reforma",
+   "ambito": "RURAL",
+   "latitud": "31.4165017",
+   "longitud": "-106.1496311",
+   "pob_total": "2"
+  },
+  {
+   "cvegeo": "080500228",
+   "cve_ent": "08",
+   "cve_mun": "050",
+   "cve_loc": "0228",
+   "nomgeo": "Rancho Juárez",
+   "ambito": "RURAL",
+   "latitud": "30.4737358",
+   "longitud": "-107.8816667",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080450893",
+   "cve_ent": "08",
+   "cve_mun": "045",
+   "cve_loc": "0893",
+   "nomgeo": "El 7 [Tomás Juárez]",
+   "ambito": "RURAL",
+   "latitud": "28.3708867",
+   "longitud": "-105.5937867",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080450744",
+   "cve_ent": "08",
+   "cve_mun": "045",
+   "cve_loc": "0744",
+   "nomgeo": "Rancho de Martín Juárez",
+   "ambito": "RURAL",
+   "latitud": "28.3504778",
+   "longitud": "-105.5811033",
+   "pob_total": "1"
+  },
+  {
+   "cvegeo": "080620006",
+   "cve_ent": "08",
+   "cve_mun": "062",
+   "cve_loc": "0006",
+   "nomgeo": "Colonia Benito Juárez",
+   "ambito": "RURAL",
+   "latitud": "28.2137167",
+   "longitud": "-105.3464231",
+   "pob_total": "49"
+  },
+  {
+   "cvegeo": "080550644",
+   "cve_ent": "08",
+   "cve_mun": "055",
+   "cve_loc": "0644",
+   "nomgeo": "Establo Benito Juárez",
+   "ambito": "RURAL",
+   "latitud": "28.2166200",
+   "longitud": "-105.5380222",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080420169",
+   "cve_ent": "08",
+   "cve_mun": "042",
+   "cve_loc": "0169",
+   "nomgeo": "Benito Juárez (Santa Elena)",
+   "ambito": "RURAL",
+   "latitud": "29.1146444",
+   "longitud": "-103.5256550",
+   "pob_total": "18"
+  },
+  {
+   "cvegeo": "080170357",
+   "cve_ent": "08",
+   "cve_mun": "017",
+   "cve_loc": "0357",
+   "nomgeo": "Colonia Margarita Maza de Juárez (Las Margaritas)",
+   "ambito": "RURAL",
+   "latitud": "28.7584672",
+   "longitud": "-106.8918442",
+   "pob_total": "560"
+  },
+  {
+   "cvegeo": "080310060",
+   "cve_ent": "08",
+   "cve_mun": "031",
+   "cve_loc": "0060",
+   "nomgeo": "Juárez Guerrero (El Cajonero)",
+   "ambito": "RURAL",
+   "latitud": "28.4691650",
+   "longitud": "-107.2202208",
+   "pob_total": "48"
+  },
+  {
+   "cvegeo": "080130017",
+   "cve_ent": "08",
+   "cve_mun": "013",
+   "cve_loc": "0017",
+   "nomgeo": "Colonia Juárez",
+   "ambito": "RURAL",
+   "latitud": "30.3093103",
+   "longitud": "-108.0769617",
+   "pob_total": "792"
+  },
+  {
+   "cvegeo": "080160004",
+   "cve_ent": "08",
+   "cve_mun": "016",
+   "cve_loc": "0004",
+   "nomgeo": "Corraleño de Juárez",
+   "ambito": "RURAL",
+   "latitud": "27.8117853",
+   "longitud": "-105.1688322",
+   "pob_total": "527"
+  },
+  {
+   "cvegeo": "080480064",
+   "cve_ent": "08",
+   "cve_mun": "048",
+   "cve_loc": "0064",
+   "nomgeo": "Benito Juárez",
+   "ambito": "RURAL",
+   "latitud": "29.1651156",
+   "longitud": "-106.9551439",
+   "pob_total": "2017"
+  },
+  {
+   "cvegeo": "080520029",
+   "cve_ent": "08",
+   "cve_mun": "052",
+   "cve_loc": "0029",
+   "nomgeo": "Loma de Juárez",
+   "ambito": "RURAL",
+   "latitud": "29.4067175",
+   "longitud": "-104.1927914",
+   "pob_total": "138"
+  },
+  {
+   "cvegeo": "080140005",
+   "cve_ent": "08",
+   "cve_mun": "014",
+   "cve_loc": "0005",
+   "nomgeo": "Colonia Benito Juárez (La Loma de la Cruz)",
+   "ambito": "RURAL",
+   "latitud": "26.7338314",
+   "longitud": "-105.1387547",
+   "pob_total": "160"
+  },
+  {
+   "cvegeo": "080150383",
+   "cve_ent": "08",
+   "cve_mun": "015",
+   "cve_loc": "0383",
+   "nomgeo": "Rancho de Juárez",
+   "ambito": "RURAL",
+   "latitud": "29.4537272",
+   "longitud": "-105.0872058",
+   "pob_total": "2"
+  },
+  {
+   "cvegeo": "080280020",
+   "cve_ent": "08",
+   "cve_mun": "028",
+   "cve_loc": "0020",
+   "nomgeo": "Juárez y Reforma",
+   "ambito": "RURAL",
+   "latitud": "31.4418536",
+   "longitud": "-106.1698206",
+   "pob_total": "569"
+  }
+ ]
+}

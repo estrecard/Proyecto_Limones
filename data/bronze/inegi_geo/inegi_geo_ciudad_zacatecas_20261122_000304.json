@@ -1,0 +1,26 @@
+{
+ "registros": [
+  {
+   "cvegeo": "320560001",
+   "cve_ent": "32",
+   "cve_mun": "056",
+   "cve_loc": "0001",
+   "nomgeo": "Zacatecas",
+   "ambito": "URBANO",
+   "latitud": "22.7760961",
+   "longitud": "-102.5718364",
+   "pob_total": "138444"
+  },
+  {
+   "cvegeo": "320320028",
+   "cve_ent": "32",
+   "cve_mun": "032",
+   "cve_loc": "0028",
+   "nomgeo": "La Cabaña (Granja Zacatecas)",
+   "ambito": "RURAL",
+   "latitud": "22.8544369",
+   "longitud": "-102.6656683",
+   "pob_total": "0"
+  }
+ ]
+}

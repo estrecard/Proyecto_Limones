@@ -1,0 +1,4757 @@
+{
+ "registros": [
+  {
+   "denue_id": "4405364",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1931542,
+   "lon": -96.15281935
+  },
+  {
+   "denue_id": "4428102",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18607426,
+   "lon": -96.151384
+  },
+  {
+   "denue_id": "7706632",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19431249,
+   "lon": -96.1500538
+  },
+  {
+   "denue_id": "10844423",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19441758,
+   "lon": -96.15000963
+  },
+  {
+   "denue_id": "10653871",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19512617,
+   "lon": -96.15097177
+  },
+  {
+   "denue_id": "11041495",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18565549,
+   "lon": -96.15675328
+  },
+  {
+   "denue_id": "4312150",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19599338,
+   "lon": -96.15102951
+  },
+  {
+   "denue_id": "4427477",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19291682,
+   "lon": -96.14731969
+  },
+  {
+   "denue_id": "10321895",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18977701,
+   "lon": -96.14665014
+  },
+  {
+   "denue_id": "4314999",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1907785,
+   "lon": -96.16015689
+  },
+  {
+   "denue_id": "4315114",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18512488,
+   "lon": -96.15857765
+  },
+  {
+   "denue_id": "4428200",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18313083,
+   "lon": -96.15025902
+  },
+  {
+   "denue_id": "11197872",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18120838,
+   "lon": -96.15261396
+  },
+  {
+   "denue_id": "10804166",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19268632,
+   "lon": -96.16268418
+  },
+  {
+   "denue_id": "11519008",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19082356,
+   "lon": -96.16309647
+  },
+  {
+   "denue_id": "11286125",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19277077,
+   "lon": -96.16302401
+  },
+  {
+   "denue_id": "4409864",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19266681,
+   "lon": -96.14295933
+  },
+  {
+   "denue_id": "7623909",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18737714,
+   "lon": -96.16344426
+  },
+  {
+   "denue_id": "10512849",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19674317,
+   "lon": -96.16195476
+  },
+  {
+   "denue_id": "7623784",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19674317,
+   "lon": -96.16195476
+  },
+  {
+   "denue_id": "12335235",
+   "categoria": "mayorista",
+   "estrato": "11 a 30 personas",
+   "lat": 19.18844874,
+   "lon": -96.14123743
+  },
+  {
+   "denue_id": "12335028",
+   "categoria": "mayorista",
+   "estrato": "6 a 10 personas",
+   "lat": 19.18834843,
+   "lon": -96.14117206
+  },
+  {
+   "denue_id": "10638578",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1838797,
+   "lon": -96.16314425
+  },
+  {
+   "denue_id": "10427149",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1810326,
+   "lon": -96.16069859
+  },
+  {
+   "denue_id": "10550634",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19005747,
+   "lon": -96.16555585
+  },
+  {
+   "denue_id": "11010622",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18101767,
+   "lon": -96.14484489
+  },
+  {
+   "denue_id": "7415512",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19085791,
+   "lon": -96.16588955
+  },
+  {
+   "denue_id": "10280694",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19240026,
+   "lon": -96.16598379
+  },
+  {
+   "denue_id": "7624123",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18116585,
+   "lon": -96.16204895
+  },
+  {
+   "denue_id": "7645338",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20288371,
+   "lon": -96.1532855
+  },
+  {
+   "denue_id": "4315534",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.19234889,
+   "lon": -96.13973301
+  },
+  {
+   "denue_id": "8788592",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17921736,
+   "lon": -96.14595735
+  },
+  {
+   "denue_id": "10525605",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19364421,
+   "lon": -96.13923827
+  },
+  {
+   "denue_id": "10858968",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19364421,
+   "lon": -96.13923827
+  },
+  {
+   "denue_id": "4315410",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19363405,
+   "lon": -96.13923016
+  },
+  {
+   "denue_id": "4407890",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19362389,
+   "lon": -96.13922205
+  },
+  {
+   "denue_id": "11823999",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19358785,
+   "lon": -96.13919328
+  },
+  {
+   "denue_id": "7706538",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19357212,
+   "lon": -96.13918072
+  },
+  {
+   "denue_id": "10671746",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17710636,
+   "lon": -96.1563049
+  },
+  {
+   "denue_id": "11138187",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18590101,
+   "lon": -96.1666827
+  },
+  {
+   "denue_id": "10608888",
+   "categoria": "mayorista",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19085646,
+   "lon": -96.13841283
+  },
+  {
+   "denue_id": "11380590",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18000038,
+   "lon": -96.14319055
+  },
+  {
+   "denue_id": "7706363",
+   "categoria": "fruteria",
+   "estrato": "11 a 30 personas",
+   "lat": 19.19080855,
+   "lon": -96.13837852
+  },
+  {
+   "denue_id": "9048379",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19281971,
+   "lon": -96.13857877
+  },
+  {
+   "denue_id": "7414962",
+   "categoria": "fruteria",
+   "estrato": "11 a 30 personas",
+   "lat": 19.19084748,
+   "lon": -96.13830526
+  },
+  {
+   "denue_id": "4409876",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1907384,
+   "lon": -96.13830032
+  },
+  {
+   "denue_id": "4315843",
+   "categoria": "fruteria",
+   "estrato": "11 a 30 personas",
+   "lat": 19.19075009,
+   "lon": -96.13828348
+  },
+  {
+   "denue_id": "11347894",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19077261,
+   "lon": -96.13825104
+  },
+  {
+   "denue_id": "4396323",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19079931,
+   "lon": -96.13821256
+  },
+  {
+   "denue_id": "4396321",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1903763,
+   "lon": -96.13814551
+  },
+  {
+   "denue_id": "4407988",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19244617,
+   "lon": -96.13826921
+  },
+  {
+   "denue_id": "4423348",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18956099,
+   "lon": -96.16793281
+  },
+  {
+   "denue_id": "7415073",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19087523,
+   "lon": -96.13810315
+  },
+  {
+   "denue_id": "8397401",
+   "categoria": "mayorista",
+   "estrato": "6 a 10 personas",
+   "lat": 19.19043664,
+   "lon": -96.13807711
+  },
+  {
+   "denue_id": "8397395",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19227209,
+   "lon": -96.13815658
+  },
+  {
+   "denue_id": "4315562",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19220247,
+   "lon": -96.13806986
+  },
+  {
+   "denue_id": "4396428",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18989797,
+   "lon": -96.13787009
+  },
+  {
+   "denue_id": "9935791",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19114666,
+   "lon": -96.13788075
+  },
+  {
+   "denue_id": "4396325",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.19103875,
+   "lon": -96.1378675
+  },
+  {
+   "denue_id": "4396396",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19012944,
+   "lon": -96.13783078
+  },
+  {
+   "denue_id": "9048639",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18994208,
+   "lon": -96.137813
+  },
+  {
+   "denue_id": "4396394",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19003814,
+   "lon": -96.13775757
+  },
+  {
+   "denue_id": "11730502",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17591354,
+   "lon": -96.15066079
+  },
+  {
+   "denue_id": "10144642",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19117557,
+   "lon": -96.13767032
+  },
+  {
+   "denue_id": "10378277",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19118308,
+   "lon": -96.1376595
+  },
+  {
+   "denue_id": "7706851",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18974109,
+   "lon": -96.1376378
+  },
+  {
+   "denue_id": "4396392",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19008709,
+   "lon": -96.13759495
+  },
+  {
+   "denue_id": "9622710",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19122148,
+   "lon": -96.13760418
+  },
+  {
+   "denue_id": "4315689",
+   "categoria": "mayorista",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19268493,
+   "lon": -96.13775379
+  },
+  {
+   "denue_id": "11267961",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.20501112,
+   "lon": -96.1520695
+  },
+  {
+   "denue_id": "4404893",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20501112,
+   "lon": -96.1520695
+  },
+  {
+   "denue_id": "10370136",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20501112,
+   "lon": -96.1520695
+  },
+  {
+   "denue_id": "4312501",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20501112,
+   "lon": -96.1520695
+  },
+  {
+   "denue_id": "4396431",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.18961868,
+   "lon": -96.13753905
+  },
+  {
+   "denue_id": "4315711",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19315689,
+   "lon": -96.13777467
+  },
+  {
+   "denue_id": "4315716",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19342969,
+   "lon": -96.13778673
+  },
+  {
+   "denue_id": "10797446",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19344773,
+   "lon": -96.13778753
+  },
+  {
+   "denue_id": "11347256",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19131659,
+   "lon": -96.13746711
+  },
+  {
+   "denue_id": "4408103",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19145221,
+   "lon": -96.13747505
+  },
+  {
+   "denue_id": "4404779",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20457327,
+   "lon": -96.15737455
+  },
+  {
+   "denue_id": "7667398",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19254281,
+   "lon": -96.13758436
+  },
+  {
+   "denue_id": "4315722",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19251831,
+   "lon": -96.13757027
+  },
+  {
+   "denue_id": "4409850",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19256672,
+   "lon": -96.13755282
+  },
+  {
+   "denue_id": "4409847",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19257099,
+   "lon": -96.13754718
+  },
+  {
+   "denue_id": "6477979",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19247346,
+   "lon": -96.13753166
+  },
+  {
+   "denue_id": "4409853",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.192561,
+   "lon": -96.13752159
+  },
+  {
+   "denue_id": "8397341",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "10922981",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "10510600",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8343375",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4315748",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4315749",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408710",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408819",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8343434",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "11590892",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8397339",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408647",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "10103456",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408808",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4315755",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408796",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8343381",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408805",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4315743",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "10919938",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "10988350",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "7667246",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408823",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "9669754",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8343490",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408801",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "11805632",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408825",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408640",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408747",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "11077981",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "9051740",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "7667349",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "11128395",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "10337749",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408833",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8343374",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408827",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8343380",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408803",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408729",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8343378",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "7667287",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408821",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408855",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "8343319",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4315746",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "7414957",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408822",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408824",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "9769716",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "4408787",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "11509900",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "9557065",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "7414958",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19232981,
+   "lon": -96.13746769
+  },
+  {
+   "denue_id": "9700128",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1772908,
+   "lon": -96.14524434
+  },
+  {
+   "denue_id": "7667396",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19230993,
+   "lon": -96.13739075
+  },
+  {
+   "denue_id": "8342927",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19447682,
+   "lon": -96.13784619
+  },
+  {
+   "denue_id": "9616225",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19095256,
+   "lon": -96.13724175
+  },
+  {
+   "denue_id": "10799621",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19086079,
+   "lon": -96.13723247
+  },
+  {
+   "denue_id": "4396354",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19086079,
+   "lon": -96.13723247
+  },
+  {
+   "denue_id": "7706672",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19085186,
+   "lon": -96.13723157
+  },
+  {
+   "denue_id": "4408682",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19226512,
+   "lon": -96.13735213
+  },
+  {
+   "denue_id": "10618920",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19080597,
+   "lon": -96.13722692
+  },
+  {
+   "denue_id": "4396376",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19078811,
+   "lon": -96.13722511
+  },
+  {
+   "denue_id": "10799165",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19077918,
+   "lon": -96.1372242
+  },
+  {
+   "denue_id": "7706675",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19077918,
+   "lon": -96.1372242
+  },
+  {
+   "denue_id": "9048581",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19073329,
+   "lon": -96.13721956
+  },
+  {
+   "denue_id": "4396356",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19071542,
+   "lon": -96.13721775
+  },
+  {
+   "denue_id": "7706673",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19069756,
+   "lon": -96.13721594
+  },
+  {
+   "denue_id": "4396411",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19044225,
+   "lon": -96.13719305
+  },
+  {
+   "denue_id": "4416738",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19077614,
+   "lon": -96.1371344
+  },
+  {
+   "denue_id": "4416735",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19020201,
+   "lon": -96.13708098
+  },
+  {
+   "denue_id": "10881459",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19206335,
+   "lon": -96.13716103
+  },
+  {
+   "denue_id": "9706024",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19281418,
+   "lon": -96.13722492
+  },
+  {
+   "denue_id": "7750040",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1894928,
+   "lon": -96.13702377
+  },
+  {
+   "denue_id": "9633140",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1927953,
+   "lon": -96.13715289
+  },
+  {
+   "denue_id": "10397932",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19789951,
+   "lon": -96.16700692
+  },
+  {
+   "denue_id": "11329635",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19277473,
+   "lon": -96.13713711
+  },
+  {
+   "denue_id": "11685552",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18830808,
+   "lon": -96.16910074
+  },
+  {
+   "denue_id": "7667403",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19236187,
+   "lon": -96.1368856
+  },
+  {
+   "denue_id": "8343484",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19126495,
+   "lon": -96.1366466
+  },
+  {
+   "denue_id": "10862087",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18177462,
+   "lon": -96.16686898
+  },
+  {
+   "denue_id": "8314332",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18793618,
+   "lon": -96.16934736
+  },
+  {
+   "denue_id": "4412157",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "4412156",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "4412117",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "8343147",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "4412116",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "4412103",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "4412101",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "4412090",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "4412118",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "4316166",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19347024,
+   "lon": -96.13652925
+  },
+  {
+   "denue_id": "11492789",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20412204,
+   "lon": -96.16156958
+  },
+  {
+   "denue_id": "10082535",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17423832,
+   "lon": -96.15415721
+  },
+  {
+   "denue_id": "7623360",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17525875,
+   "lon": -96.15929005
+  },
+  {
+   "denue_id": "7624019",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19319832,
+   "lon": -96.16983526
+  },
+  {
+   "denue_id": "9001176",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20442934,
+   "lon": -96.161708
+  },
+  {
+   "denue_id": "9641519",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19398732,
+   "lon": -96.1362233
+  },
+  {
+   "denue_id": "4484349",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20205317,
+   "lon": -96.16522585
+  },
+  {
+   "denue_id": "8343272",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17399762,
+   "lon": -96.15604114
+  },
+  {
+   "denue_id": "10517621",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18332819,
+   "lon": -96.16924553
+  },
+  {
+   "denue_id": "11198372",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18290732,
+   "lon": -96.16915998
+  },
+  {
+   "denue_id": "4423444",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18286197,
+   "lon": -96.16915095
+  },
+  {
+   "denue_id": "11540183",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20186444,
+   "lon": -96.16634494
+  },
+  {
+   "denue_id": "7644987",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20510074,
+   "lon": -96.16229175
+  },
+  {
+   "denue_id": "9029733",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17660566,
+   "lon": -96.14173361
+  },
+  {
+   "denue_id": "8593526",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.18806429,
+   "lon": -96.13472387
+  },
+  {
+   "denue_id": "11590614",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20552982,
+   "lon": -96.16223706
+  },
+  {
+   "denue_id": "9611833",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17855697,
+   "lon": -96.13910314
+  },
+  {
+   "denue_id": "4484332",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20156764,
+   "lon": -96.16792574
+  },
+  {
+   "denue_id": "11675881",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20590634,
+   "lon": -96.16279565
+  },
+  {
+   "denue_id": "11341672",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20041534,
+   "lon": -96.16946928
+  },
+  {
+   "denue_id": "11461942",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19715774,
+   "lon": -96.17130312
+  },
+  {
+   "denue_id": "9881100",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1719046,
+   "lon": -96.14873891
+  },
+  {
+   "denue_id": "11399500",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17549403,
+   "lon": -96.14047241
+  },
+  {
+   "denue_id": "9782249",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19267556,
+   "lon": -96.17293964
+  },
+  {
+   "denue_id": "4313832",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17116309,
+   "lon": -96.15311106
+  },
+  {
+   "denue_id": "8817706",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17697087,
+   "lon": -96.1675866
+  },
+  {
+   "denue_id": "11384718",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19138779,
+   "lon": -96.17352105
+  },
+  {
+   "denue_id": "9048965",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1872823,
+   "lon": -96.17379424
+  },
+  {
+   "denue_id": "8298136",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20321382,
+   "lon": -96.16944757
+  },
+  {
+   "denue_id": "10456728",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17646626,
+   "lon": -96.16883503
+  },
+  {
+   "denue_id": "4311150",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18637462,
+   "lon": -96.17488631
+  },
+  {
+   "denue_id": "11382986",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17067477,
+   "lon": -96.14357884
+  },
+  {
+   "denue_id": "11604039",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19516796,
+   "lon": -96.17612852
+  },
+  {
+   "denue_id": "10110831",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20467657,
+   "lon": -96.17137473
+  },
+  {
+   "denue_id": "7748699",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19604664,
+   "lon": -96.1761069
+  },
+  {
+   "denue_id": "4313877",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16763271,
+   "lon": -96.1520951
+  },
+  {
+   "denue_id": "10137816",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17014617,
+   "lon": -96.14187401
+  },
+  {
+   "denue_id": "11653574",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20201088,
+   "lon": -96.17369772
+  },
+  {
+   "denue_id": "4414620",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19098195,
+   "lon": -96.1287105
+  },
+  {
+   "denue_id": "4436383",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16743612,
+   "lon": -96.14863383
+  },
+  {
+   "denue_id": "8314215",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18973959,
+   "lon": -96.17765279
+  },
+  {
+   "denue_id": "10580284",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16805018,
+   "lon": -96.14483832
+  },
+  {
+   "denue_id": "7415169",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18498531,
+   "lon": -96.17725427
+  },
+  {
+   "denue_id": "10930140",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16930842,
+   "lon": -96.16468058
+  },
+  {
+   "denue_id": "11429201",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16697173,
+   "lon": -96.14745684
+  },
+  {
+   "denue_id": "4314392",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1695929,
+   "lon": -96.14023983
+  },
+  {
+   "denue_id": "8314476",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1688672,
+   "lon": -96.14161032
+  },
+  {
+   "denue_id": "4421068",
+   "categoria": "fruteria",
+   "estrato": "11 a 30 personas",
+   "lat": 19.18141802,
+   "lon": -96.12932089
+  },
+  {
+   "denue_id": "4314039",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16598445,
+   "lon": -96.15288324
+  },
+  {
+   "denue_id": "10277597",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16995341,
+   "lon": -96.16710143
+  },
+  {
+   "denue_id": "10815897",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16594626,
+   "lon": -96.15134899
+  },
+  {
+   "denue_id": "4436437",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16595084,
+   "lon": -96.14916424
+  },
+  {
+   "denue_id": "11465139",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18859222,
+   "lon": -96.17908435
+  },
+  {
+   "denue_id": "9024110",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20974307,
+   "lon": -96.16940948
+  },
+  {
+   "denue_id": "11564278",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1777555,
+   "lon": -96.17589602
+  },
+  {
+   "denue_id": "11586140",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17684176,
+   "lon": -96.17562911
+  },
+  {
+   "denue_id": "4421246",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "7749466",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "4421252",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "4421261",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "4313015",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "4421266",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "7749464",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "4421251",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "4421269",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18073702,
+   "lon": -96.12830872
+  },
+  {
+   "denue_id": "9592800",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20195423,
+   "lon": -96.17697686
+  },
+  {
+   "denue_id": "7737583",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.165442,
+   "lon": -96.14681548
+  },
+  {
+   "denue_id": "7748521",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18645739,
+   "lon": -96.17970087
+  },
+  {
+   "denue_id": "10803395",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16509149,
+   "lon": -96.15967605
+  },
+  {
+   "denue_id": "11228434",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16524021,
+   "lon": -96.14465691
+  },
+  {
+   "denue_id": "4311086",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1836394,
+   "lon": -96.17988992
+  },
+  {
+   "denue_id": "9529024",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16398632,
+   "lon": -96.15553243
+  },
+  {
+   "denue_id": "8594052",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16499812,
+   "lon": -96.14459763
+  },
+  {
+   "denue_id": "11689949",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20374256,
+   "lon": -96.17748373
+  },
+  {
+   "denue_id": "9895148",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16495572,
+   "lon": -96.1426758
+  },
+  {
+   "denue_id": "9930003",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17617673,
+   "lon": -96.17759426
+  },
+  {
+   "denue_id": "4435943",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1646569,
+   "lon": -96.16302754
+  },
+  {
+   "denue_id": "7644633",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.21082395,
+   "lon": -96.17317213
+  },
+  {
+   "denue_id": "7737714",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16209558,
+   "lon": -96.15614994
+  },
+  {
+   "denue_id": "7749501",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17206105,
+   "lon": -96.17610927
+  },
+  {
+   "denue_id": "10259476",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18884727,
+   "lon": -96.18304563
+  },
+  {
+   "denue_id": "8789251",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16521109,
+   "lon": -96.16773943
+  },
+  {
+   "denue_id": "4421980",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17183879,
+   "lon": -96.12979241
+  },
+  {
+   "denue_id": "9540927",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.2107621,
+   "lon": -96.17448788
+  },
+  {
+   "denue_id": "10019215",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16248786,
+   "lon": -96.14496624
+  },
+  {
+   "denue_id": "4420918",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17592235,
+   "lon": -96.12654549
+  },
+  {
+   "denue_id": "7749798",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16755881,
+   "lon": -96.1724352
+  },
+  {
+   "denue_id": "11498473",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17158562,
+   "lon": -96.12931866
+  },
+  {
+   "denue_id": "9959275",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16088711,
+   "lon": -96.15364645
+  },
+  {
+   "denue_id": "10936151",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16195968,
+   "lon": -96.16147912
+  },
+  {
+   "denue_id": "9028780",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.21057986,
+   "lon": -96.17559012
+  },
+  {
+   "denue_id": "4311334",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.21035001,
+   "lon": -96.17601924
+  },
+  {
+   "denue_id": "8590980",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17493181,
+   "lon": -96.17978732
+  },
+  {
+   "denue_id": "7644803",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.2100267,
+   "lon": -96.17652138
+  },
+  {
+   "denue_id": "10064549",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.17405592,
+   "lon": -96.17953671
+  },
+  {
+   "denue_id": "9742309",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20369608,
+   "lon": -96.18171376
+  },
+  {
+   "denue_id": "11014481",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20891489,
+   "lon": -96.17831853
+  },
+  {
+   "denue_id": "11673990",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20247607,
+   "lon": -96.18240517
+  },
+  {
+   "denue_id": "7738289",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16199822,
+   "lon": -96.16893142
+  },
+  {
+   "denue_id": "10034069",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.1709452,
+   "lon": -96.12599188
+  },
+  {
+   "denue_id": "10159582",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20830049,
+   "lon": -96.18164495
+  },
+  {
+   "denue_id": "6711312",
+   "categoria": "mayorista",
+   "estrato": "6 a 10 personas",
+   "lat": 19.1603607,
+   "lon": -96.13947919
+  },
+  {
+   "denue_id": "9890025",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1653222,
+   "lon": -96.1309719
+  },
+  {
+   "denue_id": "11381136",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15862092,
+   "lon": -96.1439501
+  },
+  {
+   "denue_id": "9984216",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.19991448,
+   "lon": -96.18633039
+  },
+  {
+   "denue_id": "9735250",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20161388,
+   "lon": -96.18579922
+  },
+  {
+   "denue_id": "4429975",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429927",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429939",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429926",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "10705652",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429941",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4313615",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "9823481",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429930",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429938",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429921",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429940",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4313614",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429928",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "7738208",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "11800155",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "9637680",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429931",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "7414928",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429923",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429917",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16058484,
+   "lon": -96.13759528
+  },
+  {
+   "denue_id": "4429950",
+   "categoria": "fruteria",
+   "estrato": "11 a 30 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4429946",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "9029070",
+   "categoria": "fruteria",
+   "estrato": "11 a 30 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "9096429",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4429945",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4429951",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "7738210",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4429944",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "7738214",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4429954",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4429942",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4429952",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4313617",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "9733564",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16060148,
+   "lon": -96.13735647
+  },
+  {
+   "denue_id": "4313627",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429960",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429964",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429978",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429980",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "11158425",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429979",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "11455407",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429972",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429955",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "11670839",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429968",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429977",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "7738211",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4313625",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "10498966",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429973",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429976",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "4429971",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1606234,
+   "lon": -96.13709722
+  },
+  {
+   "denue_id": "10434067",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16110958,
+   "lon": -96.13604854
+  },
+  {
+   "denue_id": "6492026",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16110958,
+   "lon": -96.13604854
+  },
+  {
+   "denue_id": "4429986",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "4429993",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "4429990",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "4429995",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "4429982",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "4429992",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "7738217",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "7738218",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "4313638",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "4429991",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "4429994",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065013,
+   "lon": -96.13691579
+  },
+  {
+   "denue_id": "11602311",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.21292773,
+   "lon": -96.17890692
+  },
+  {
+   "denue_id": "11017967",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "8594239",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "7737980",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "8314774",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "8023242",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "8023244",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "8023243",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "4430021",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "4430022",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "4429996",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "4430000",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "4430007",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "4430001",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "8594180",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "4430012",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065872,
+   "lon": -96.13680966
+  },
+  {
+   "denue_id": "4430011",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16065937,
+   "lon": -96.13680013
+  },
+  {
+   "denue_id": "9029730",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941749,
+   "lon": -96.13958216
+  },
+  {
+   "denue_id": "7738267",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941749,
+   "lon": -96.13958216
+  },
+  {
+   "denue_id": "4430223",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941749,
+   "lon": -96.13958216
+  },
+  {
+   "denue_id": "8314022",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941749,
+   "lon": -96.13958216
+  },
+  {
+   "denue_id": "4430245",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10503408",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10964851",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9555377",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430259",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9783314",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430257",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11773131",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8313967",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430336",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430400",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11694083",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9029729",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430394",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10330448",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9885232",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11416747",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9534553",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430255",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430517",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11051284",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737942",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430506",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9959494",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738333",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4313557",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593420",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430495",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737883",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10455913",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10296092",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8313973",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738050",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593488",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737869",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10233750",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9741087",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737877",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430292",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10559800",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11407111",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8023304",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8023306",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737874",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11082133",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737392",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430421",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430221",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8818897",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9504525",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430246",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10884690",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10406511",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430452",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10470964",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10280608",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430443",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11590656",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9738266",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9589643",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10501970",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10126862",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9823597",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430539",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738321",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430467",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4313587",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11182706",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8551378",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9523273",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593477",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593483",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737936",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11411551",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10701656",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9756331",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9703000",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10269462",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430276",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10256535",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10161652",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430523",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11483424",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11584752",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10463053",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8023351",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11795480",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10304557",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10156243",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11727237",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430371",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738330",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430401",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10745017",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9636113",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11655602",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10962113",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430265",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430234",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10674668",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10681700",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11439137",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430294",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9784265",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593417",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11075826",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9571160",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4313586",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737990",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593427",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10313908",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11387149",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10475413",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10190353",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10313510",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738323",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430334",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737987",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737993",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738322",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738264",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10546118",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10785120",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737397",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8023350",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11009111",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11721578",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8023356",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11394185",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4313572",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430489",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430324",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10875799",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593535",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11513666",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737391",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10559912",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430486",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11522267",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737934",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430229",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737931",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737384",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10634118",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430424",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10133969",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593422",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738268",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10531725",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593485",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10523711",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430281",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10204929",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593486",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738266",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9855844",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9725937",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "9524639",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738326",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430340",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737882",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8995440",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11639322",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10192595",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430275",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737880",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738327",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8313968",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8593480",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737444",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10367669",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10851887",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10731049",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11651695",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430362",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11395970",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10537325",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10063546",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7738325",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737932",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737388",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "10842399",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "11603077",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430241",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "7737393",
+   "categoria": "mayorista",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "4430454",
+   "categoria": "mayorista",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15941228,
+   "lon": -96.13958439
+  },
+  {
+   "denue_id": "8594229",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "10634134",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "8594232",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "4430026",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "11391485",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "7738031",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "4430045",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "10234921",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "8819256",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "9547953",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "10591758",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "8314776",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "11436091",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "8551374",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "4429962",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "8023245",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "8594228",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "9765371",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067193,
+   "lon": -96.13668524
+  },
+  {
+   "denue_id": "4430059",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "9029016",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "11421178",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "8023293",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "7738035",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "7738039",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "8023294",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "8023247",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "10963167",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "9849968",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "7738090",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "7738034",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "7738042",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "8023249",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16068885,
+   "lon": -96.1365702
+  },
+  {
+   "denue_id": "4430098",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16074662,
+   "lon": -96.13624339
+  },
+  {
+   "denue_id": "7738150",
+   "categoria": "mayorista",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16074662,
+   "lon": -96.13624339
+  },
+  {
+   "denue_id": "9867264",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16074662,
+   "lon": -96.13624339
+  },
+  {
+   "denue_id": "4430114",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16074662,
+   "lon": -96.13624339
+  },
+  {
+   "denue_id": "7738102",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16074662,
+   "lon": -96.13624339
+  },
+  {
+   "denue_id": "4430112",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16074662,
+   "lon": -96.13624339
+  },
+  {
+   "denue_id": "8594240",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16074662,
+   "lon": -96.13624339
+  },
+  {
+   "denue_id": "4440795",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16110652,
+   "lon": -96.13554987
+  },
+  {
+   "denue_id": "4430074",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16067653,
+   "lon": -96.13633261
+  },
+  {
+   "denue_id": "4430130",
+   "categoria": "fruteria",
+   "estrato": "6 a 10 personas",
+   "lat": 19.16077652,
+   "lon": -96.13606089
+  },
+  {
+   "denue_id": "4430125",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16077652,
+   "lon": -96.13606089
+  },
+  {
+   "denue_id": "4430124",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16077652,
+   "lon": -96.13606089
+  },
+  {
+   "denue_id": "7738216",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16010549,
+   "lon": -96.13688691
+  },
+  {
+   "denue_id": "4430086",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15983223,
+   "lon": -96.13632854
+  },
+  {
+   "denue_id": "8594238",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15983223,
+   "lon": -96.13632854
+  },
+  {
+   "denue_id": "4430081",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15983223,
+   "lon": -96.13632854
+  },
+  {
+   "denue_id": "4430076",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15983223,
+   "lon": -96.13632854
+  },
+  {
+   "denue_id": "4430085",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15983223,
+   "lon": -96.13632854
+  },
+  {
+   "denue_id": "4430082",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15983223,
+   "lon": -96.13632854
+  },
+  {
+   "denue_id": "8313909",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15983223,
+   "lon": -96.13632854
+  },
+  {
+   "denue_id": "8313908",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1597057,
+   "lon": -96.13624069
+  },
+  {
+   "denue_id": "4430083",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1597057,
+   "lon": -96.13624069
+  },
+  {
+   "denue_id": "10368966",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15609427,
+   "lon": -96.14671866
+  },
+  {
+   "denue_id": "8593657",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15958633,
+   "lon": -96.13570228
+  },
+  {
+   "denue_id": "8593656",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15958728,
+   "lon": -96.1356929
+  },
+  {
+   "denue_id": "8593655",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15958932,
+   "lon": -96.13567276
+  },
+  {
+   "denue_id": "8593654",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15959027,
+   "lon": -96.13566339
+  },
+  {
+   "denue_id": "8314087",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15959217,
+   "lon": -96.13564463
+  },
+  {
+   "denue_id": "8818996",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15959311,
+   "lon": -96.13563526
+  },
+  {
+   "denue_id": "8593653",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15959406,
+   "lon": -96.13562589
+  },
+  {
+   "denue_id": "8593652",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1595961,
+   "lon": -96.13560575
+  },
+  {
+   "denue_id": "8593651",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15959705,
+   "lon": -96.13559637
+  },
+  {
+   "denue_id": "8593650",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.159598,
+   "lon": -96.135587
+  },
+  {
+   "denue_id": "4318939",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15642326,
+   "lon": -96.14401329
+  },
+  {
+   "denue_id": "11748610",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16381666,
+   "lon": -96.12829813
+  },
+  {
+   "denue_id": "10049620",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20741429,
+   "lon": -96.18611552
+  },
+  {
+   "denue_id": "4482929",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.21117536,
+   "lon": -96.1836954
+  },
+  {
+   "denue_id": "4482967",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20815983,
+   "lon": -96.18643915
+  },
+  {
+   "denue_id": "11108490",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15374775,
+   "lon": -96.14792832
+  },
+  {
+   "denue_id": "9724829",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.18101838,
+   "lon": -96.19085092
+  },
+  {
+   "denue_id": "7415010",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20353726,
+   "lon": -96.189549
+  },
+  {
+   "denue_id": "7749120",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15374695,
+   "lon": -96.16214358
+  },
+  {
+   "denue_id": "11785443",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15385077,
+   "lon": -96.16278913
+  },
+  {
+   "denue_id": "4310070",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20547963,
+   "lon": -96.18997774
+  },
+  {
+   "denue_id": "11829866",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20514497,
+   "lon": -96.19023548
+  },
+  {
+   "denue_id": "10533889",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1681965,
+   "lon": -96.12003151
+  },
+  {
+   "denue_id": "10144469",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20521437,
+   "lon": -96.19026032
+  },
+  {
+   "denue_id": "7315400",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1587054,
+   "lon": -96.1297468
+  },
+  {
+   "denue_id": "10172617",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15620093,
+   "lon": -96.17236075
+  },
+  {
+   "denue_id": "11574615",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.21277925,
+   "lon": -96.18635789
+  },
+  {
+   "denue_id": "4310390",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.22061063,
+   "lon": -96.17885221
+  },
+  {
+   "denue_id": "4305277",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15918803,
+   "lon": -96.12804863
+  },
+  {
+   "denue_id": "10595514",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20514273,
+   "lon": -96.19146032
+  },
+  {
+   "denue_id": "10483187",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15838512,
+   "lon": -96.17767362
+  },
+  {
+   "denue_id": "7414922",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15855173,
+   "lon": -96.17803924
+  },
+  {
+   "denue_id": "11314927",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15823548,
+   "lon": -96.12837653
+  },
+  {
+   "denue_id": "11490803",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20053774,
+   "lon": -96.19355621
+  },
+  {
+   "denue_id": "4482257",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20542545,
+   "lon": -96.19197769
+  },
+  {
+   "denue_id": "11400571",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15910203,
+   "lon": -96.1796863
+  },
+  {
+   "denue_id": "4437378",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15241846,
+   "lon": -96.16784904
+  },
+  {
+   "denue_id": "11290941",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15134555,
+   "lon": -96.16496787
+  },
+  {
+   "denue_id": "10129351",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20663492,
+   "lon": -96.19229383
+  },
+  {
+   "denue_id": "9801861",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20473919,
+   "lon": -96.1931577
+  },
+  {
+   "denue_id": "10359391",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.21896216,
+   "lon": -96.18359816
+  },
+  {
+   "denue_id": "8817904",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.16007464,
+   "lon": -96.18191626
+  },
+  {
+   "denue_id": "4482220",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20710637,
+   "lon": -96.19255558
+  },
+  {
+   "denue_id": "9267621",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.2037872,
+   "lon": -96.1940952
+  },
+  {
+   "denue_id": "10977837",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15071271,
+   "lon": -96.16554587
+  },
+  {
+   "denue_id": "8789195",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.1487962,
+   "lon": -96.15679746
+  },
+  {
+   "denue_id": "4314108",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.14900801,
+   "lon": -96.16036067
+  },
+  {
+   "denue_id": "9749273",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15819679,
+   "lon": -96.12450489
+  },
+  {
+   "denue_id": "9982389",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.14863148,
+   "lon": -96.15995212
+  },
+  {
+   "denue_id": "4437381",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15045853,
+   "lon": -96.16811404
+  },
+  {
+   "denue_id": "10437836",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15668475,
+   "lon": -96.12580044
+  },
+  {
+   "denue_id": "4482626",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20525757,
+   "lon": -96.19491364
+  },
+  {
+   "denue_id": "11695684",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20524464,
+   "lon": -96.19506268
+  },
+  {
+   "denue_id": "10797793",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20406179,
+   "lon": -96.19599259
+  },
+  {
+   "denue_id": "10165527",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.14779823,
+   "lon": -96.16026242
+  },
+  {
+   "denue_id": "9024105",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.2070593,
+   "lon": -96.19530113
+  },
+  {
+   "denue_id": "11322571",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15019614,
+   "lon": -96.13516148
+  },
+  {
+   "denue_id": "7252754",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.22113364,
+   "lon": -96.1856042
+  },
+  {
+   "denue_id": "9567374",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.14695687,
+   "lon": -96.15960236
+  },
+  {
+   "denue_id": "4455978",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15700353,
+   "lon": -96.12218146
+  },
+  {
+   "denue_id": "7644662",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.21281196,
+   "lon": -96.19332396
+  },
+  {
+   "denue_id": "10546830",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.15621004,
+   "lon": -96.12292571
+  },
+  {
+   "denue_id": "10084840",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20702071,
+   "lon": -96.19667615
+  },
+  {
+   "denue_id": "10692826",
+   "categoria": "fruteria",
+   "estrato": "0 a 5 personas",
+   "lat": 19.20973644,
+   "lon": -96.19543955
+  }
+ ]
+}

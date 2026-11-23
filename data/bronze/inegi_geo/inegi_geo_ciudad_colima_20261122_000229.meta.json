@@ -1,0 +1,13 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_ciudad_colima_20261122_000229.json",
+  "fecha_captura": "2026-11-22T00:02:29",
+  "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/Colima",
+  "tipo_consulta": "ciudad",
+  "lugar": "Colima",
+  "registros": 4,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": false,
+  "cve_ent": "06"
+}

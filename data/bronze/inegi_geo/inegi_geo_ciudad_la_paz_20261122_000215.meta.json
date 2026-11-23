@@ -1,0 +1,13 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_ciudad_la_paz_20261122_000215.json",
+  "fecha_captura": "2026-11-22T00:02:15",
+  "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/La%20Paz",
+  "tipo_consulta": "ciudad",
+  "lugar": "La Paz",
+  "registros": 3,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": false,
+  "cve_ent": "03"
+}

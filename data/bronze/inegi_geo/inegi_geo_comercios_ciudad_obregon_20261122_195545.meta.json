@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_ciudad_obregon_20261122_195545.json",
+  "fecha_captura": "2026-11-22T19:55:45",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/27.4964889,-109.9327161/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "Ciudad Obregón",
+  "registros": 155,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 27.4964889,
+    "lon": -109.9327161,
+    "cvegeo": "260180001",
+    "nomgeo": "Ciudad Obregón",
+    "pob_total": 329404.0,
+    "archivo": "inegi_geo_ciudad_ciudad_obregon_20261122_000251.json",
+    "fecha_captura": "2026-11-22T00:02:51"
+  }
+}

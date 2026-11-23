@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_mazatlan_20261122_195541.json",
+  "fecha_captura": "2026-11-22T19:55:41",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/23.2003158,-106.4222214/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "Mazatlán",
+  "registros": 128,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 23.2003158,
+    "lon": -106.4222214,
+    "cvegeo": "250120001",
+    "nomgeo": "Mazatlán",
+    "pob_total": 441975.0,
+    "archivo": "inegi_geo_ciudad_mazatlan_20261122_000247.json",
+    "fecha_captura": "2026-11-22T00:02:47"
+  }
+}

@@ -1,0 +1,125 @@
+{
+ "registros": [
+  {
+   "cvegeo": "080190001",
+   "cve_ent": "08",
+   "cve_mun": "019",
+   "cve_loc": "0001",
+   "nomgeo": "Chihuahua",
+   "ambito": "URBANO",
+   "latitud": "28.6367939",
+   "longitud": "-106.0763067",
+   "pob_total": "925762"
+  },
+  {
+   "cvegeo": "080190915",
+   "cve_ent": "08",
+   "cve_mun": "019",
+   "cve_loc": "0915",
+   "nomgeo": "Fraccionamiento Presa Chihuahua",
+   "ambito": "RURAL",
+   "latitud": "28.5563631",
+   "longitud": "-106.1707017",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080050074",
+   "cve_ent": "08",
+   "cve_mun": "005",
+   "cve_loc": "0074",
+   "nomgeo": "Rincón de Chihuahua",
+   "ambito": "RURAL",
+   "latitud": "30.8477306",
+   "longitud": "-107.3223689",
+   "pob_total": "1"
+  },
+  {
+   "cvegeo": "080040019",
+   "cve_ent": "08",
+   "cve_mun": "004",
+   "cve_loc": "0019",
+   "nomgeo": "Chihuahua Viejo",
+   "ambito": "RURAL",
+   "latitud": "28.5768669",
+   "longitud": "-105.8200203",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080440193",
+   "cve_ent": "08",
+   "cve_mun": "044",
+   "cve_loc": "0193",
+   "nomgeo": "Ninguno [Productos Hidropónicos de Chihuahua]",
+   "ambito": "RURAL",
+   "latitud": "26.8356528",
+   "longitud": "-105.6073278",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080191287",
+   "cve_ent": "08",
+   "cve_mun": "019",
+   "cve_loc": "1287",
+   "nomgeo": "Productos Hortícolas de Chihuahua",
+   "ambito": "RURAL",
+   "latitud": "28.8678117",
+   "longitud": "-106.2213742",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080191038",
+   "cve_ent": "08",
+   "cve_mun": "019",
+   "cve_loc": "1038",
+   "nomgeo": "La Puerta de Chihuahua",
+   "ambito": "RURAL",
+   "latitud": "28.5908147",
+   "longitud": "-105.9590092",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080111082",
+   "cve_ent": "08",
+   "cve_mun": "011",
+   "cve_loc": "1082",
+   "nomgeo": "Las Brujas de Chihuahua",
+   "ambito": "RURAL",
+   "latitud": "27.7124528",
+   "longitud": "-105.1900811",
+   "pob_total": "6"
+  },
+  {
+   "cvegeo": "080191233",
+   "cve_ent": "08",
+   "cve_mun": "019",
+   "cve_loc": "1233",
+   "nomgeo": "Granjas Chihuahua",
+   "ambito": "RURAL",
+   "latitud": "28.5682064",
+   "longitud": "-106.0244872",
+   "pob_total": "71"
+  },
+  {
+   "cvegeo": "080130386",
+   "cve_ent": "08",
+   "cve_mun": "013",
+   "cve_loc": "0386",
+   "nomgeo": "Saucito Chihuahua [Rancho]",
+   "ambito": "RURAL",
+   "latitud": "30.0425506",
+   "longitud": "-108.4520275",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "080480545",
+   "cve_ent": "08",
+   "cve_mun": "048",
+   "cve_loc": "0545",
+   "nomgeo": "Complejo Ganadero del Noroeste [Unión Ganadera Regional de Chihuahua]",
+   "ambito": "RURAL",
+   "latitud": "29.0666056",
+   "longitud": "-107.4077650",
+   "pob_total": "-"
+  }
+ ]
+}

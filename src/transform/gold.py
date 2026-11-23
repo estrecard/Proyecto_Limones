@@ -51,6 +51,14 @@ CALIBRE = {
 }
 
 
+def unir_unicos(serie) -> str:
+    """Une valores de linaje sin repetir: 'a.html;b.html'."""
+    vals = set()
+    for v in serie.dropna():
+        vals.update(x for x in str(v).split(";") if x)
+    return ";".join(sorted(vals))
+
+
 def temporada(mes: int) -> str:
     """Ciclo del limón en Colima: poca fruta en invierno-primavera, mucha con las lluvias."""
     if mes in (1, 2, 3, 4):
@@ -94,7 +102,12 @@ def consolidar_sniim(s: pd.DataFrame, rep: dict) -> pd.DataFrame:
          .agg(precio_frec=("precio_frec", "median"), precio_min=("precio_min", "min"),
               precio_max=("precio_max", "max"), n_presentaciones=("presentacion", "nunique"),
               tendencia_obs=("tendencia_obs", lambda x: x.mode().iat[0]),
-              estado=("estado_destino", "first"))
+              estado=("estado_destino", "first"),
+              # Linaje: registros de Plata y archivos de Bronce de los que sale este valor
+              n_registros_plata=("precio_frec", "size"),
+              ids_plata=("id_registro", unir_unicos) if "id_registro" in s else ("archivo_origen", unir_unicos),
+              archivos_bronce=("archivo_origen", unir_unicos),
+              fecha_captura=("fecha_captura", "max"))
          .reset_index())
     d["calibre"] = d["producto"].map(CALIBRE)
     return d
@@ -224,7 +237,8 @@ def semanal_sniim(d: pd.DataFrame, rep: dict) -> pd.DataFrame:
     w = (d.groupby(["destino", "producto", "semana"])
          .agg(precio=("precio_frec_limpio", "mean"), precio_min=("precio_min", "min"),
               precio_max=("precio_max", "max"), dias_reportados=("fecha", "nunique"),
-              atipicos_corregidos=("atipico", "sum"), estado=("estado", "first"), calibre=("calibre", "first"))
+              atipicos_corregidos=("atipico", "sum"), estado=("estado", "first"), calibre=("calibre", "first"),
+              archivos_bronce=("archivos_bronce", unir_unicos), fecha_captura=("fecha_captura", "max"))
          .reset_index())
 
     # Panel semanal completo dentro del periodo activo de cada serie → aquí aparecen los huecos
@@ -248,6 +262,10 @@ def semanal_sniim(d: pd.DataFrame, rep: dict) -> pd.DataFrame:
         interp[hueco & (largo_hueco > HUECO_MAX_SEMANAS)] = np.nan
         w.loc[g.index, "imputado"] = hueco & interp.notna()
         w.loc[g.index, "precio"] = interp
+    # Linaje del valor: observado (viene de Bronce), imputado (interpolación) o sin dato (hueco largo)
+    w["origen_valor"] = np.select([w["archivos_bronce"].fillna("") != "", w["imputado"]],
+                                  ["observado", "imputado"], default="sin_dato")
+    w["archivos_bronce"] = w["archivos_bronce"].fillna("")
     w["dias_reportados"] = w["dias_reportados"].fillna(0).astype(int)
     w["atipicos_corregidos"] = w["atipicos_corregidos"].fillna(0).astype(int)
 
@@ -279,7 +297,9 @@ def semanal_clima(o: pd.DataFrame) -> pd.DataFrame:
     o = o.sort_values("fecha").set_index("fecha")
     o["lluvia_30d_mm"] = o["precipitacion_mm"].rolling("30D").sum()
     w = o.resample("W-SUN").agg({"precipitacion_mm": "sum", "temp_media": "mean", "temp_max": "max",
-                                 "temp_min": "min", "lluvia_30d_mm": "last"})
+                                 "temp_min": "min", "lluvia_30d_mm": "last",
+                                 "archivo_origen": unir_unicos, "fecha_captura": "max"})
+    w = w.rename(columns={"archivo_origen": "archivo_bronce_clima", "fecha_captura": "fecha_captura_clima"})
     w.index = w.index.to_period("W-SUN").start_time
     return w.rename(columns={"precipitacion_mm": "lluvia_semana_mm"}).rename_axis("semana").reset_index()
 
@@ -287,22 +307,37 @@ def semanal_clima(o: pd.DataFrame) -> pd.DataFrame:
 def semanal_dolar(b: pd.DataFrame, rep: dict) -> pd.DataFrame:
     """El FIX no se publica en fines de semana ni festivos. El valor vigente es el último publicado,
     así que se usa LOCF (última observación hacia adelante) en el calendario diario y luego se promedia por semana."""
-    b = b.sort_values("fecha").set_index("fecha")["tipo_cambio"]
+    b = b.sort_values("fecha").set_index("fecha")
+    linaje = b.resample("W-SUN").agg({"archivo_origen": unir_unicos, "fecha_captura": "max"})
+    linaje.index = linaje.index.to_period("W-SUN").start_time
+    b = b["tipo_cambio"]
     diario = b.reindex(pd.date_range(b.index.min(), b.index.max(), freq="D"))
     rep["imputacion"]["tipo_cambio_dias_locf"] = int(diario.isna().sum())
     diario = diario.ffill()
     w = diario.resample("W-SUN").mean()
     w.index = w.index.to_period("W-SUN").start_time
-    return w.rename("tipo_cambio").rename_axis("semana").reset_index()
+    w = pd.concat([w.rename("tipo_cambio"),
+                   linaje.rename(columns={"archivo_origen": "archivo_bronce_banxico",
+                                          "fecha_captura": "fecha_captura_banxico"})], axis=1)
+    return w.rename_axis("semana").reset_index()
 
 
 # ----------------------------------------------------------------------------- 6-8. integración, discretización, normalización
 def integrar(w: pd.DataFrame, clima: pd.DataFrame, dolar: pd.DataFrame, rep: dict) -> pd.DataFrame:
     t = w.merge(clima, on="semana", how="left").merge(dolar, on="semana", how="left")
+    # Fuente especializada (E2): variables geoespaciales de cada mercado, si ya se calcularon
+    geo = ruta("gold") / "mercados_geo.csv"
+    if geo.exists():
+        g = pd.read_csv(geo).rename(columns={"archivo_bronce_ciudad": "archivo_bronce_geo",
+                                             "fecha_captura_ciudad": "fecha_captura_geo"})
+        t = t.merge(g[["destino", "lat", "lon", "poblacion", "distancia_tecoman_km", "fruterias_5km",
+                       "mayoristas_5km", "comercios_5km", "archivo_bronce_geo", "archivo_bronce_comercios", "fecha_captura_geo"]],
+                    on="destino", how="left")
     rep["integracion"] = {
         "filas": len(t),
         "semanas_sin_clima": int(t["temp_media"].isna().sum()),
         "semanas_sin_tipo_cambio": int(t["tipo_cambio"].isna().sum()),
+        "con_variables_geo": "distancia_tecoman_km" in t,
     }
     return t
 

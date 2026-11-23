@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_san_nicolas_de_los_garza_20261122_195534.json",
+  "fecha_captura": "2026-11-22T19:55:34",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/25.7552528,-100.2895861/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "San Nicolás de los Garza",
+  "registros": 645,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 25.7552528,
+    "lon": -100.2895861,
+    "cvegeo": "190460001",
+    "nomgeo": "San Nicolás de los Garza",
+    "pob_total": 412199.0,
+    "archivo": "inegi_geo_ciudad_san_nicolas_de_los_garza_20261122_000240.json",
+    "fecha_captura": "2026-11-22T00:02:40"
+  }
+}

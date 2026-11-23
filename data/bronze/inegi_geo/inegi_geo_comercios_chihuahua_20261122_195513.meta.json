@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_chihuahua_20261122_195513.json",
+  "fecha_captura": "2026-11-22T19:55:13",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/28.6367939,-106.0763067/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "Chihuahua",
+  "registros": 53,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 28.6367939,
+    "lon": -106.0763067,
+    "cvegeo": "080190001",
+    "nomgeo": "Chihuahua",
+    "pob_total": 925762.0,
+    "archivo": "inegi_geo_ciudad_chihuahua_20261122_000219.json",
+    "fecha_captura": "2026-11-22T00:02:19"
+  }
+}

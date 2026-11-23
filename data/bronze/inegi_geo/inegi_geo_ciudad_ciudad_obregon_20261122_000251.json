@@ -1,0 +1,37 @@
+{
+ "registros": [
+  {
+   "cvegeo": "260180001",
+   "cve_ent": "26",
+   "cve_mun": "018",
+   "cve_loc": "0001",
+   "nomgeo": "Ciudad Obregón",
+   "ambito": "URBANO",
+   "latitud": "27.4964889",
+   "longitud": "-109.9327161",
+   "pob_total": "329404"
+  },
+  {
+   "cvegeo": "260720155",
+   "cve_ent": "26",
+   "cve_mun": "072",
+   "cve_loc": "0155",
+   "nomgeo": "Agraristas de Ciudad Obregón",
+   "ambito": "RURAL",
+   "latitud": "27.4088064",
+   "longitud": "-110.3061531",
+   "pob_total": "81"
+  },
+  {
+   "cvegeo": "260181306",
+   "cve_ent": "26",
+   "cve_mun": "018",
+   "cve_loc": "1306",
+   "nomgeo": "Seminario Diocesano de Ciudad Obregón",
+   "ambito": "RURAL",
+   "latitud": "27.5253431",
+   "longitud": "-110.0058403",
+   "pob_total": "0"
+  }
+ ]
+}

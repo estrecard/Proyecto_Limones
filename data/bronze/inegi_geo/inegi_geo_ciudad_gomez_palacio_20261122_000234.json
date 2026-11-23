@@ -1,0 +1,15 @@
+{
+ "registros": [
+  {
+   "cvegeo": "100070001",
+   "cve_ent": "10",
+   "cve_mun": "007",
+   "cve_loc": "0001",
+   "nomgeo": "Gómez Palacio",
+   "ambito": "URBANO",
+   "latitud": "25.5701072",
+   "longitud": "-103.4964169",
+   "pob_total": "301742"
+  }
+ ]
+}

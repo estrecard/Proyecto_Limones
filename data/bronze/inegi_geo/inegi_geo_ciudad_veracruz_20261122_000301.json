@@ -1,0 +1,191 @@
+{
+ "registros": [
+  {
+   "cvegeo": "301930241",
+   "cve_ent": "30",
+   "cve_mun": "193",
+   "cve_loc": "0241",
+   "nomgeo": "Nuevo Veracruz",
+   "ambito": "URBANO",
+   "latitud": "19.1825575",
+   "longitud": "-96.1908842",
+   "pob_total": "3296"
+  },
+  {
+   "cvegeo": "300280037",
+   "cve_ent": "30",
+   "cve_mun": "028",
+   "cve_loc": "0037",
+   "nomgeo": "Veracruz",
+   "ambito": "URBANO",
+   "latitud": "19.1428492",
+   "longitud": "-96.1159586",
+   "pob_total": "132011"
+  },
+  {
+   "cvegeo": "301930001",
+   "cve_ent": "30",
+   "cve_mun": "193",
+   "cve_loc": "0001",
+   "nomgeo": "Veracruz",
+   "ambito": "URBANO",
+   "latitud": "19.1903233",
+   "longitud": "-96.1530275",
+   "pob_total": "405952"
+  },
+  {
+   "cvegeo": "300320169",
+   "cve_ent": "30",
+   "cve_mun": "032",
+   "cve_loc": "0169",
+   "nomgeo": "Flora y Fauna [Universidad Veracruzana]",
+   "ambito": "RURAL",
+   "latitud": "18.4592411",
+   "longitud": "-95.0454258",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "300910045",
+   "cve_ent": "30",
+   "cve_mun": "091",
+   "cve_loc": "0045",
+   "nomgeo": "Progreso Veracruzano",
+   "ambito": "RURAL",
+   "latitud": "17.5401381",
+   "longitud": "-94.9412753",
+   "pob_total": "14"
+  },
+  {
+   "cvegeo": "301230112",
+   "cve_ent": "30",
+   "cve_mun": "123",
+   "cve_loc": "0112",
+   "nomgeo": "La Veracruz",
+   "ambito": "RURAL",
+   "latitud": "22.4080308",
+   "longitud": "-98.2477450",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "301210434",
+   "cve_ent": "30",
+   "cve_mun": "121",
+   "cve_loc": "0434",
+   "nomgeo": "Rancho Nuevo Veracruz",
+   "ambito": "RURAL",
+   "latitud": "21.6820503",
+   "longitud": "-98.0122753",
+   "pob_total": "5"
+  },
+  {
+   "cvegeo": "301230137",
+   "cve_ent": "30",
+   "cve_mun": "123",
+   "cve_loc": "0137",
+   "nomgeo": "El Veracruzano",
+   "ambito": "RURAL",
+   "latitud": "22.0316242",
+   "longitud": "-98.1295514",
+   "pob_total": "1"
+  },
+  {
+   "cvegeo": "301330117",
+   "cve_ent": "30",
+   "cve_mun": "133",
+   "cve_loc": "0117",
+   "nomgeo": "Buena Vista (El Veracruzano)",
+   "ambito": "RURAL",
+   "latitud": "22.1622197",
+   "longitud": "-97.8153186",
+   "pob_total": "6"
+  },
+  {
+   "cvegeo": "300390166",
+   "cve_ent": "30",
+   "cve_mun": "039",
+   "cve_loc": "0166",
+   "nomgeo": "Colonia Veracruz",
+   "ambito": "RURAL",
+   "latitud": "18.1480497",
+   "longitud": "-94.5328594",
+   "pob_total": "321"
+  },
+  {
+   "cvegeo": "300400199",
+   "cve_ent": "30",
+   "cve_mun": "040",
+   "cve_loc": "0199",
+   "nomgeo": "Colonia Veracruz",
+   "ambito": "RURAL",
+   "latitud": "20.4774714",
+   "longitud": "-97.4386336",
+   "pob_total": "24"
+  },
+  {
+   "cvegeo": "300040104",
+   "cve_ent": "30",
+   "cve_mun": "004",
+   "cve_loc": "0104",
+   "nomgeo": "Villa Rica de la Veracruz",
+   "ambito": "RURAL",
+   "latitud": "19.6767428",
+   "longitud": "-96.4000000",
+   "pob_total": "180"
+  },
+  {
+   "cvegeo": "301730004",
+   "cve_ent": "30",
+   "cve_mun": "173",
+   "cve_loc": "0004",
+   "nomgeo": "Colonia Cafetera Veracruzana (La Joya)",
+   "ambito": "RURAL",
+   "latitud": "18.5995475",
+   "longitud": "-96.7464394",
+   "pob_total": "68"
+  },
+  {
+   "cvegeo": "302070055",
+   "cve_ent": "30",
+   "cve_mun": "207",
+   "cve_loc": "0055",
+   "nomgeo": "Campo Veracruz",
+   "ambito": "RURAL",
+   "latitud": "18.2262369",
+   "longitud": "-96.1370108",
+   "pob_total": "153"
+  },
+  {
+   "cvegeo": "301890714",
+   "cve_ent": "30",
+   "cve_mun": "189",
+   "cve_loc": "0714",
+   "nomgeo": "Colonia Revolucionaria Veracruzana (Fidel Herrera Beltrán)",
+   "ambito": "RURAL",
+   "latitud": "20.9187611",
+   "longitud": "-97.3903139",
+   "pob_total": "332"
+  },
+  {
+   "cvegeo": "302050123",
+   "cve_ent": "30",
+   "cve_mun": "205",
+   "cve_loc": "0123",
+   "nomgeo": "Veracruzano",
+   "ambito": "RURAL",
+   "latitud": "21.7964694",
+   "longitud": "-98.3339436",
+   "pob_total": "6"
+  },
+  {
+   "cvegeo": "301240549",
+   "cve_ent": "30",
+   "cve_mun": "124",
+   "cve_loc": "0549",
+   "nomgeo": "Unión Veracruzana de Pueblos Olvidados AC [UVERPO]",
+   "ambito": "RURAL",
+   "latitud": "20.4817053",
+   "longitud": "-97.3208194",
+   "pob_total": "-"
+  }
+ ]
+}

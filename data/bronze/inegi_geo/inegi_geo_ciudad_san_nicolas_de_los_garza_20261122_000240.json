@@ -1,0 +1,26 @@
+{
+ "registros": [
+  {
+   "cvegeo": "190460001",
+   "cve_ent": "19",
+   "cve_mun": "046",
+   "cve_loc": "0001",
+   "nomgeo": "San Nicolás de los Garza",
+   "ambito": "URBANO",
+   "latitud": "25.7552528",
+   "longitud": "-100.2895861",
+   "pob_total": "412199"
+  },
+  {
+   "cvegeo": "190450334",
+   "cve_ent": "19",
+   "cve_mun": "045",
+   "cve_loc": "0334",
+   "nomgeo": "San Nicolás de los Garza",
+   "ambito": "RURAL",
+   "latitud": "25.8767228",
+   "longitud": "-100.2770181",
+   "pob_total": "0"
+  }
+ ]
+}

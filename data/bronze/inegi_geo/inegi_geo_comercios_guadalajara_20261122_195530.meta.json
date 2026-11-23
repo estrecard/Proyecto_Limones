@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_guadalajara_20261122_195530.json",
+  "fecha_captura": "2026-11-22T19:55:30",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/20.6763889,-103.3422222/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "Guadalajara",
+  "registros": 2093,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 20.6763889,
+    "lon": -103.3422222,
+    "cvegeo": "140390001",
+    "nomgeo": "Guadalajara",
+    "pob_total": 1385621.0,
+    "archivo": "inegi_geo_ciudad_guadalajara_20261122_000237.json",
+    "fecha_captura": "2026-11-22T00:02:37"
+  }
+}

@@ -15,8 +15,9 @@ import sys
 import time
 from datetime import date, datetime, timedelta
 
-from src.ingest import banxico, open_meteo, sniim
-from src.transform import gold, silver
+from src.ingest import banxico, inegi_geo, open_meteo, sniim
+from src.quality import linaje
+from src.transform import geo, gold, silver
 from src.utils import cargar_config, obtener_logger, ruta
 
 logger = obtener_logger("pipeline")
@@ -63,6 +64,15 @@ def main(argv=None):
                 logger.error(f"Falló la ingesta de {nombre}: {e}")
                 bitacora["ingesta"][nombre] = {"estado": "error", "detalle": str(e)}
                 bitacora["errores"].append(f"ingesta {nombre}: {e}")
+        # Fuente especializada geoespacial (INEGI): usa caché, así que normalmente no hace ninguna consulta
+        logger.info("--- Ingesta inegi_geo (con caché)")
+        try:
+            inegi_geo.extraer()
+            bitacora["ingesta"]["inegi_geo"] = {"estado": "ok"}
+        except Exception as e:
+            logger.error(f"Falló la ingesta de inegi_geo: {e}")
+            bitacora["ingesta"]["inegi_geo"] = {"estado": "error", "detalle": str(e)}
+            bitacora["errores"].append(f"ingesta inegi_geo: {e}")
 
     # 2. Bronce → Plata (con puertas de calidad)
     logger.info("--- Capa Plata y puertas de calidad")
@@ -74,7 +84,18 @@ def main(argv=None):
         logger.error(f"Falló la capa Plata: {e}")
         bitacora["errores"].append(f"plata: {e}")
 
-    # 3. Plata → Oro (limpieza estadística, integración, discretización y normalización)
+    # 3. Capa geoespacial (GeoPandas): distancias y unión espacial de comercios, antes de Oro
+    logger.info("--- Capa geoespacial (INEGI + GeoPandas)")
+    try:
+        bitacora["geo"] = geo.construir()
+    except ImportError as e:  # p. ej. Windows bloquea una librería compilada: Oro se arma sin variables geo
+        logger.warning(f"Capa geo omitida (falta una librería: {e}). Se ejecuta completa en GitHub Actions")
+        bitacora["geo"] = {"estado": "omitida", "detalle": str(e)}
+    except Exception as e:
+        logger.error(f"Falló la capa geo: {e}")
+        bitacora["errores"].append(f"geo: {e}")
+
+    # 4. Plata → Oro (limpieza estadística, integración, discretización y normalización)
     if not any(e.startswith("plata") for e in bitacora["errores"]):
         logger.info("--- Capa Oro: limpieza e integración")
         try:
@@ -86,7 +107,21 @@ def main(argv=None):
             logger.error(f"Falló la capa Oro: {e}")
             bitacora["errores"].append(f"oro: {e}")
 
-    # 4. Bitácora de la ejecución
+    # 5. Mapa del observatorio y validación del linaje Oro → Bronce
+    try:
+        geo.mapa()
+    except ImportError as e:
+        logger.warning(f"Mapa omitido (falta una librería: {e})")
+    except Exception as e:
+        logger.error(f"Falló el mapa: {e}")
+        bitacora["errores"].append(f"mapa: {e}")
+    try:
+        bitacora["linaje_pct_trazable"] = linaje.validar()["pct_trazable_global"]
+    except Exception as e:
+        logger.error(f"Falló la validación de linaje: {e}")
+        bitacora["errores"].append(f"linaje: {e}")
+
+    # 6. Bitácora de la ejecución
     bitacora["duracion_seg"] = round(time.time() - inicio_ejecucion, 1)
     bitacora["estado"] = "error" if bitacora["errores"] else "ok"
     salida = ruta("logs") / "ejecuciones.jsonl"

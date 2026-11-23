@@ -1,5 +1,5 @@
 {
-  "fecha": "21/11/2026 07:11",
+  "fecha": "22/11/2026 20:04",
   "conflictos": {
     "registros_plata": 19238,
     "llaves_unicas": 15287,
@@ -51,7 +51,7 @@
       "temporada": {
         "chi2": 2.25,
         "gl": 2,
-        "p_valor": 0.32497265921749885
+        "p_valor": 0.32497265921749896
       },
       "dia_semana": {
         "chi2": 187.29,
@@ -144,7 +144,8 @@
   "integracion": {
     "filas": 3448,
     "semanas_sin_clima": 0,
-    "semanas_sin_tipo_cambio": 0
+    "semanas_sin_tipo_cambio": 0,
+    "con_variables_geo": true
   },
   "discretizacion": {
     "lluvia_30d_cortes_mm": [

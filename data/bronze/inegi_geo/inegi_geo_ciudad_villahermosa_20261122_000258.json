@@ -1,0 +1,15 @@
+{
+ "registros": [
+  {
+   "cvegeo": "270040001",
+   "cve_ent": "27",
+   "cve_mun": "004",
+   "cve_loc": "0001",
+   "nomgeo": "Villahermosa",
+   "ambito": "URBANO",
+   "latitud": "17.9878375",
+   "longitud": "-92.9194161",
+   "pob_total": "340060"
+  }
+ ]
+}

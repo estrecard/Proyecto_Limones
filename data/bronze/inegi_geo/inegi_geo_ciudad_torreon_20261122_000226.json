@@ -1,0 +1,48 @@
+{
+ "registros": [
+  {
+   "cvegeo": "050350001",
+   "cve_ent": "05",
+   "cve_mun": "035",
+   "cve_loc": "0001",
+   "nomgeo": "Torreón",
+   "ambito": "URBANO",
+   "latitud": "25.5417533",
+   "longitud": "-103.4530606",
+   "pob_total": "690193"
+  },
+  {
+   "cvegeo": "050170235",
+   "cve_ent": "05",
+   "cve_mun": "017",
+   "cve_loc": "0235",
+   "nomgeo": "Torreón (Los Alcohólicos)",
+   "ambito": "RURAL",
+   "latitud": "25.4849553",
+   "longitud": "-103.1842719",
+   "pob_total": "1"
+  },
+  {
+   "cvegeo": "050350263",
+   "cve_ent": "05",
+   "cve_mun": "035",
+   "cve_loc": "0263",
+   "nomgeo": "Torreón [Club de Caza y Tiro]",
+   "ambito": "RURAL",
+   "latitud": "25.4230903",
+   "longitud": "-103.3444528",
+   "pob_total": "4"
+  },
+  {
+   "cvegeo": "050220341",
+   "cve_ent": "05",
+   "cve_mun": "022",
+   "cve_loc": "0341",
+   "nomgeo": "Ninguno [Autopartes Torreón]",
+   "ambito": "RURAL",
+   "latitud": "28.5657675",
+   "longitud": "-100.6214172",
+   "pob_total": "0"
+  }
+ ]
+}

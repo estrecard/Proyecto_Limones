@@ -1,0 +1,81 @@
+{
+ "registros": [
+  {
+   "cvegeo": "260300001",
+   "cve_ent": "26",
+   "cve_mun": "030",
+   "cve_loc": "0001",
+   "nomgeo": "Hermosillo",
+   "ambito": "URBANO",
+   "latitud": "29.0748997",
+   "longitud": "-110.9585347",
+   "pob_total": "855563"
+  },
+  {
+   "cvegeo": "260710028",
+   "cve_ent": "26",
+   "cve_mun": "071",
+   "cve_loc": "0028",
+   "nomgeo": "Campo de Alfonso Hermosillo",
+   "ambito": "RURAL",
+   "latitud": "27.0615594",
+   "longitud": "-109.8503031",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "260300289",
+   "cve_ent": "26",
+   "cve_mun": "030",
+   "cve_loc": "0289",
+   "nomgeo": "Hermosillo",
+   "ambito": "RURAL",
+   "latitud": "28.6403294",
+   "longitud": "-111.5266947",
+   "pob_total": "32"
+  },
+  {
+   "cvegeo": "260300910",
+   "cve_ent": "26",
+   "cve_mun": "030",
+   "cve_loc": "0910",
+   "nomgeo": "Hipódromo de Hermosillo",
+   "ambito": "RURAL",
+   "latitud": "29.0524489",
+   "longitud": "-111.0973192",
+   "pob_total": "2"
+  },
+  {
+   "cvegeo": "260301751",
+   "cve_ent": "26",
+   "cve_mun": "030",
+   "cve_loc": "1751",
+   "nomgeo": "Unión de Crédito Agrícola de Hermosillo",
+   "ambito": "RURAL",
+   "latitud": "28.8226983",
+   "longitud": "-111.3922806",
+   "pob_total": "20"
+  },
+  {
+   "cvegeo": "260720290",
+   "cve_ent": "26",
+   "cve_mun": "072",
+   "cve_loc": "0290",
+   "nomgeo": "Ninguno [Isidro Flores Hermosillo]",
+   "ambito": "RURAL",
+   "latitud": "27.3509889",
+   "longitud": "-110.2003917",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "260304020",
+   "cve_ent": "26",
+   "cve_mun": "030",
+   "cve_loc": "4020",
+   "nomgeo": "Parque Industrial De Hermosillo Norte",
+   "ambito": "RURAL",
+   "latitud": "29.1892986",
+   "longitud": "-111.0076872",
+   "pob_total": "0"
+  }
+ ]
+}

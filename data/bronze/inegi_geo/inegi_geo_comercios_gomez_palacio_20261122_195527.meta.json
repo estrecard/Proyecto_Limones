@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_gomez_palacio_20261122_195527.json",
+  "fecha_captura": "2026-11-22T19:55:27",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/25.5701072,-103.4964169/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "Gómez Palacio",
+  "registros": 171,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 25.5701072,
+    "lon": -103.4964169,
+    "cvegeo": "100070001",
+    "nomgeo": "Gómez Palacio",
+    "pob_total": 301742.0,
+    "archivo": "inegi_geo_ciudad_gomez_palacio_20261122_000234.json",
+    "fecha_captura": "2026-11-22T00:02:34"
+  }
+}

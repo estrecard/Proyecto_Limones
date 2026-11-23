@@ -1,0 +1,48 @@
+{
+ "registros": [
+  {
+   "cvegeo": "060020001",
+   "cve_ent": "06",
+   "cve_mun": "002",
+   "cve_loc": "0001",
+   "nomgeo": "Colima",
+   "ambito": "URBANO",
+   "latitud": "19.2429222",
+   "longitud": "-103.7281189",
+   "pob_total": "146965"
+  },
+  {
+   "cvegeo": "060020287",
+   "cve_ent": "06",
+   "cve_mun": "002",
+   "cve_loc": "0287",
+   "nomgeo": "Yesera Colima",
+   "ambito": "RURAL",
+   "latitud": "19.0840922",
+   "longitud": "-103.7743022",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "060040196",
+   "cve_ent": "06",
+   "cve_mun": "004",
+   "cve_loc": "0196",
+   "nomgeo": "Loma Alta Colima",
+   "ambito": "RURAL",
+   "latitud": "19.2344444",
+   "longitud": "-103.7869444",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "060050439",
+   "cve_ent": "06",
+   "cve_mun": "005",
+   "cve_loc": "0439",
+   "nomgeo": "Club Hípico de Colima",
+   "ambito": "RURAL",
+   "latitud": "19.2491458",
+   "longitud": "-103.6553142",
+   "pob_total": "0"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_ciudad_guadalajara_20261122_000237.json",
+  "fecha_captura": "2026-11-22T00:02:37",
+  "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/Guadalajara",
+  "tipo_consulta": "ciudad",
+  "lugar": "Guadalajara",
+  "registros": 13,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": false,
+  "cve_ent": "14"
+}

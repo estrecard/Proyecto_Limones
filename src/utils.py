@@ -2,8 +2,10 @@
 import json
 import logging
 import time
+import urllib.robotparser
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 import yaml
@@ -55,6 +57,42 @@ def peticion_con_reintentos(url, params=None, headers=None, reintentos=3, pausa=
                 logger.warning(f"Intento {intento}/{reintentos} falló: {e}")
             if intento < reintentos:
                 time.sleep(pausa * (2 ** (intento - 1)))
+    raise ultimo_error
+
+
+_ROBOTS = {}
+
+
+def permitido_por_robots(url: str, user_agent: str) -> bool:
+    """Lee (una vez por dominio) el robots.txt del sitio y dice si la ruta está permitida.
+    Regla del proyecto: si el sitio lo prohíbe, NO se consulta y se busca otra fuente."""
+    p = urlparse(url)
+    base = f"{p.scheme}://{p.netloc}"
+    if base not in _ROBOTS:
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            r = requests.get(base + "/robots.txt", headers={"User-Agent": user_agent}, timeout=20)
+            rp.parse(r.text.splitlines() if r.status_code == 200 else [])  # sin robots.txt = todo permitido
+        except requests.RequestException:
+            rp.parse([])
+        _ROBOTS[base] = rp
+    return _ROBOTS[base].can_fetch(user_agent, url)
+
+
+def post_con_reintentos(url, data=None, headers=None, reintentos=3, pausa=2, timeout=120, logger=None):
+    """POST con reintentos y espera creciente; también espera si el servidor responde 429 (saturado)."""
+    ultimo_error = None
+    for intento in range(1, reintentos + 1):
+        try:
+            resp = requests.post(url, data=data, headers=headers, timeout=timeout)
+            resp.raise_for_status()
+            return resp
+        except requests.RequestException as e:
+            ultimo_error = e
+            if logger:
+                logger.warning(f"Intento {intento}/{reintentos} falló: {e}")
+            if intento < reintentos:
+                time.sleep(pausa * (2 ** intento))
     raise ultimo_error
 
 

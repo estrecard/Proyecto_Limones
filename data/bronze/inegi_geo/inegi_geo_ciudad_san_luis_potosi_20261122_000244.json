@@ -1,0 +1,26 @@
+{
+ "registros": [
+  {
+   "cvegeo": "240280001",
+   "cve_ent": "24",
+   "cve_mun": "028",
+   "cve_loc": "0001",
+   "nomgeo": "San Luis Potosí",
+   "ambito": "URBANO",
+   "latitud": "22.1516550",
+   "longitud": "-100.9769581",
+   "pob_total": "845941"
+  },
+  {
+   "cvegeo": "240200196",
+   "cve_ent": "24",
+   "cve_mun": "020",
+   "cve_loc": "0196",
+   "nomgeo": "San Luis Potosí",
+   "ambito": "RURAL",
+   "latitud": "23.6045992",
+   "longitud": "-100.6661592",
+   "pob_total": "0"
+  }
+ ]
+}

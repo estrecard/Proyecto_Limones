@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_veracruz_20261122_195556.json",
+  "fecha_captura": "2026-11-22T19:55:56",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/19.1903233,-96.1530275/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "Veracruz",
+  "registros": 679,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 19.1903233,
+    "lon": -96.1530275,
+    "cvegeo": "301930001",
+    "nomgeo": "Veracruz",
+    "pob_total": 405952.0,
+    "archivo": "inegi_geo_ciudad_veracruz_20261122_000301.json",
+    "fecha_captura": "2026-11-22T00:03:01"
+  }
+}

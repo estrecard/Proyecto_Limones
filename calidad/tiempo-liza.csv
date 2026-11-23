@@ -17,3 +17,9 @@ fecha,inicio,fin,interrupcion_min,delta_min,fase,actividad,comentarios
 2026-11-13,11:20,11:30,0,10,Pruebas,7 pruebas nuevas de la capa Oro (32 en total),Estimado
 2026-11-13,11:30,11:40,0,10,Documentación,ENTREGA.md y relatoría de la E1,Estimado
 2026-11-13,11:40,12:00,0,20,Documentación,Ejecución en GitHub Actions; ficha de entrega; relatoría y etiqueta e1,Estimado
+2026-11-21,23:00,23:10,0,10,Planeación,Revisión de indicaciones de E2 y elección de la fuente geoespacial,Estimado
+2026-11-21,23:10,23:25,0,15,Diseño,Política de uso y robots.txt de Nominatim y Overpass; se descarta Nominatim,Estimado
+2026-11-21,23:25,23:59,0,34,Codificación,Extractor OSM y transformación geoespacial (GeoPandas; unión espacial; mapa),Estimado
+2026-11-22,00:00,00:25,0,25,Codificación,Linaje en Plata y Oro; validador y rastreador linaje.py,Estimado
+2026-11-22,00:25,00:40,0,15,Pruebas,5 pruebas nuevas de E2 y ajuste de 4 pruebas de Oro,Estimado
+2026-11-22,00:40,01:05,0,25,Documentación,Declaración de ética; ficha de entrega y relatoría de E2,Estimado

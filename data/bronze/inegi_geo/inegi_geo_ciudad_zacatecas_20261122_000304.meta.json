@@ -1,0 +1,13 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_ciudad_zacatecas_20261122_000304.json",
+  "fecha_captura": "2026-11-22T00:03:04",
+  "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/Zacatecas",
+  "tipo_consulta": "ciudad",
+  "lugar": "Zacatecas",
+  "registros": 2,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": false,
+  "cve_ent": "32"
+}

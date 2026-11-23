@@ -132,6 +132,11 @@ def procesar(fuente: str) -> dict:
         return {"registros_bronce": 0}
 
     df_consolidado, reemplazados = consolidar_capturas(df, LLAVES[fuente])
+    # Linaje: identificador estable de cada registro (fuente + archivo de Bronce + llave del dato)
+    columnas_id = ["archivo_origen"] + LLAVES[fuente]
+    df_consolidado = df_consolidado.assign(id_registro=(
+        fuente + "-" + pd.util.hash_pandas_object(df_consolidado[columnas_id].astype(str), index=False)
+        .astype("uint64").map("{:016x}".format)).values)
     aceptados, cuarentena, resumen = aplicar_puertas(df_consolidado, reglas_de(fuente))
 
     # Plata: se quitan columnas de texto crudo auxiliares y se ordena

@@ -1,0 +1,13 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_ciudad_gomez_palacio_20261122_000234.json",
+  "fecha_captura": "2026-11-22T00:02:34",
+  "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/G%C3%B3mez%20Palacio",
+  "tipo_consulta": "ciudad",
+  "lugar": "Gómez Palacio",
+  "registros": 1,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": false,
+  "cve_ent": "10"
+}

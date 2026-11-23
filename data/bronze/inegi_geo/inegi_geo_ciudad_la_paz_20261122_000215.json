@@ -1,0 +1,37 @@
+{
+ "registros": [
+  {
+   "cvegeo": "030030001",
+   "cve_ent": "03",
+   "cve_mun": "003",
+   "cve_loc": "0001",
+   "nomgeo": "La Paz",
+   "ambito": "URBANO",
+   "latitud": "24.1487450",
+   "longitud": "-110.3065900",
+   "pob_total": "250141"
+  },
+  {
+   "cvegeo": "030031944",
+   "cve_ent": "03",
+   "cve_mun": "003",
+   "cve_loc": "1944",
+   "nomgeo": "San Patricio de La Paz",
+   "ambito": "RURAL",
+   "latitud": "24.1042772",
+   "longitud": "-110.3249678",
+   "pob_total": "14"
+  },
+  {
+   "cvegeo": "030032819",
+   "cve_ent": "03",
+   "cve_mun": "003",
+   "cve_loc": "2819",
+   "nomgeo": "Granjas Familiares la Paz",
+   "ambito": "RURAL",
+   "latitud": "23.7365719",
+   "longitud": "-110.2341736",
+   "pob_total": "2"
+  }
+ ]
+}

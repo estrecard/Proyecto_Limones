@@ -1,0 +1,13 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_ciudad_tecoman_20261122_000206.json",
+  "fecha_captura": "2026-11-22T00:02:06",
+  "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/buscar/Tecom%C3%A1n",
+  "tipo_consulta": "ciudad",
+  "lugar": "Tecomán",
+  "registros": 5,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": false,
+  "cve_ent": "06"
+}

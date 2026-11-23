@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7be426588660a8dadaaa33eaea0cbc4c {
+                    position: relative;
+                    width: 100.0vw;
+                    height: 100.0vh;
+
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>/*
+ * Glyphicons Halflings -- the icon font used by folium's default Awesome Markers
+ * (Icon(prefix="glyphicon")). Extracted from Bootstrap 3's glyphicon rules only.
+ *
+ * folium previously loaded netdna's bootstrap-glyphicons.css, which despite its
+ * name ships a full Bootstrap-3 base stylesheet (normalize reset + global `body`
+ * rules) that leaked onto the host page (GH-1820). This file provides just the
+ * @font-face and .glyphicon/.glyphicon-* rules needed for the markers, with no
+ * page-wide side effects. Font files are served from jsDelivr.
+ */
+@font-face{font-family:'Glyphicons Halflings';src:url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.eot');src:url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'),url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'),url('https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');}.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;}
+.glyphicon-asterisk:before{content:"\2a";}
+.glyphicon-plus:before{content:"\2b";}
+.glyphicon-euro:before{content:"\20ac";}
+.glyphicon-minus:before{content:"\2212";}
+.glyphicon-cloud:before{content:"\2601";}
+.glyphicon-envelope:before{content:"\2709";}
+.glyphicon-pencil:before{content:"\270f";}
+.glyphicon-glass:before{content:"\e001";}
+.glyphicon-music:before{content:"\e002";}
+.glyphicon-search:before{content:"\e003";}
+.glyphicon-heart:before{content:"\e005";}
+.glyphicon-star:before{content:"\e006";}
+.glyphicon-star-empty:before{content:"\e007";}
+.glyphicon-user:before{content:"\e008";}
+.glyphicon-film:before{content:"\e009";}
+.glyphicon-th-large:before{content:"\e010";}
+.glyphicon-th:before{content:"\e011";}
+.glyphicon-th-list:before{content:"\e012";}
+.glyphicon-ok:before{content:"\e013";}
+.glyphicon-remove:before{content:"\e014";}
+.glyphicon-zoom-in:before{content:"\e015";}
+.glyphicon-zoom-out:before{content:"\e016";}
+.glyphicon-off:before{content:"\e017";}
+.glyphicon-signal:before{content:"\e018";}
+.glyphicon-cog:before{content:"\e019";}
+.glyphicon-trash:before{content:"\e020";}
+.glyphicon-home:before{content:"\e021";}
+.glyphicon-file:before{content:"\e022";}
+.glyphicon-time:before{content:"\e023";}
+.glyphicon-road:before{content:"\e024";}
+.glyphicon-download-alt:before{content:"\e025";}
+.glyphicon-download:before{content:"\e026";}
+.glyphicon-upload:before{content:"\e027";}
+.glyphicon-inbox:before{content:"\e028";}
+.glyphicon-play-circle:before{content:"\e029";}
+.glyphicon-repeat:before{content:"\e030";}
+.glyphicon-refresh:before{content:"\e031";}
+.glyphicon-list-alt:before{content:"\e032";}
+.glyphicon-flag:before{content:"\e034";}
+.glyphicon-headphones:before{content:"\e035";}
+.glyphicon-volume-off:before{content:"\e036";}
+.glyphicon-volume-down:before{content:"\e037";}
+.glyphicon-volume-up:before{content:"\e038";}
+.glyphicon-qrcode:before{content:"\e039";}
+.glyphicon-barcode:before{content:"\e040";}
+.glyphicon-tag:before{content:"\e041";}
+.glyphicon-tags:before{content:"\e042";}
+.glyphicon-book:before{content:"\e043";}
+.glyphicon-print:before{content:"\e045";}
+.glyphicon-font:before{content:"\e047";}
+.glyphicon-bold:before{content:"\e048";}
+.glyphicon-italic:before{content:"\e049";}
+.glyphicon-text-height:before{content:"\e050";}
+.glyphicon-text-width:before{content:"\e051";}
+.glyphicon-align-left:before{content:"\e052";}
+.glyphicon-align-center:before{content:"\e053";}
+.glyphicon-align-right:before{content:"\e054";}
+.glyphicon-align-justify:before{content:"\e055";}
+.glyphicon-list:before{content:"\e056";}
+.glyphicon-indent-left:before{content:"\e057";}
+.glyphicon-indent-right:before{content:"\e058";}
+.glyphicon-facetime-video:before{content:"\e059";}
+.glyphicon-picture:before{content:"\e060";}
+.glyphicon-map-marker:before{content:"\e062";}
+.glyphicon-adjust:before{content:"\e063";}
+.glyphicon-tint:before{content:"\e064";}
+.glyphicon-edit:before{content:"\e065";}
+.glyphicon-share:before{content:"\e066";}
+.glyphicon-check:before{content:"\e067";}
+.glyphicon-move:before{content:"\e068";}
+.glyphicon-step-backward:before{content:"\e069";}
+.glyphicon-fast-backward:before{content:"\e070";}
+.glyphicon-backward:before{content:"\e071";}
+.glyphicon-play:before{content:"\e072";}
+.glyphicon-pause:before{content:"\e073";}
+.glyphicon-stop:before{content:"\e074";}
+.glyphicon-forward:before{content:"\e075";}
+.glyphicon-fast-forward:before{content:"\e076";}
+.glyphicon-step-forward:before{content:"\e077";}
+.glyphicon-eject:before{content:"\e078";}
+.glyphicon-chevron-left:before{content:"\e079";}
+.glyphicon-chevron-right:before{content:"\e080";}
+.glyphicon-plus-sign:before{content:"\e081";}
+.glyphicon-minus-sign:before{content:"\e082";}
+.glyphicon-remove-sign:before{content:"\e083";}
+.glyphicon-ok-sign:before{content:"\e084";}
+.glyphicon-question-sign:before{content:"\e085";}
+.glyphicon-info-sign:before{content:"\e086";}
+.glyphicon-screenshot:before{content:"\e087";}
+.glyphicon-remove-circle:before{content:"\e088";}
+.glyphicon-ok-circle:before{content:"\e089";}
+.glyphicon-ban-circle:before{content:"\e090";}
+.glyphicon-arrow-left:before{content:"\e091";}
+.glyphicon-arrow-right:before{content:"\e092";}
+.glyphicon-arrow-up:before{content:"\e093";}
+.glyphicon-arrow-down:before{content:"\e094";}
+.glyphicon-share-alt:before{content:"\e095";}
+.glyphicon-resize-full:before{content:"\e096";}
+.glyphicon-resize-small:before{content:"\e097";}
+.glyphicon-exclamation-sign:before{content:"\e101";}
+.glyphicon-gift:before{content:"\e102";}
+.glyphicon-leaf:before{content:"\e103";}
+.glyphicon-eye-open:before{content:"\e105";}
+.glyphicon-eye-close:before{content:"\e106";}
+.glyphicon-warning-sign:before{content:"\e107";}
+.glyphicon-plane:before{content:"\e108";}
+.glyphicon-random:before{content:"\e110";}
+.glyphicon-comment:before{content:"\e111";}
+.glyphicon-magnet:before{content:"\e112";}
+.glyphicon-chevron-up:before{content:"\e113";}
+.glyphicon-chevron-down:before{content:"\e114";}
+.glyphicon-retweet:before{content:"\e115";}
+.glyphicon-shopping-cart:before{content:"\e116";}
+.glyphicon-folder-close:before{content:"\e117";}
+.glyphicon-folder-open:before{content:"\e118";}
+.glyphicon-resize-vertical:before{content:"\e119";}
+.glyphicon-resize-horizontal:before{content:"\e120";}
+.glyphicon-hdd:before{content:"\e121";}
+.glyphicon-bullhorn:before{content:"\e122";}
+.glyphicon-certificate:before{content:"\e124";}
+.glyphicon-thumbs-up:before{content:"\e125";}
+.glyphicon-thumbs-down:before{content:"\e126";}
+.glyphicon-hand-right:before{content:"\e127";}
+.glyphicon-hand-left:before{content:"\e128";}
+.glyphicon-hand-up:before{content:"\e129";}
+.glyphicon-hand-down:before{content:"\e130";}
+.glyphicon-circle-arrow-right:before{content:"\e131";}
+.glyphicon-circle-arrow-left:before{content:"\e132";}
+.glyphicon-circle-arrow-up:before{content:"\e133";}
+.glyphicon-circle-arrow-down:before{content:"\e134";}
+.glyphicon-globe:before{content:"\e135";}
+.glyphicon-tasks:before{content:"\e137";}
+.glyphicon-filter:before{content:"\e138";}
+.glyphicon-fullscreen:before{content:"\e140";}
+.glyphicon-dashboard:before{content:"\e141";}
+.glyphicon-heart-empty:before{content:"\e143";}
+.glyphicon-link:before{content:"\e144";}
+.glyphicon-phone:before{content:"\e145";}
+.glyphicon-usd:before{content:"\e148";}
+.glyphicon-gbp:before{content:"\e149";}
+.glyphicon-sort:before{content:"\e150";}
+.glyphicon-sort-by-alphabet:before{content:"\e151";}
+.glyphicon-sort-by-alphabet-alt:before{content:"\e152";}
+.glyphicon-sort-by-order:before{content:"\e153";}
+.glyphicon-sort-by-order-alt:before{content:"\e154";}
+.glyphicon-sort-by-attributes:before{content:"\e155";}
+.glyphicon-sort-by-attributes-alt:before{content:"\e156";}
+.glyphicon-unchecked:before{content:"\e157";}
+.glyphicon-expand:before{content:"\e158";}
+.glyphicon-collapse-down:before{content:"\e159";}
+.glyphicon-collapse-up:before{content:"\e160";}
+.glyphicon-log-in:before{content:"\e161";}
+.glyphicon-flash:before{content:"\e162";}
+.glyphicon-log-out:before{content:"\e163";}
+.glyphicon-new-window:before{content:"\e164";}
+.glyphicon-record:before{content:"\e165";}
+.glyphicon-save:before{content:"\e166";}
+.glyphicon-open:before{content:"\e167";}
+.glyphicon-saved:before{content:"\e168";}
+.glyphicon-import:before{content:"\e169";}
+.glyphicon-export:before{content:"\e170";}
+.glyphicon-send:before{content:"\e171";}
+.glyphicon-floppy-disk:before{content:"\e172";}
+.glyphicon-floppy-saved:before{content:"\e173";}
+.glyphicon-floppy-remove:before{content:"\e174";}
+.glyphicon-floppy-save:before{content:"\e175";}
+.glyphicon-floppy-open:before{content:"\e176";}
+.glyphicon-credit-card:before{content:"\e177";}
+.glyphicon-transfer:before{content:"\e178";}
+.glyphicon-cutlery:before{content:"\e179";}
+.glyphicon-header:before{content:"\e180";}
+.glyphicon-compressed:before{content:"\e181";}
+.glyphicon-earphone:before{content:"\e182";}
+.glyphicon-phone-alt:before{content:"\e183";}
+.glyphicon-tower:before{content:"\e184";}
+.glyphicon-stats:before{content:"\e185";}
+.glyphicon-sd-video:before{content:"\e186";}
+.glyphicon-hd-video:before{content:"\e187";}
+.glyphicon-subtitles:before{content:"\e188";}
+.glyphicon-sound-stereo:before{content:"\e189";}
+.glyphicon-sound-dolby:before{content:"\e190";}
+.glyphicon-sound-5-1:before{content:"\e191";}
+.glyphicon-sound-6-1:before{content:"\e192";}
+.glyphicon-sound-7-1:before{content:"\e193";}
+.glyphicon-copyright-mark:before{content:"\e194";}
+.glyphicon-registration-mark:before{content:"\e195";}
+.glyphicon-cloud-download:before{content:"\e197";}
+.glyphicon-cloud-upload:before{content:"\e198";}
+.glyphicon-tree-conifer:before{content:"\e199";}
+.glyphicon-tree-deciduous:before{content:"\e200";}
+.glyphicon-briefcase:before{content:"\1f4bc";}
+.glyphicon-calendar:before{content:"\1f4c5";}
+.glyphicon-pushpin:before{content:"\1f4cc";}
+.glyphicon-paperclip:before{content:"\1f4ce";}
+.glyphicon-camera:before{content:"\1f4f7";}
+.glyphicon-lock:before{content:"\1f512";}
+.glyphicon-bell:before{content:"\1f514";}
+.glyphicon-bookmark:before{content:"\1f516";}
+.glyphicon-fire:before{content:"\1f525";}
+.glyphicon-wrench:before{content:"\1f527";}
+</style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+            
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7be426588660a8dadaaa33eaea0cbc4c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7be426588660a8dadaaa33eaea0cbc4c = L.map(
+                "map_7be426588660a8dadaaa33eaea0cbc4c",
+                {
+                    center: [23.5, -102.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_94ee8be992367a7c5bbf381a4d3e0a1a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "Mapa base \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap contributors\u003c/a\u003e \u00b7 Datos: INEGI (Cat\u00e1logo \u00danico y DENUE) \u00b7 Precios: SNIIM, Secretar\u00eda de Econom\u00eda \u00b7 Lim\u00f3nLab Colima",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_94ee8be992367a7c5bbf381a4d3e0a1a.addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var marker_7d11c3d4045ab82ef4c1f2e4f26d972a = L.marker(
+                [18.9105028, -103.8735475],
+                {
+}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var icon_3685892e768d77c58dde8c339101082e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7d11c3d4045ab82ef4c1f2e4f26d972a.bindTooltip(
+                `<div>
+                     Tecomán, Colima (origen del limón)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                {
+                    const element = marker_7d11c3d4045ab82ef4c1f2e4f26d972a.getElement();
+                    if (element) {
+                        element.style.width = "";
+                        element.style.height = "";
+                        element.style.marginLeft = "";
+                        element.style.marginTop = "";
+                    }
+                }
+                marker_7d11c3d4045ab82ef4c1f2e4f26d972a.setIcon(icon_3685892e768d77c58dde8c339101082e);
+            
+    
+            var poly_line_1c98a3713325255fc901589fafdf0478 = L.polyline(
+                [[18.9105028, -103.8735475], [21.8798228, -102.2960467]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_aec23d56d9a59f2faa8bf89750e06c90 = L.circleMarker(
+                [21.8798228, -102.2960467],
+                {"bubblingMouseEvents": true, "color": "#149340", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#149340", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_1759d237a2b772cbb803b7089405d7dc = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_cb9cbe0c59aa149338c5b65df7de9b0a = $(`<div id="html_cb9cbe0c59aa149338c5b65df7de9b0a" style="width: 100.0%; height: 100.0%;"><b>Aguascalientes: Central de Abasto de Aguascalientes</b><br>Distancia a Tecomán: 366.2 km<br>Precio mediano (12 meses): 18.86 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 746</div>`)[0];
+                popup_1759d237a2b772cbb803b7089405d7dc.setContent(html_cb9cbe0c59aa149338c5b65df7de9b0a);
+            
+        
+
+        circle_marker_aec23d56d9a59f2faa8bf89750e06c90.bindPopup(popup_1759d237a2b772cbb803b7089405d7dc)
+        ;
+
+        
+    
+    
+            var poly_line_f81bda6baa5c28bf79b10122b0a5afae = L.polyline(
+                [[18.9105028, -103.8735475], [21.8798228, -102.2960467]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_b487bbcbb4b95408cf8f96b137242b75 = L.circleMarker(
+                [21.8798228, -102.2960467],
+                {"bubblingMouseEvents": true, "color": "#0d9740", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d9740", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_7abb4dcc00e64f1f7664421e824b0b31 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_678844b32c38d8084cbcd10032c94c5a = $(`<div id="html_678844b32c38d8084cbcd10032c94c5a" style="width: 100.0%; height: 100.0%;"><b>Aguascalientes: Centro Comercial Agropecuario de Aguascalientes</b><br>Distancia a Tecomán: 366.2 km<br>Precio mediano (12 meses): 18.21 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 746</div>`)[0];
+                popup_7abb4dcc00e64f1f7664421e824b0b31.setContent(html_678844b32c38d8084cbcd10032c94c5a);
+            
+        
+
+        circle_marker_b487bbcbb4b95408cf8f96b137242b75.bindPopup(popup_7abb4dcc00e64f1f7664421e824b0b31)
+        ;
+
+        
+    
+    
+            var poly_line_a68e773a88174dbaa1891d6ee531971b = L.polyline(
+                [[18.9105028, -103.8735475], [24.148745, -110.30659]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_a73c3cd9099b7a4b34ffbecf12e1d25c = L.circleMarker(
+                [24.148745, -110.30659],
+                {"bubblingMouseEvents": true, "color": "#de1440", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#de1440", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_46132fef03bc44959e8d86f9e59e3516 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9c7acc2fa746b2346eaab9fa7945867c = $(`<div id="html_9c7acc2fa746b2346eaab9fa7945867c" style="width: 100.0%; height: 100.0%;"><b>Baja California Sur: Unión de Comerciantes de La Paz</b><br>Distancia a Tecomán: 879.2 km<br>Precio mediano (12 meses): 37.50 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 100</div>`)[0];
+                popup_46132fef03bc44959e8d86f9e59e3516.setContent(html_9c7acc2fa746b2346eaab9fa7945867c);
+            
+        
+
+        circle_marker_a73c3cd9099b7a4b34ffbecf12e1d25c.bindPopup(popup_46132fef03bc44959e8d86f9e59e3516)
+        ;
+
+        
+    
+    
+            var poly_line_b04b51c050ad52a137632a7d47374932 = L.polyline(
+                [[18.9105028, -103.8735475], [28.6367939, -106.0763067]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_ac7f72b290454f3d9b8f1f905c70dcf7 = L.circleMarker(
+                [28.6367939, -106.0763067],
+                {"bubblingMouseEvents": true, "color": "#208b40", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#208b40", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.833333333333334, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_979de677eeea44caffb5f2ac38f2612b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4aa6bd236e75858c7dd0ca504abde2f4 = $(`<div id="html_4aa6bd236e75858c7dd0ca504abde2f4" style="width: 100.0%; height: 100.0%;"><b>Chihuahua: Central de Abasto de Chihuahua</b><br>Distancia a Tecomán: 1095.6 km<br>Precio mediano (12 meses): 20.00 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 53</div>`)[0];
+                popup_979de677eeea44caffb5f2ac38f2612b.setContent(html_4aa6bd236e75858c7dd0ca504abde2f4);
+            
+        
+
+        circle_marker_ac7f72b290454f3d9b8f1f905c70dcf7.bindPopup(popup_979de677eeea44caffb5f2ac38f2612b)
+        ;
+
+        
+    
+    
+            var poly_line_ba9a9df08a9bab4c2a369c1d38f10503 = L.polyline(
+                [[18.9105028, -103.8735475], [31.7464653, -106.4850186]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_48d982b0bd46bfbb8fb30a14e0ed1b3b = L.circleMarker(
+                [31.7464653, -106.4850186],
+                {"bubblingMouseEvents": true, "color": "#616240", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#616240", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_191f7978486f6bdfa81c0111f503d9b0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_684e8a6863ad25f6780bb98508be54e5 = $(`<div id="html_684e8a6863ad25f6780bb98508be54e5" style="width: 100.0%; height: 100.0%;"><b>Chihuahua: Mercado de Abasto de Cd. Juárez</b><br>Distancia a Tecomán: 1441.8 km<br>Precio mediano (12 meses): 26.00 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 58</div>`)[0];
+                popup_191f7978486f6bdfa81c0111f503d9b0.setContent(html_684e8a6863ad25f6780bb98508be54e5);
+            
+        
+
+        circle_marker_48d982b0bd46bfbb8fb30a14e0ed1b3b.bindPopup(popup_191f7978486f6bdfa81c0111f503d9b0)
+        ;
+
+        
+    
+    
+            var poly_line_2e8f4d49f3f025e81d77a70777772039 = L.polyline(
+                [[18.9105028, -103.8735475], [25.5417533, -103.4530606]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_f7eff1e9e85be912d736e2987d6f5666 = L.circleMarker(
+                [25.5417533, -103.4530606],
+                {"bubblingMouseEvents": true, "color": "#039d40", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#039d40", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_f8a3bd61e5f61596d69c37d6a92a5850 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_03b0f293f29552c777a0ff81798023f4 = $(`<div id="html_03b0f293f29552c777a0ff81798023f4" style="width: 100.0%; height: 100.0%;"><b>Coahuila: Central de Abasto de La Laguna, Torreón</b><br>Distancia a Tecomán: 732.2 km<br>Precio mediano (12 meses): 17.33 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 276</div>`)[0];
+                popup_f8a3bd61e5f61596d69c37d6a92a5850.setContent(html_03b0f293f29552c777a0ff81798023f4);
+            
+        
+
+        circle_marker_f7eff1e9e85be912d736e2987d6f5666.bindPopup(popup_f8a3bd61e5f61596d69c37d6a92a5850)
+        ;
+
+        
+    
+    
+            var poly_line_65cd7eac82958545eb52498fff243f5b = L.polyline(
+                [[18.9105028, -103.8735475], [19.2429222, -103.7281189]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_646cc77d30ebd9c7d5d99a3690419cbb = L.circleMarker(
+                [19.2429222, -103.7281189],
+                {"bubblingMouseEvents": true, "color": "#ff0040", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0040", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_b403b2a65e92f0a33ab37a98bd009648 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e60c6651781faab850ead7eba6c44a7e = $(`<div id="html_e60c6651781faab850ead7eba6c44a7e" style="width: 100.0%; height: 100.0%;"><b>Colima: Centros de distribución de Colima</b><br>Distancia a Tecomán: 39.8 km<br>Precio mediano (12 meses): 40.50 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 169</div>`)[0];
+                popup_b403b2a65e92f0a33ab37a98bd009648.setContent(html_e60c6651781faab850ead7eba6c44a7e);
+            
+        
+
+        circle_marker_646cc77d30ebd9c7d5d99a3690419cbb.bindPopup(popup_b403b2a65e92f0a33ab37a98bd009648)
+        ;
+
+        
+    
+    
+            var poly_line_ce15ba4d90a086a67473ba7082bc99aa = L.polyline(
+                [[18.9105028, -103.8735475], [25.5701072, -103.4964169]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_d84c614b333abae055e4e582e9f58729 = L.circleMarker(
+                [25.5701072, -103.4964169],
+                {"bubblingMouseEvents": true, "color": "#715840", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#715840", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_2f66c061c047eac7960d73e51b6eee4f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_acd228acc0d3a03ca7c9530c3c0cc43a = $(`<div id="html_acd228acc0d3a03ca7c9530c3c0cc43a" style="width: 100.0%; height: 100.0%;"><b>Durango: Centro de Distribución y Abasto de Gómez Palacio</b><br>Distancia a Tecomán: 735.0 km<br>Precio mediano (12 meses): 27.50 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 171</div>`)[0];
+                popup_2f66c061c047eac7960d73e51b6eee4f.setContent(html_acd228acc0d3a03ca7c9530c3c0cc43a);
+            
+        
+
+        circle_marker_d84c614b333abae055e4e582e9f58729.bindPopup(popup_2f66c061c047eac7960d73e51b6eee4f)
+        ;
+
+        
+    
+    
+            var poly_line_f1c6c5d35537cd55175ffd70e16397ee = L.polyline(
+                [[18.9105028, -103.8735475], [20.6763889, -103.3422222]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_3d538d2640923df7ba85803e87fce8fc = L.circleMarker(
+                [20.6763889, -103.3422222],
+                {"bubblingMouseEvents": true, "color": "#00a040", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00a040", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_9a2834a637d7159a42a0e284955763bf = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e5e31af884289fb26ad38ba432570ee1 = $(`<div id="html_e5e31af884289fb26ad38ba432570ee1" style="width: 100.0%; height: 100.0%;"><b>Jalisco: Mercado Felipe Ángeles de Guadalajara</b><br>Distancia a Tecomán: 202.6 km<br>Precio mediano (12 meses): 17.00 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 2093</div>`)[0];
+                popup_9a2834a637d7159a42a0e284955763bf.setContent(html_e5e31af884289fb26ad38ba432570ee1);
+            
+        
+
+        circle_marker_3d538d2640923df7ba85803e87fce8fc.bindPopup(popup_9a2834a637d7159a42a0e284955763bf)
+        ;
+
+        
+    
+    
+            var poly_line_2789d0a019fe3d7e73aa1efe26c5e301 = L.polyline(
+                [[18.9105028, -103.8735475], [20.6763889, -103.3422222]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_17196092f89fb190ad3b00fc93f440c5 = L.circleMarker(
+                [20.6763889, -103.3422222],
+                {"bubblingMouseEvents": true, "color": "#7a5240", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7a5240", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_247bc9fc0d640567182e297a929d7b89 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_457aace1543914f2a83ace55164aee4b = $(`<div id="html_457aace1543914f2a83ace55164aee4b" style="width: 100.0%; height: 100.0%;"><b>Jalisco: Mercado de Abasto de Guadalajara</b><br>Distancia a Tecomán: 202.6 km<br>Precio mediano (12 meses): 28.33 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 2093</div>`)[0];
+                popup_247bc9fc0d640567182e297a929d7b89.setContent(html_457aace1543914f2a83ace55164aee4b);
+            
+        
+
+        circle_marker_17196092f89fb190ad3b00fc93f440c5.bindPopup(popup_247bc9fc0d640567182e297a929d7b89)
+        ;
+
+        
+    
+    
+            var poly_line_7e8dfb3ecd25856796f878b18bf3a1f4 = L.polyline(
+                [[18.9105028, -103.8735475], [25.7552528, -100.2895861]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_e5ae4899b6ad201dece422290327d915 = L.circleMarker(
+                [25.7552528, -100.2895861],
+                {"bubblingMouseEvents": true, "color": "#566940", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#566940", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_51225481301e7482ce9565364b0a9361 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b7d4033f0580d68723aa0d440e59aef6 = $(`<div id="html_b7d4033f0580d68723aa0d440e59aef6" style="width: 100.0%; height: 100.0%;"><b>Nuevo León: Mercado de Abasto Estrella de San Nicolás de los Garza</b><br>Distancia a Tecomán: 839.0 km<br>Precio mediano (12 meses): 25.00 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 645</div>`)[0];
+                popup_51225481301e7482ce9565364b0a9361.setContent(html_b7d4033f0580d68723aa0d440e59aef6);
+            
+        
+
+        circle_marker_e5ae4899b6ad201dece422290327d915.bindPopup(popup_51225481301e7482ce9565364b0a9361)
+        ;
+
+        
+    
+    
+            var poly_line_39bee0ce8e9b042e5df275624d5aca19 = L.polyline(
+                [[18.9105028, -103.8735475], [22.151655, -100.9769581]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_fb02adea9257865b9f531e040eb28536 = L.circleMarker(
+                [22.151655, -100.9769581],
+                {"bubblingMouseEvents": true, "color": "#0c9840", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0c9840", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_6e35db59096bc79c78c37cce4b476f90 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fdb5e10980c9adb2bd5ef331150403cd = $(`<div id="html_fdb5e10980c9adb2bd5ef331150403cd" style="width: 100.0%; height: 100.0%;"><b>San Luis Potosí: Centro de Abasto de San Luis Potosí</b><br>Distancia a Tecomán: 467.2 km<br>Precio mediano (12 meses): 18.16 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 462</div>`)[0];
+                popup_6e35db59096bc79c78c37cce4b476f90.setContent(html_fdb5e10980c9adb2bd5ef331150403cd);
+            
+        
+
+        circle_marker_fb02adea9257865b9f531e040eb28536.bindPopup(popup_6e35db59096bc79c78c37cce4b476f90)
+        ;
+
+        
+    
+    
+            var poly_line_962bb0840c29a31323559bc591cdfcdc = L.polyline(
+                [[18.9105028, -103.8735475], [23.2003158, -106.4222214]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_099fd9081b2842123695f2f37f0e35fb = L.circleMarker(
+                [23.2003158, -106.4222214],
+                {"bubblingMouseEvents": true, "color": "#7f5040", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7f5040", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_8fa2490ff8e960cf46a383932ba653df = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2a259c0eb8ab2b1f92437e01b0412fe6 = $(`<div id="html_2a259c0eb8ab2b1f92437e01b0412fe6" style="width: 100.0%; height: 100.0%;"><b>Sinaloa: Zona de Abasto de Mazatlán</b><br>Distancia a Tecomán: 541.5 km<br>Precio mediano (12 meses): <br>Fruterías y mayoristas de frutas y verduras a 5 km: 128</div>`)[0];
+                popup_8fa2490ff8e960cf46a383932ba653df.setContent(html_2a259c0eb8ab2b1f92437e01b0412fe6);
+            
+        
+
+        circle_marker_099fd9081b2842123695f2f37f0e35fb.bindPopup(popup_8fa2490ff8e960cf46a383932ba653df)
+        ;
+
+        
+    
+    
+            var poly_line_3859827c32179a1a76205a95c1735f37 = L.polyline(
+                [[18.9105028, -103.8735475], [27.4964889, -109.9327161]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_74d0a92a8ae5eefac5aa726c635dfcf9 = L.circleMarker(
+                [27.4964889, -109.9327161],
+                {"bubblingMouseEvents": true, "color": "#596740", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#596740", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_ad24528cd842dd7f754c96ab37bdc154 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_51fbb42bc776a83d2dcef0d15dc7d59a = $(`<div id="html_51fbb42bc776a83d2dcef0d15dc7d59a" style="width: 100.0%; height: 100.0%;"><b>Sonora: Central de Abasto de Cd. Obregón</b><br>Distancia a Tecomán: 1129.7 km<br>Precio mediano (12 meses): 25.26 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 155</div>`)[0];
+                popup_ad24528cd842dd7f754c96ab37bdc154.setContent(html_51fbb42bc776a83d2dcef0d15dc7d59a);
+            
+        
+
+        circle_marker_74d0a92a8ae5eefac5aa726c635dfcf9.bindPopup(popup_ad24528cd842dd7f754c96ab37bdc154)
+        ;
+
+        
+    
+    
+            var poly_line_119bb4ed0570a19a1418366f1d97a9f9 = L.polyline(
+                [[18.9105028, -103.8735475], [29.0748997, -110.9585347]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_9c8942173c1e72c816b6a5af6f05aaba = L.circleMarker(
+                [29.0748997, -110.9585347],
+                {"bubblingMouseEvents": true, "color": "#715840", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#715840", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_701af62213c128d4623166c4927dc063 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_79bdaf6d5bdc718e988be5486285bf11 = $(`<div id="html_79bdaf6d5bdc718e988be5486285bf11" style="width: 100.0%; height: 100.0%;"><b>Sonora: Mercado de Abasto Francisco I. Madero de Hermosillo</b><br>Distancia a Tecomán: 1330.5 km<br>Precio mediano (12 meses): 27.50 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 82</div>`)[0];
+                popup_701af62213c128d4623166c4927dc063.setContent(html_79bdaf6d5bdc718e988be5486285bf11);
+            
+        
+
+        circle_marker_9c8942173c1e72c816b6a5af6f05aaba.bindPopup(popup_701af62213c128d4623166c4927dc063)
+        ;
+
+        
+    
+    
+            var poly_line_67e0cbbd5c3757f309ab918460958ad0 = L.polyline(
+                [[18.9105028, -103.8735475], [17.9878375, -92.9194161]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_39af84e27d4f05a80c1a38ce24181e7b = L.circleMarker(
+                [17.9878375, -92.9194161],
+                {"bubblingMouseEvents": true, "color": "#3b7a40", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b7a40", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_709ac73c02bb3ff2ba2a7b3803d8d8d6 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d3ed1e99701d733d4e8a7dc68c86fb77 = $(`<div id="html_d3ed1e99701d733d4e8a7dc68c86fb77" style="width: 100.0%; height: 100.0%;"><b>Tabasco: Central de Abasto de Villahermosa</b><br>Distancia a Tecomán: 1159.5 km<br>Precio mediano (12 meses): 22.50 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 413</div>`)[0];
+                popup_709ac73c02bb3ff2ba2a7b3803d8d8d6.setContent(html_d3ed1e99701d733d4e8a7dc68c86fb77);
+            
+        
+
+        circle_marker_39af84e27d4f05a80c1a38ce24181e7b.bindPopup(popup_709ac73c02bb3ff2ba2a7b3803d8d8d6)
+        ;
+
+        
+    
+    
+            var poly_line_8485ff31d4138178fadeda0b04d3a5b2 = L.polyline(
+                [[18.9105028, -103.8735475], [19.1903233, -96.1530275]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_5037c1717f46c553b9a62e327dedba20 = L.circleMarker(
+                [19.1903233, -96.1530275],
+                {"bubblingMouseEvents": true, "color": "#3b7a40", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b7a40", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_5f86f0cb9617f8ebd7b722c24e454305 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_50ec59ba5923225288bdc28eb0fcd59f = $(`<div id="html_50ec59ba5923225288bdc28eb0fcd59f" style="width: 100.0%; height: 100.0%;"><b>Veracruz: Mercado Malibrán</b><br>Distancia a Tecomán: 811.2 km<br>Precio mediano (12 meses): 22.50 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 679</div>`)[0];
+                popup_5f86f0cb9617f8ebd7b722c24e454305.setContent(html_50ec59ba5923225288bdc28eb0fcd59f);
+            
+        
+
+        circle_marker_5037c1717f46c553b9a62e327dedba20.bindPopup(popup_5f86f0cb9617f8ebd7b722c24e454305)
+        ;
+
+        
+    
+    
+            var poly_line_e098aa6b4a8e5f57e1e951936da60edc = L.polyline(
+                [[18.9105028, -103.8735475], [22.7760961, -102.5718364]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+            var circle_marker_ebf26ad8bbc811ef1f1b0052b879625d = L.circleMarker(
+                [22.7760961, -102.5718364],
+                {"bubblingMouseEvents": true, "color": "#8d4740", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8d4740", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_7be426588660a8dadaaa33eaea0cbc4c);
+        
+    
+        var popup_7340e2810b82ab0bcc2427fd035bde19 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ffdf6d82de424866f0c8f0054d8aa8d6 = $(`<div id="html_ffdf6d82de424866f0c8f0054d8aa8d6" style="width: 100.0%; height: 100.0%;"><b>Zacatecas: Mercado de Abasto de Zacatecas</b><br>Distancia a Tecomán: 447.0 km<br>Precio mediano (12 meses): 30.00 $/kg<br>Fruterías y mayoristas de frutas y verduras a 5 km: 200</div>`)[0];
+                popup_7340e2810b82ab0bcc2427fd035bde19.setContent(html_ffdf6d82de424866f0c8f0054d8aa8d6);
+            
+        
+
+        circle_marker_ebf26ad8bbc811ef1f1b0052b879625d.bindPopup(popup_7340e2810b82ab0bcc2427fd035bde19)
+        ;
+
+        
+    
+</script>
+</html>

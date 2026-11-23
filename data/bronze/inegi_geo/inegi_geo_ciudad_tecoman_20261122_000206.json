@@ -1,0 +1,59 @@
+{
+ "registros": [
+  {
+   "cvegeo": "060090001",
+   "cve_ent": "06",
+   "cve_mun": "009",
+   "cve_loc": "0001",
+   "nomgeo": "Tecomán",
+   "ambito": "URBANO",
+   "latitud": "18.9105028",
+   "longitud": "-103.8735475",
+   "pob_total": "88337"
+  },
+  {
+   "cvegeo": "060090236",
+   "cve_ent": "06",
+   "cve_mun": "009",
+   "cve_loc": "0236",
+   "nomgeo": "Ejido Santiago Tecomán Dos",
+   "ambito": "RURAL",
+   "latitud": "18.7355953",
+   "longitud": "-103.7483708",
+   "pob_total": "2"
+  },
+  {
+   "cvegeo": "060090691",
+   "cve_ent": "06",
+   "cve_mun": "009",
+   "cve_loc": "0691",
+   "nomgeo": "INIFAP [Campo Experimental Tecomán]",
+   "ambito": "RURAL",
+   "latitud": "18.9663369",
+   "longitud": "-103.8434553",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "060090798",
+   "cve_ent": "06",
+   "cve_mun": "009",
+   "cve_loc": "0798",
+   "nomgeo": "Ninguno [Fumigaciones Aéreas del Valle de Tecomán]",
+   "ambito": "RURAL",
+   "latitud": "18.7838344",
+   "longitud": "-103.7751717",
+   "pob_total": "0"
+  },
+  {
+   "cvegeo": "060091360",
+   "cve_ent": "06",
+   "cve_mun": "009",
+   "cve_loc": "1360",
+   "nomgeo": "Compañía Guardia Nacional Tecomán",
+   "ambito": "RURAL",
+   "latitud": "18.8947236",
+   "longitud": "-103.8619719",
+   "pob_total": "-"
+  }
+ ]
+}

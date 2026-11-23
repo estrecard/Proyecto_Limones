@@ -1,0 +1,22 @@
+{
+  "fuente": "inegi_geo",
+  "archivo": "inegi_geo_comercios_aguascalientes_20261122_195506.json",
+  "fecha_captura": "2026-11-22T19:55:06",
+  "url": "https://www.inegi.org.mx/app/api/denue/v1/consulta/Buscar/frutas/21.8798228,-102.2960467/5000/<DENUE_TOKEN>",
+  "tipo_consulta": "comercios",
+  "lugar": "Aguascalientes",
+  "registros": 746,
+  "robots_permitido": true,
+  "licencia": "Términos de libre uso de la información del INEGI — Fuente: INEGI (Catálogo Único de Claves Geoestadísticas y DENUE)",
+  "anonimizado": true,
+  "radio_m": 5000,
+  "centro": {
+    "lat": 21.8798228,
+    "lon": -102.2960467,
+    "cvegeo": "010010001",
+    "nomgeo": "Aguascalientes",
+    "pob_total": 863893.0,
+    "archivo": "inegi_geo_ciudad_aguascalientes_20261122_000210.json",
+    "fecha_captura": "2026-11-22T00:02:10"
+  }
+}
