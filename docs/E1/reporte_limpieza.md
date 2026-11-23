@@ -1,6 +1,6 @@
 # Reporte de limpieza y preprocesamiento — E1
 
-*Generado automáticamente por `src/transform/gold.py` el 22/11/2026 20:04.*
+*Generado automáticamente por `src/transform/gold.py` el 23/11/2026 02:16.*
 
 ## 1. Resolución de conflictos de esquema (SNIIM)
 
@@ -146,9 +146,9 @@ Para cada variable continua se agregan dos columnas: `_minmax` = (x − min)/(ma
 | Variable | Mín | Máx | Media | Desv. estándar |
 |---|---|---|---|---|
 | precio | 9.33 | 74.664 | 25.3354 | 8.2922 |
-| lluvia_30d_mm | 0.0 | 438.6 | 76.5364 | 100.8047 |
+| lluvia_30d_mm | 0.0 | 438.6 | 76.4838 | 100.8296 |
 | lluvia_semana_mm | 0.0 | 269.8 | 18.1341 | 33.8149 |
-| temp_media | 21.4 | 30.4714 | 26.297 | 1.763 |
+| temp_media | 21.4 | 30.4714 | 26.2991 | 1.7625 |
 | tipo_cambio | 16.5262 | 20.6838 | 18.2341 | 1.122 |
 
 Los parámetros se guardan en `data/gold/parametros_normalizacion.json`. **Nota para el modelado (E1/E3):** al entrenar un modelo,
