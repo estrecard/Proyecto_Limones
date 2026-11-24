@@ -1,6 +1,6 @@
 # Reporte de limpieza y preprocesamiento — E1
 
-*Generado automáticamente por `src/transform/gold.py` el 23/11/2026 02:16.*
+*Generado automáticamente por `src/transform/gold.py` el 24/11/2026 09:56.*
 
 ## 1. Resolución de conflictos de esquema (SNIIM)
 
@@ -9,11 +9,11 @@ Como todos los precios se pidieron en **$/kg calculado**, las presentaciones son
 
 | Concepto | Valor |
 |---|---|
-| Registros en Plata | 19238 |
-| Llaves únicas (fecha, mercado, calibre) | 15287 |
-| Llaves con varias presentaciones | 3010 |
+| Registros en Plata | 19255 |
+| Llaves únicas (fecha, mercado, calibre) | 15301 |
+| Llaves con varias presentaciones | 3012 |
 | Textos distintos en 'observaciones' | 17 |
-| Categorías después de normalizar | {'Sin observación': 19215, 'Baja': 10, 'Alza': 8, 'Otra': 5} |
+| Categorías después de normalizar | {'Sin observación': 19232, 'Baja': 10, 'Alza': 8, 'Otra': 5} |
 
 Otras resoluciones: comillas eliminadas de los nombres de mercado; texto libre de observaciones normalizado
 con expresiones regulares (corrige errores como "A LA ALAZA" o "a la alza") a *Alza / Baja / Otra*.
@@ -24,26 +24,26 @@ Se construyó el panel completo **día hábil × serie (mercado, calibre)** dent
 
 | Concepto | Valor |
 |---|---|
-| Días hábiles con publicación del SNIIM | 977 |
-| Celdas del panel | 16690 |
-| Celdas faltantes | 1403 (8.41 %) |
+| Días hábiles con publicación del SNIIM | 978 |
+| Celdas del panel | 16704 |
+| Celdas faltantes | 1403 (8.4 %) |
 
-**Faltantes por temporada (%):** {'Alta oferta (may-sep)': 8.75, 'Baja oferta (ene-abr)': 8.03, 'Transición (oct-dic)': 8.27}
+**Faltantes por temporada (%):** {'Alta oferta (may-sep)': 8.75, 'Baja oferta (ene-abr)': 8.03, 'Transición (oct-dic)': 8.24}
 
-**Faltantes por día de la semana (%):** {'Jueves': 10.67, 'Lunes': 11.36, 'Martes': 4.83, 'Miércoles': 10.48, 'Viernes': 4.9}
+**Faltantes por día de la semana (%):** {'Jueves': 10.67, 'Lunes': 11.31, 'Martes': 4.83, 'Miércoles': 10.48, 'Viernes': 4.9}
 
 **Pruebas:**
-- Independencia faltante × temporada (χ²): p = 0.325
-- Independencia faltante × día de la semana (χ²): p = 2.02e-39
-- Precio previo a un hueco vs. sin hueco (Mann-Whitney): p = 1.66e-06
+- Independencia faltante × temporada (χ²): p = 0.317
+- Independencia faltante × día de la semana (χ²): p = 3.17e-39
+- Precio previo a un hueco vs. sin hueco (Mann-Whitney): p = 1.46e-06
   (mediana 20.53 vs 24.00 $/kg)
 
 **Interpretación:**
-- **Temporada:** p = 0.325 → el porcentaje de faltantes **no** cambia de forma significativa entre temporadas.
-- **Día de la semana:** p = 2.02e-39 → los faltantes **dependen del día** (algunos mercados no reportan ciertos días). La falta depende de una variable observada, así que el mecanismo **no es MCAR** sino **MAR**.
-- **Precio antes del hueco:** p = 1.66e-06, mediana 20.53 vs 24.00 $/kg → los huecos aparecen cuando el precio venía **más bajo**: indicio de **MNAR** (el limón de Colima deja de llegar a ese mercado cuando no conviene enviarlo). Por eso los huecos largos **no se imputan**.
+- **Temporada:** p = 0.317 → el porcentaje de faltantes **no** cambia de forma significativa entre temporadas.
+- **Día de la semana:** p = 3.17e-39 → los faltantes **dependen del día** (algunos mercados no reportan ciertos días). La falta depende de una variable observada, así que el mecanismo **no es MCAR** sino **MAR**.
+- **Precio antes del hueco:** p = 1.46e-06, mediana 20.53 vs 24.00 $/kg → los huecos aparecen cuando el precio venía **más bajo**: indicio de **MNAR** (el limón de Colima deja de llegar a ese mercado cuando no conviene enviarlo). Por eso los huecos largos **no se imputan**.
 - **Conclusión:** los faltantes **no son MCAR**. Los huecos cortos se tratan como MAR (se pueden interpolar) y los huecos largos como posible MNAR (se dejan vacíos y se documentan).
-- Series más incompletas: {'Colima: Centros de distribución de Colima | Limón c/semilla # 5': 58.9, 'Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 5': 58.2, 'Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3': 43.3, 'Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 4': 4.3, 'Sinaloa: Zona de Abasto de Mazatlán | Limón c/semilla # 5': 3.9, 'Durango: Centro de Distribución y Abasto de Gómez Palacio | Limón c/semilla # 5': 3.7}
+- Series más incompletas: {'Colima: Centros de distribución de Colima | Limón c/semilla # 5': 58.9, 'Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 5': 58.2, 'Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3': 43.2, 'Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 4': 4.3, 'Sinaloa: Zona de Abasto de Mazatlán | Limón c/semilla # 5': 3.9, 'Durango: Centro de Distribución y Abasto de Gómez Palacio | Limón c/semilla # 5': 3.7}
 
 **Otras fuentes:** Open-Meteo: 0 días faltantes (serie diaria completa). Banxico: fines de semana y festivos: el FIX no se publica (faltante estructural).
 
@@ -60,7 +60,7 @@ Se construyó el panel completo **día hábil × serie (mercado, calibre)** dent
 | Semanas vacías antes de imputar | 152 |
 | Semanas imputadas (interpolación) | 11 |
 | Semanas que quedan vacías (huecos largos) | 141 |
-| Días de tipo de cambio rellenados con LOCF | 443 |
+| Días de tipo de cambio rellenados con LOCF | 445 |
 
 Cada valor imputado queda marcado en la columna `imputado` de la capa Oro.
 
@@ -73,8 +73,8 @@ El precio del limón es muy estacional: una regla global marcaría como "atípic
 **Hallazgo:** el precio es "pegajoso" — el **76.7 %** de los residuos es exactamente 0 porque el mismo
 precio se repite varios días. Serie por serie, la MAD y el IQR valen 0, lo que hace inútiles ambos métodos
 (el Z robusto divide entre 0 y el IQR marcaría cualquier cambio de precio). Por eso la escala se estima con los
-**3562 residuos distintos de 0, juntando todas las series** (al ser porcentajes son comparables):
-mediana = 0.34 %, MAD = 6.78 %.
+**3561 residuos distintos de 0, juntando todas las series** (al ser porcentajes son comparables):
+mediana = 0.2 %, MAD = 6.8 %.
 
 - **Z-score robusto** (Iglewicz y Hoaglin, 1993): z = 0.6745·(x − mediana)/MAD; atípico si |z| > 3.5 (equivale a desviarse más de ~35.5 % de la tendencia).
 - **IQR de Tukey**: atípico fuera de [-26.7 %, 26.7 %].
@@ -86,24 +86,26 @@ se conserva en `precio_frec_original` (nada se borra).
 
 | Concepto | Valor |
 |---|---|
-| Registros diarios evaluados | 15287 |
-| Marcados por Z robusto | 68 |
-| Marcados por IQR | 144 |
-| Marcados por ambos | 68 |
-| Persistentes (cambio de nivel, no se corrigen) | 65 |
-| Aislados (ruido, corregidos) | 3 (0.02 %) |
+| Registros diarios evaluados | 15301 |
+| Marcados por Z robusto | 67 |
+| Marcados por IQR | 145 |
+| Marcados por ambos | 67 |
+| Persistentes (cambio de nivel, no se corrigen) | 62 |
+| Aislados (ruido, corregidos) | 5 (0.03 %) |
 
 Ejemplos de valores corregidos:
 
 | Fecha | Mercado | Calibre | Precio reportado | Tendencia local | Z robusto |
 |---|---|---|---|---|---|
-| 28/02/2023 | Jalisco: Mercado Felipe Ángeles de Guadalajara | #5 | 40.0 | 20.0 | 9.91 |
+| 28/02/2023 | Jalisco: Mercado Felipe Ángeles de Guadalajara | #5 | 40.0 | 20.0 | 9.9 |
 | 05/06/2023 | Sonora: Central de Abasto de Cd. Obregón | #5 | 35.68 | 22.89 | 5.52 |
 | 11/03/2025 | Jalisco: Mercado Felipe Ángeles de Guadalajara | #5 | 36.67 | 26.0 | 4.05 |
+| 17/11/2026 | Chihuahua: Mercado de Abasto de Cd. Juárez | S/C | 22.0 | 16.0 | 3.7 |
+| 18/11/2026 | Chihuahua: Mercado de Abasto de Cd. Juárez | S/C | 22.0 | 16.0 | 3.7 |
 
 ## 5. Reducción de datos
 
-- **Agregación:** de 15287 registros diarios a 3448 registros semanales (factor 4.4×). La semana es el horizonte que necesita el cliente.
+- **Agregación:** de 15301 registros diarios a 3462 registros semanales (factor 4.4×). La semana es el horizonte que necesita el cliente.
 - **Selección de variables:** se eliminan las constantes ["calidad (siempre 'Primera')", "origen (siempre 'Colima')", "seccion (siempre 'Frutas')", 'fuente'] y las técnicas ['fecha_captura', 'archivo_origen', 'producto_id', 'advertencias'] (se conservan en Plata para trazabilidad).
 - **Selección de series:** 19 series con al menos 26 semanas; descartadas por cortas: {'Aguascalientes: Central de Abasto de Aguascalientes | Limón c/semilla # 5': 1, 'Sinaloa: Zona de Abasto de Mazatlán | Limón c/semilla # 5': 22}.
 
@@ -120,8 +122,8 @@ Ejemplos de valores corregidos:
 
 | Concepto | Valor |
 |---|---|
-| Filas integradas | 3448 |
-| Semanas sin clima | 0 |
+| Filas integradas | 3462 |
+| Semanas sin clima | 14 |
 | Semanas sin tipo de cambio | 0 |
 
 Las semanas sin clima corresponden a la semana más reciente: Open-Meteo publica el reanálisis con ~5 días de retraso,
@@ -145,11 +147,11 @@ Para cada variable continua se agregan dos columnas: `_minmax` = (x − min)/(ma
 
 | Variable | Mín | Máx | Media | Desv. estándar |
 |---|---|---|---|---|
-| precio | 9.33 | 74.664 | 25.3354 | 8.2922 |
+| precio | 9.33 | 74.664 | 25.3077 | 8.2874 |
 | lluvia_30d_mm | 0.0 | 438.6 | 76.4838 | 100.8296 |
 | lluvia_semana_mm | 0.0 | 269.8 | 18.1341 | 33.8149 |
-| temp_media | 21.4 | 30.4714 | 26.2991 | 1.7625 |
-| tipo_cambio | 16.5262 | 20.6838 | 18.2341 | 1.122 |
+| temp_media | 21.4 | 30.4714 | 26.2999 | 1.7624 |
+| tipo_cambio | 16.5262 | 20.6838 | 18.2382 | 1.1214 |
 
 Los parámetros se guardan en `data/gold/parametros_normalizacion.json`. **Nota para el modelado (E1/E3):** al entrenar un modelo,
 los parámetros deben recalcularse solo con el periodo de entrenamiento para no filtrar información del futuro.

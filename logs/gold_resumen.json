@@ -1,40 +1,40 @@
 {
-  "fecha": "23/11/2026 02:16",
+  "fecha": "24/11/2026 09:56",
   "conflictos": {
-    "registros_plata": 19238,
-    "llaves_unicas": 15287,
-    "llaves_con_varias_presentaciones": 3010,
+    "registros_plata": 19255,
+    "llaves_unicas": 15301,
+    "llaves_con_varias_presentaciones": 3012,
     "presentaciones": {
-      "Caja de 20 kg.": 6639,
-      "Caja de 15 kg.": 3514,
-      "Kilogramo": 3288,
-      "Arpilla de 15 kg.": 2513,
-      "Caja de 19 kg.": 2340,
-      "Caja de 13 kg.": 505,
+      "Caja de 20 kg.": 6645,
+      "Caja de 15 kg.": 3516,
+      "Kilogramo": 3291,
+      "Arpilla de 15 kg.": 2516,
+      "Caja de 19 kg.": 2342,
+      "Caja de 13 kg.": 506,
       "Arpilla de 13 kg.": 436,
       "Caja de 25 kg.": 3
     },
     "observaciones_texto_distintos": 17,
     "observaciones_categorias": {
-      "Sin observación": 19215,
+      "Sin observación": 19232,
       "Baja": 10,
       "Alza": 8,
       "Otra": 5
     }
   },
   "faltantes": {
-    "dias_habiles_calendario": 977,
-    "celdas_panel": 16690,
+    "dias_habiles_calendario": 978,
+    "celdas_panel": 16704,
     "faltantes": 1403,
-    "pct_faltante": 8.41,
+    "pct_faltante": 8.4,
     "pct_por_temporada": {
       "Alta oferta (may-sep)": 8.75,
       "Baja oferta (ene-abr)": 8.03,
-      "Transición (oct-dic)": 8.27
+      "Transición (oct-dic)": 8.24
     },
     "pct_por_dia_semana": {
       "Jueves": 10.67,
-      "Lunes": 11.36,
+      "Lunes": 11.31,
       "Martes": 4.83,
       "Miércoles": 10.48,
       "Viernes": 4.9
@@ -42,26 +42,26 @@
     "series_mas_incompletas": {
       "Colima: Centros de distribución de Colima | Limón c/semilla # 5": 58.9,
       "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 5": 58.2,
-      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3": 43.3,
+      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3": 43.2,
       "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 4": 4.3,
       "Sinaloa: Zona de Abasto de Mazatlán | Limón c/semilla # 5": 3.9,
       "Durango: Centro de Distribución y Abasto de Gómez Palacio | Limón c/semilla # 5": 3.7
     },
     "pruebas": {
       "temporada": {
-        "chi2": 2.25,
+        "chi2": 2.3,
         "gl": 2,
-        "p_valor": 0.32497265921749885
+        "p_valor": 0.31737849855548556
       },
       "dia_semana": {
-        "chi2": 187.29,
+        "chi2": 186.38,
         "gl": 4,
-        "p_valor": 2.0222859777849113e-39
+        "p_valor": 3.16980772204089e-39
       },
       "precio_previo": {
         "mediana_antes_de_hueco": 20.53,
         "mediana_sin_hueco": 24.0,
-        "p_valor": 1.6568774824545145e-06
+        "p_valor": 1.4641336912662227e-06
       }
     },
     "faltantes_otras_fuentes": {
@@ -70,22 +70,22 @@
     }
   },
   "atipicos": {
-    "registros": 15287,
+    "registros": 15301,
     "pct_residuo_cero": 76.7,
-    "residuos_distintos_de_cero": 3562,
-    "mediana_pct": 0.34,
-    "mad_pct": 6.78,
+    "residuos_distintos_de_cero": 3561,
+    "mediana_pct": 0.2,
+    "mad_pct": 6.8,
     "limites_iqr_pct": [
       -26.7,
       26.7
     ],
     "umbral_z_pct": 35.5,
-    "marcados_z_robusto": 68,
-    "marcados_iqr": 144,
-    "marcados_ambos": 68,
-    "persistentes_no_corregidos": 65,
-    "marcados_ambos_corregidos": 3,
-    "pct_corregidos": 0.02,
+    "marcados_z_robusto": 67,
+    "marcados_iqr": 145,
+    "marcados_ambos": 67,
+    "persistentes_no_corregidos": 62,
+    "marcados_ambos_corregidos": 5,
+    "pct_corregidos": 0.03,
     "ejemplos": [
       {
         "fecha": "28/02/2023",
@@ -93,7 +93,7 @@
         "calibre": "#5",
         "precio_frec": 40.0,
         "tendencia_local": 20.0,
-        "z_robusto": 9.91
+        "z_robusto": 9.9
       },
       {
         "fecha": "05/06/2023",
@@ -110,12 +110,28 @@
         "precio_frec": 36.67,
         "tendencia_local": 26.0,
         "z_robusto": 4.05
+      },
+      {
+        "fecha": "17/11/2026",
+        "destino": "Chihuahua: Mercado de Abasto de Cd. Juárez",
+        "calibre": "S/C",
+        "precio_frec": 22.0,
+        "tendencia_local": 16.0,
+        "z_robusto": 3.7
+      },
+      {
+        "fecha": "18/11/2026",
+        "destino": "Chihuahua: Mercado de Abasto de Cd. Juárez",
+        "calibre": "S/C",
+        "precio_frec": 22.0,
+        "tendencia_local": 16.0,
+        "z_robusto": 3.7
       }
     ]
   },
   "reduccion": {
-    "registros_diarios": 15287,
-    "registros_semanales": 3448,
+    "registros_diarios": 15301,
+    "registros_semanales": 3462,
     "factor_reduccion": 4.4,
     "series_validas": 19,
     "series_descartadas": {
@@ -139,11 +155,11 @@
     "semanas_vacias_antes": 152,
     "imputadas_interpolacion": 11,
     "vacias_despues": 141,
-    "tipo_cambio_dias_locf": 443
+    "tipo_cambio_dias_locf": 445
   },
   "integracion": {
-    "filas": 3448,
-    "semanas_sin_clima": 0,
+    "filas": 3462,
+    "semanas_sin_clima": 14,
     "semanas_sin_tipo_cambio": 0,
     "con_variables_geo": true
   },
@@ -166,15 +182,15 @@
     "temporadas": {
       "Alta oferta (may-sep)": 1518,
       "Baja oferta (ene-abr)": 1154,
-      "Transición (oct-dic)": 776
+      "Transición (oct-dic)": 790
     }
   },
   "normalizacion": {
     "precio": {
       "min": 9.33,
       "max": 74.664,
-      "media": 25.3354,
-      "desv_std": 8.2922
+      "media": 25.3077,
+      "desv_std": 8.2874
     },
     "lluvia_30d_mm": {
       "min": 0.0,
@@ -191,14 +207,14 @@
     "temp_media": {
       "min": 21.4,
       "max": 30.4714,
-      "media": 26.2991,
-      "desv_std": 1.7625
+      "media": 26.2999,
+      "desv_std": 1.7624
     },
     "tipo_cambio": {
       "min": 16.5262,
       "max": 20.6838,
-      "media": 18.2341,
-      "desv_std": 1.122
+      "media": 18.2382,
+      "desv_std": 1.1214
     }
   }
 }

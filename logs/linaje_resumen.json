@@ -1,9 +1,9 @@
 {
-  "fecha": "2026-11-23T02:16:54",
-  "filas_oro": 3448,
+  "fecha": "2026-11-24T09:56:54",
+  "filas_oro": 3462,
   "columnas": {
     "archivos_bronce": {
-      "valores_con_dato": 3296,
+      "valores_con_dato": 3310,
       "sin_linaje": 0,
       "archivos_no_encontrados": 0,
       "ejemplos_no_encontrados": [],
@@ -17,21 +17,21 @@
       "pct_trazable": 100.0
     },
     "archivo_bronce_banxico": {
-      "valores_con_dato": 3448,
+      "valores_con_dato": 3462,
       "sin_linaje": 0,
       "archivos_no_encontrados": 0,
       "ejemplos_no_encontrados": [],
       "pct_trazable": 100.0
     },
     "archivo_bronce_geo": {
-      "valores_con_dato": 3448,
+      "valores_con_dato": 3462,
       "sin_linaje": 0,
       "archivos_no_encontrados": 0,
       "ejemplos_no_encontrados": [],
       "pct_trazable": 100.0
     },
     "archivo_bronce_comercios": {
-      "valores_con_dato": 3448,
+      "valores_con_dato": 3462,
       "sin_linaje": 0,
       "archivos_no_encontrados": 0,
       "ejemplos_no_encontrados": [],
@@ -39,7 +39,7 @@
     }
   },
   "origen_del_precio": {
-    "observado": 3296,
+    "observado": 3310,
     "sin_dato": 141,
     "imputado": 11
   },
