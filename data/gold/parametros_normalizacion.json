@@ -2,14 +2,14 @@
   "precio": {
     "min": 9.33,
     "max": 74.664,
-    "media": 25.3072,
-    "desv_std": 8.2858
+    "media": 25.3077,
+    "desv_std": 8.2855
   },
   "lluvia_30d_mm": {
     "min": 0.0,
     "max": 438.6,
-    "media": 76.4838,
-    "desv_std": 100.8296
+    "media": 76.4803,
+    "desv_std": 100.8314
   },
   "lluvia_semana_mm": {
     "min": 0.0,
@@ -26,7 +26,7 @@
   "tipo_cambio": {
     "min": 16.5262,
     "max": 20.6838,
-    "media": 18.2389,
-    "desv_std": 1.1218
+    "media": 18.2395,
+    "desv_std": 1.1224
   }
 }
