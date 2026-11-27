@@ -54,6 +54,13 @@ Detalle en [`docs/catalogo_fuentes.md`](docs/catalogo_fuentes.md).
 
 **Atribución:** datos meteorológicos de [Open-Meteo.com](https://open-meteo.com/) (CC BY 4.0); precios del SNIIM, Secretaría de Economía; tipo de cambio de Banco de México (SIE); datos geográficos: Fuente INEGI, Catálogo Único de Claves Geoestadísticas y DENUE; mapa base © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). Declaración completa: [`docs/etica-datos.md`](docs/etica-datos.md).
 
+## Dataset publicado
+
+El dataset curado está en [`dataset/`](dataset/) bajo licencia **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es)**
+(versión congelada 1.0.0, semanas de 2023-01-02 a 2026-11-22). Incluye el esquema estándar
+[`datapackage.json`](dataset/datapackage.json) y su ficha técnica [`docs/E3/datasheet.md`](docs/E3/datasheet.md).
+Descarga en un solo archivo: GitHub Release `dataset-v1.0.0`.
+
 ## Estructura del repositorio
 
 ```
@@ -63,10 +70,13 @@ Proyecto_Limones/
 │   ├── bronze/        # crudo
 │   ├── silver/        # limpio
 │   ├── gold/          # analítico
+│   ├── cache/         # renglones ya interpretados del SNIIM (acelera Plata)
 │   └── quarantine/    # rechazados
+├── dataset/           # dataset curado publicado (CC BY 4.0) con datapackage.json
 ├── src/
 │   ├── ingest/        # scrapers y clientes de API
-│   ├── quality/       # puertas de calidad
+│   ├── quality/       # puertas de calidad, linaje y medición de rendimiento
+│   ├── publicacion/   # empaquetado del dataset para terceros
 │   └── transform/     # bronce → plata → oro
 ├── notebooks/         # análisis estadístico
 ├── dashboard/         # observatorio en línea
@@ -81,8 +91,8 @@ Proyecto_Limones/
 |---|---|---|---|
 | `e0` | Propuesta, máquina de captura (Bronce) y sistema de calidad inicial — [`docs/E0/`](docs/E0/) | 10 % | Entregada (entrevista de campo pendiente) |
 | `e1` | Limpieza estadística, puerta de calidad Pandera y capa Oro — [`docs/E1/`](docs/E1/) | 40 % | Entregada |
-| `e2` | Fuente geoespacial (INEGI + GeoPandas), ética y linaje — [`docs/E2/`](docs/E2/) | 20 % | En curso |
-| `e3` | Comparación de grupos multivariados | 15 % | Pendiente |
+| `e2` | Fuente geoespacial (INEGI + GeoPandas), ética y linaje — [`docs/E2/`](docs/E2/) | 20 % | Entregada |
+| `e3` | Optimización medida del pipeline y publicación del dataset con ficha técnica — [`docs/E3/`](docs/E3/) | 15 % | En curso |
 | `e4` | Por definir según rúbrica | 15 % | Pendiente |
 
 Detalle en [`docs/plan_entregas.md`](docs/plan_entregas.md).
@@ -94,6 +104,8 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 copy .env.example .env   # y pega tu token de Banxico
-python -m pytest         # 25 pruebas automáticas
-python -m src.pipeline   # captura incremental + capa Plata
+python -m pytest         # pruebas automáticas
+python -m src.pipeline   # captura incremental + Plata + Oro + linaje
+python -m src.quality.benchmark      # comparativa de rendimiento antes (e2) vs. después
+python -m src.publicacion.dataset    # genera dataset/ y el .zip para el Release
 ```

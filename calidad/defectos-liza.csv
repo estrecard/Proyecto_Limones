@@ -20,3 +20,6 @@ D18,2026-11-13,80 Función,Codificación,Pruebas,2,,La expresión regular de obs
 D19,2026-11-21,60 Verificación,Diseño,Revisión,10,,El primer diseño usaba Nominatim sin revisar su robots.txt (prohíbe /search); se cambió a Overpass y se agregó la revisión automática de robots.txt
 D20,2026-11-21,50 Interfaz,Codificación,Pruebas,5,,Las nuevas columnas de linaje rompieron 4 pruebas de la capa Oro (datos de ejemplo sin archivo_origen ni fecha_captura)
 D21,2026-11-21,60 Verificación,Diseño,Pruebas,10,D19,El diseño usaba Overpass sin revisar su robots.txt a mano (prohíbe /api/); el candado automático lo detectó en la primera ejecución y se cambió la fuente a INEGI
+D22,2026-11-24,100 Entorno,Entorno,Revisión,5,,El comando de PowerShell que cambió las versiones de Actions leyó pipeline.yml sin -Encoding utf8 y dañó los acentos; se restauró desde git
+D23,2026-11-24,40 Asignación,Diseño,Pruebas,10,,La caché en CSV no distinguía vacío de nulo y cambiaba algunos id_registro; se cambió a JSON y una prueba compara con y sin caché
+D24,2026-11-24,60 Verificación,Pruebas,Pruebas,5,,La medición de memoria de Oro contaba la importación inicial de librerías (48 MB); se mide en una corrida aparte ya caliente

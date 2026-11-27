@@ -52,11 +52,30 @@ CALIBRE = {
 
 
 def unir_unicos(serie) -> str:
-    """Une valores de linaje sin repetir: 'a.html;b.html'."""
+    """Une valores de linaje sin repetir: 'a.html;b.html'. (Para pocos grupos, p. ej. semanas de clima.)"""
     vals = set()
     for v in serie.dropna():
         vals.update(x for x in str(v).split(";") if x)
     return ";".join(sorted(vals))
+
+
+def unir_unicos_por_grupo(df: pd.DataFrame, llaves: list, columna: str) -> pd.Series:
+    """Mismo resultado que groupby(llaves)[columna].agg(unir_unicos), pero VECTORIZADO (optimización E3):
+    en lugar de crear una Serie de pandas por cada uno de los ~15 mil grupos, se separa, se quitan
+    repetidos, se ordena y se concatena todo de una vez."""
+    v = df[llaves + [columna]].dropna(subset=[columna])
+    v = v.assign(**{columna: v[columna].astype(str)})
+    if v[columna].str.contains(";", regex=False).any():  # solo se separa si hay listas 'a;b' (ahorra memoria)
+        v = v.assign(**{columna: v[columna].str.split(";")}).explode(columna)
+    v = v[v[columna].notna() & (v[columna] != "")].drop_duplicates().sort_values(llaves + [columna])
+    return (";" + v[columna]).groupby([v[k] for k in llaves]).sum().str[1:].rename(columna)
+
+
+def moda_por_grupo(df: pd.DataFrame, llaves: list, columna: str) -> pd.Series:
+    """Mismo resultado que agg(lambda x: x.mode().iat[0]) (el más frecuente; en empate, el menor), vectorizado."""
+    n = df.groupby(llaves + [columna]).size().rename("_n").reset_index()
+    n = n.sort_values(llaves + ["_n", columna], ascending=[True] * len(llaves) + [False, True])
+    return n.drop_duplicates(llaves).set_index(llaves)[columna]
 
 
 def temporada(mes: int) -> str:
@@ -98,17 +117,17 @@ def consolidar_sniim(s: pd.DataFrame, rep: dict) -> pd.DataFrame:
         "observaciones_texto_distintos": int(s["observaciones"].nunique()),
         "observaciones_categorias": s["tendencia_obs"].value_counts().to_dict(),
     }
-    d = (s.groupby(llave)
-         .agg(precio_frec=("precio_frec", "median"), precio_min=("precio_min", "min"),
-              precio_max=("precio_max", "max"), n_presentaciones=("presentacion", "nunique"),
-              tendencia_obs=("tendencia_obs", lambda x: x.mode().iat[0]),
-              estado=("estado_destino", "first"),
-              # Linaje: registros de Plata y archivos de Bronce de los que sale este valor
-              n_registros_plata=("precio_frec", "size"),
-              ids_plata=("id_registro", unir_unicos) if "id_registro" in s else ("archivo_origen", unir_unicos),
-              archivos_bronce=("archivo_origen", unir_unicos),
-              fecha_captura=("fecha_captura", "max"))
-         .reset_index())
+    d = s.groupby(llave).agg(precio_frec=("precio_frec", "median"), precio_min=("precio_min", "min"),
+                             precio_max=("precio_max", "max"), n_presentaciones=("presentacion", "nunique"))
+    d["tendencia_obs"] = moda_por_grupo(s, llave, "tendencia_obs")
+    d["estado"] = s.groupby(llave)["estado_destino"].first()
+    # Linaje: registros de Plata y archivos de Bronce de los que sale este valor
+    d["n_registros_plata"] = s.groupby(llave)["precio_frec"].size()
+    d["ids_plata"] = unir_unicos_por_grupo(s, llave, "id_registro" if "id_registro" in s else "archivo_origen")
+    d["archivos_bronce"] = unir_unicos_por_grupo(s, llave, "archivo_origen")
+    d["fecha_captura"] = s.groupby(llave)["fecha_captura"].max()
+    d[["ids_plata", "archivos_bronce"]] = d[["ids_plata", "archivos_bronce"]].fillna("")
+    d = d.reset_index()
     d["calibre"] = d["producto"].map(CALIBRE)
     return d
 
@@ -181,7 +200,8 @@ def tratar_atipicos(d: pd.DataFrame, rep: dict) -> pd.DataFrame:
     de todas las series juntas (al ser porcentajes son comparables entre mercados y calibres)."""
     d = d.sort_values(["destino", "producto", "fecha"]).copy()
     grupo = d.groupby(["destino", "producto"])["precio_frec"]
-    d["tendencia_local"] = grupo.transform(lambda x: x.rolling(VENTANA_RUIDO, center=True, min_periods=5).median())
+    d["tendencia_local"] = (grupo.rolling(VENTANA_RUIDO, center=True, min_periods=5).median()
+                            .reset_index(level=[0, 1], drop=True))  # vectorizado (E3): sin lambda por serie
     d["residuo_pct"] = (d["precio_frec"] - d["tendencia_local"]) / d["tendencia_local"]
 
     se_mueve = d["residuo_pct"].abs() > 1e-9
@@ -234,12 +254,14 @@ def semanal_sniim(d: pd.DataFrame, rep: dict) -> pd.DataFrame:
     La semana es el horizonte que pidió el cliente (pronóstico a 2-4 semanas)."""
     d = d.copy()
     d["semana"] = d["fecha"].dt.to_period("W-SUN").dt.start_time
-    w = (d.groupby(["destino", "producto", "semana"])
-         .agg(precio=("precio_frec_limpio", "mean"), precio_min=("precio_min", "min"),
-              precio_max=("precio_max", "max"), dias_reportados=("fecha", "nunique"),
-              atipicos_corregidos=("atipico", "sum"), estado=("estado", "first"), calibre=("calibre", "first"),
-              archivos_bronce=("archivos_bronce", unir_unicos), fecha_captura=("fecha_captura", "max"))
-         .reset_index())
+    llave_w = ["destino", "producto", "semana"]
+    w = d.groupby(llave_w).agg(precio=("precio_frec_limpio", "mean"), precio_min=("precio_min", "min"),
+                               precio_max=("precio_max", "max"), dias_reportados=("fecha", "nunique"),
+                               atipicos_corregidos=("atipico", "sum"), estado=("estado", "first"),
+                               calibre=("calibre", "first"), fecha_captura=("fecha_captura", "max"))
+    w.insert(len(w.columns) - 1, "archivos_bronce", unir_unicos_por_grupo(d, llave_w, "archivos_bronce"))
+    w["archivos_bronce"] = w["archivos_bronce"].fillna("")
+    w = w.reset_index()
 
     # Panel semanal completo dentro del periodo activo de cada serie → aquí aparecen los huecos
     partes = []
@@ -248,8 +270,9 @@ def semanal_sniim(d: pd.DataFrame, rep: dict) -> pd.DataFrame:
         partes.append(g.set_index("semana").reindex(semanas).rename_axis("semana").reset_index()
                       .assign(destino=dest, producto=prod))
     w = pd.concat(partes, ignore_index=True)
-    w["estado"] = w.groupby(["destino", "producto"])["estado"].transform(lambda x: x.ffill().bfill())
-    w["calibre"] = w.groupby(["destino", "producto"])["calibre"].transform(lambda x: x.ffill().bfill())
+    for c in ["estado", "calibre"]:  # vectorizado (E3): ffill y bfill por serie sin lambda
+        w[c] = w.groupby(["destino", "producto"])[c].ffill()
+        w[c] = w.groupby(["destino", "producto"])[c].bfill()
     faltan_antes = int(w["precio"].isna().sum())
 
     # Imputación: interpolación lineal SOLO en huecos interiores de hasta 2 semanas
@@ -572,14 +595,24 @@ los parámetros deben recalcularse solo con el periodo de entrenamiento para no 
 
 
 # ----------------------------------------------------------------------------- principal
+COLUMNAS_PLATA = {
+    "sniim": ["producto", "presentacion", "destino", "precio_min", "precio_max", "precio_frec", "observaciones",
+              "fecha_captura", "archivo_origen", "fecha", "estado_destino", "id_registro"],
+    "open_meteo": ["precipitacion_mm", "temp_max", "temp_min", "temp_media", "fecha_captura", "archivo_origen", "fecha"],
+    "banxico": ["fecha_captura", "archivo_origen", "fecha", "tipo_cambio"],
+}
+
+
 def main():
     plata = ruta("silver")
-    s = pd.read_csv(plata / "sniim.csv", parse_dates=["fecha"])
-    o = pd.read_csv(plata / "open_meteo.csv", parse_dates=["fecha"])
-    b = pd.read_csv(plata / "banxico.csv", parse_dates=["fecha"])
+    # Memoria (E3): solo se leen las columnas que usa Oro; las constantes y técnicas de Plata se quedan allá
+    s = pd.read_csv(plata / "sniim.csv", parse_dates=["fecha"], usecols=COLUMNAS_PLATA["sniim"])
+    o = pd.read_csv(plata / "open_meteo.csv", parse_dates=["fecha"], usecols=COLUMNAS_PLATA["open_meteo"])
+    b = pd.read_csv(plata / "banxico.csv", parse_dates=["fecha"], usecols=COLUMNAS_PLATA["banxico"])
     rep = {"fecha": datetime.now().strftime("%d/%m/%Y %H:%M")}
 
     d = consolidar_sniim(s, rep)
+    del s  # memoria (E3): la tabla de Plata ya no se necesita después de consolidar
     diagnosticar_faltantes(d, rep)
     d = tratar_atipicos(d, rep)
     w = semanal_sniim(d, rep)

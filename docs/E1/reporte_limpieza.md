@@ -1,6 +1,6 @@
 # Reporte de limpieza y preprocesamiento — E1
 
-*Generado automáticamente por `src/transform/gold.py` el 26/11/2026 08:22.*
+*Generado automáticamente por `src/transform/gold.py` el 26/11/2026 19:26.*
 
 ## 1. Resolución de conflictos de esquema (SNIIM)
 

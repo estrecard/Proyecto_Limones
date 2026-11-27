@@ -2,6 +2,14 @@
 y escribe los datos aceptados en data/silver/ y los rechazados en data/quarantine/.
 Genera además el reporte de métricas de calidad en logs/calidad_AAAAMMDD.json.
 
+Optimizaciones E3 (medidas en docs/E3/optimizacion.md):
+  - CACHÉ DE LECTURA DEL SNIIM: Bronce es inmutable, así que cada HTML se interpreta una sola vez
+    y sus renglones se guardan en data/cache/sniim_renglones.json. En cada ejecución solo se leen
+    los archivos nuevos (antes se volvían a interpretar los ~700 HTML con BeautifulSoup).
+  - TOLERANCIA A ARCHIVOS DAÑADOS: si un archivo de Bronce no se puede leer, se registra en
+    data/quarantine/bronce_ilegible.csv y se continúa con los demás (antes tumbaba toda la capa Plata
+    y, con ella, la capa Oro).
+
 Uso:
     python -m src.transform.silver
 """
@@ -19,12 +27,34 @@ logger = obtener_logger("silver")
 
 
 # ----------------------------------------------------------------------------- lectura de Bronce
+VERSION_LECTOR_SNIIM = 1          # súbelo si cambia leer_tabla(): la caché se reconstruye sola
+ILEGIBLES = []                    # archivos de Bronce que no se pudieron leer en esta ejecución
+_AVISOS = set()                   # para no repetir el mismo aviso en cada fuente
+
+
+def avisar_una_vez(clave: str, mensaje: str):
+    if clave not in _AVISOS:
+        _AVISOS.add(clave)
+        logger.warning(mensaje)
+
+
+def ilegible(fuente: str, archivo: str, error: Exception):
+    """Un archivo de Bronce dañado no detiene el pipeline: se anota y se sigue con los demás."""
+    ILEGIBLES.append({"fuente": fuente, "archivo": archivo, "error": f"{type(error).__name__}: {error}"[:300],
+                      "fecha_rechazo": datetime.now().isoformat(timespec="seconds")})
+    logger.error(f"{fuente}: archivo de Bronce ilegible, se omite y se registra en cuarentena -> {archivo}")
+
+
 def archivos_bronce(fuente: str):
     """Devuelve pares (archivo_crudo, metadatos) de una fuente."""
     carpeta = ruta("bronze") / fuente
     for meta_path in sorted(carpeta.glob("*.meta.json")):
-        meta = json.loads(meta_path.read_text(encoding="utf-8"))
-        crudo = carpeta / meta["archivo"]
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            crudo = carpeta / meta["archivo"]
+        except (ValueError, KeyError, UnicodeDecodeError) as e:
+            ilegible(fuente, meta_path.name, e)
+            continue
         if crudo.exists():
             yield crudo, meta
 
@@ -37,7 +67,11 @@ def numero(serie: pd.Series) -> pd.Series:
 def leer_banxico() -> pd.DataFrame:
     filas = []
     for crudo, meta in archivos_bronce("banxico"):
-        datos = json.loads(crudo.read_text(encoding="utf-8"))["bmx"]["series"][0].get("datos", [])
+        try:
+            datos = json.loads(crudo.read_text(encoding="utf-8"))["bmx"]["series"][0].get("datos", [])
+        except (ValueError, KeyError, IndexError, TypeError, UnicodeDecodeError) as e:
+            ilegible("banxico", crudo.name, e)
+            continue
         for d in datos:
             filas.append({"fecha_texto": d.get("fecha"), "tipo_cambio_texto": d.get("dato"),
                           "fuente": "banxico", "fecha_captura": meta["fecha_captura"], "archivo_origen": crudo.name})
@@ -52,7 +86,11 @@ def leer_banxico() -> pd.DataFrame:
 def leer_open_meteo() -> pd.DataFrame:
     partes = []
     for crudo, meta in archivos_bronce("open_meteo"):
-        d = json.loads(crudo.read_text(encoding="utf-8"))["daily"]
+        try:
+            d = json.loads(crudo.read_text(encoding="utf-8"))["daily"]
+        except (ValueError, KeyError, TypeError, UnicodeDecodeError) as e:
+            ilegible("open_meteo", crudo.name, e)
+            continue
         p = pd.DataFrame({
             "fecha_texto": d.get("time"),
             "precipitacion_mm": d.get("precipitation_sum"),
@@ -71,13 +109,55 @@ def leer_open_meteo() -> pd.DataFrame:
     return df
 
 
-def leer_sniim() -> pd.DataFrame:
-    filas = []
+def ruta_cache_sniim() -> Path:
+    carpeta = RAIZ / "data" / "cache"
+    carpeta.mkdir(parents=True, exist_ok=True)
+    return carpeta / "sniim_renglones.json"
+
+
+def cargar_cache_sniim() -> dict:
+    """{archivo_de_bronce: [renglones tal como los devuelve leer_tabla]}. JSON conserva vacío ("") y nulo (null)."""
+    p = ruta_cache_sniim()
+    if not p.exists():
+        return {}
+    try:
+        cache = json.loads(p.read_text(encoding="utf-8"))
+    except ValueError:
+        logger.warning("Caché del SNIIM dañada: se reconstruye desde Bronce")
+        return {}
+    if cache.get("version_lector") != VERSION_LECTOR_SNIIM:
+        logger.info("Caché del SNIIM de otra versión del lector: se reconstruye")
+        return {}
+    return cache["archivos"]
+
+
+def leer_sniim(usar_cache: bool = True) -> pd.DataFrame:
+    """Lee los HTML del SNIIM. Con caché, solo interpreta los archivos que no se habían leído antes."""
+    cache = cargar_cache_sniim() if usar_cache else {}
+    n_nuevos, presentes = 0, []
     for crudo, meta in archivos_bronce("sniim"):
-        for r in leer_tabla(crudo.read_text(encoding="utf-8"))["renglones"]:
-            filas.append({**r, "producto_id": meta.get("producto_id"),
-                          "fuente": "sniim", "fecha_captura": meta["fecha_captura"], "archivo_origen": crudo.name})
+        if crudo.name not in cache:
+            try:
+                cache[crudo.name] = leer_tabla(crudo.read_text(encoding="utf-8"))["renglones"]
+                n_nuevos += 1
+            except Exception as e:  # HTML dañado o con otra estructura
+                ilegible("sniim", crudo.name, e)
+                continue
+        presentes.append((crudo.name, meta))
+    if usar_cache and n_nuevos:
+        ruta_cache_sniim().write_text(json.dumps({"version_lector": VERSION_LECTOR_SNIIM, "archivos": cache},
+                                                 ensure_ascii=False), encoding="utf-8")
+    logger.info(f"SNIIM: {len(presentes)} archivos de Bronce ({len(presentes) - n_nuevos} desde caché, "
+                f"{n_nuevos} interpretados)")
+    # Memoria (E3): cada archivo se saca de la caché conforme se convierte, para no tener todo duplicado
+    filas = []
+    for nombre, meta in presentes:
+        extra = {"producto_id": meta.get("producto_id"), "fuente": "sniim",
+                 "fecha_captura": meta["fecha_captura"], "archivo_origen": nombre}
+        filas.extend({**r, **extra} for r in cache.pop(nombre))
+    del cache
     df = pd.DataFrame(filas)
+    del filas
     if df.empty:
         return df
     df = df.rename(columns={"fecha": "fecha_texto"})
@@ -145,7 +225,7 @@ def procesar(fuente: str) -> dict:
     try:
         aceptados.to_parquet(ruta("silver") / f"{fuente}.parquet", index=False)
     except ImportError:
-        logger.warning("pyarrow no está instalado: se omite el .parquet (instálalo con pip install pyarrow)")
+        avisar_una_vez("pyarrow", "pyarrow no está instalado: se omiten los .parquet (los .csv sí se escriben)")
     aceptados.to_csv(ruta("silver") / f"{fuente}.csv", index=False, encoding="utf-8-sig")
     cuarentena.to_csv(ruta("quarantine") / f"{fuente}_cuarentena.csv", index=False, encoding="utf-8-sig")
 
@@ -164,9 +244,15 @@ def procesar(fuente: str) -> dict:
 
 
 def main():
+    ILEGIBLES.clear()
+    _AVISOS.clear()   # cada ejecución avisa una vez de cada cosa
     reporte = {"fecha_ejecucion": datetime.now().isoformat(timespec="seconds"), "fuentes": {}}
     for fuente in ["sniim", "open_meteo", "banxico"]:
         reporte["fuentes"][fuente] = procesar(fuente)
+    # Archivos de Bronce dañados: se reportan, no detienen la ejecución
+    pd.DataFrame(ILEGIBLES, columns=["fuente", "archivo", "error", "fecha_rechazo"]).to_csv(
+        ruta("quarantine") / "bronce_ilegible.csv", index=False, encoding="utf-8-sig")
+    reporte["bronce_ilegible"] = len(ILEGIBLES)
     salida = ruta("logs") / f"calidad_{date.today():%Y%m%d}.json"
     salida.write_text(json.dumps(reporte, ensure_ascii=False, indent=2, default=str), encoding="utf-8")
     logger.info(f"Reporte de calidad: {salida.relative_to(RAIZ)}")

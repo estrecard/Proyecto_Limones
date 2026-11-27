@@ -1,5 +1,5 @@
 {
-  "fecha_ejecucion": "2026-11-26T08:21:54",
+  "fecha_ejecucion": "2026-11-26T19:25:44",
   "fuentes": {
     "sniim": {
       "registros_bronce": 25599,
@@ -116,5 +116,6 @@
       ],
       "cq10_actualidad_ok": true
     }
-  }
+  },
+  "bronce_ilegible": 0
 }

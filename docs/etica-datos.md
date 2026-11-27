@@ -111,6 +111,12 @@ El fondo del mapa (calles) son mosaicos de OpenStreetMap que **carga el navegado
 - El observatorio **no publica** precios individuales de comerciantes identificables; el SNIIM ya publica promedios por mercado.
 - Toda conclusión se acompaña de su incertidumbre y de las limitaciones de esta sección.
 
+### Publicación del dataset curado (E3)
+
+- El dataset de [`dataset/`](../dataset/) se publica bajo **CC BY 4.0**. Es compatible con las fuentes porque todas permiten redistribuir citando: SNIIM (información pública), Open-Meteo (CC BY 4.0), Banxico (citando la fuente) e INEGI (Términos de Libre Uso). La atribución de cada una se repite en `dataset/LICENSE.md`.
+- No contiene datos personales: los comercios del DENUE solo aparecen como conteos. El generador **se detiene** si una columna tiene nombre de dato personal.
+- La ficha técnica ([`docs/E3/datasheet.md`](E3/datasheet.md)) declara los **usos no recomendados** para evitar interpretaciones dañinas (por ejemplo, tomarlo como precio al productor).
+
 ## 5. Referencias
 
 - INEGI — API del DENUE: https://www.inegi.org.mx/servicios/api_denue.html

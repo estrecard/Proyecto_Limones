@@ -80,6 +80,7 @@ def main(argv=None):
         reporte = silver.main()
         bitacora["plata"] = {f: {k: m.get(k) for k in ("registros_plata", "registros_cuarentena", "tasa_aceptacion_pct")}
                              for f, m in reporte["fuentes"].items()}
+        bitacora["bronce_ilegible"] = reporte.get("bronce_ilegible", 0)  # archivos dañados omitidos (no detienen nada)
     except Exception as e:
         logger.error(f"Falló la capa Plata: {e}")
         bitacora["errores"].append(f"plata: {e}")

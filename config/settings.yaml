@@ -86,3 +86,8 @@ rutas:
   gold: "data/gold"
   quarantine: "data/quarantine"
   logs: "logs"
+
+publicacion:
+  # Versión congelada del dataset para terceros (E3). Para una versión nueva: sube la versión y la fecha de corte.
+  version: "1.0.0"
+  corte: "2026-11-22"        # último día incluido; solo se publican semanas completas (lunes a domingo)

@@ -23,3 +23,8 @@ fecha,inicio,fin,interrupcion_min,delta_min,fase,actividad,comentarios
 2026-11-22,00:00,00:25,0,25,Codificación,Linaje en Plata y Oro; validador y rastreador linaje.py,Estimado
 2026-11-22,00:25,00:40,0,15,Pruebas,5 pruebas nuevas de E2 y ajuste de 4 pruebas de Oro,Estimado
 2026-11-22,00:40,01:05,0,25,Documentación,Declaración de ética; ficha de entrega y relatoría de E2,Estimado
+2026-11-24,20:37,20:57,0,20,Análisis,Indicaciones de E3 y perfilado del pipeline (cProfile y tracemalloc),Estimado
+2026-11-24,20:57,21:37,0,40,Codificación,Optimizaciones O1-O5: caché del SNIIM; agregaciones vectorizadas; usecols; Bronce dañado,Estimado
+2026-11-24,21:37,22:02,0,25,Codificación,Herramienta de medición antes/después con inyección de fallas,Estimado
+2026-11-24,22:02,22:37,0,35,Documentación,Publicación del dataset (datapackage; licencia) y ficha técnica,Estimado
+2026-11-24,22:37,22:57,0,20,Pruebas,7 pruebas de E3; ficha de entrega y relatoría,Estimado

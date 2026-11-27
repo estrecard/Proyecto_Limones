@@ -1,0 +1,101 @@
+{
+  "fecha": "26/11/2026 19:26",
+  "repeticiones": 3,
+  "archivos_bronce": 893,
+  "entorno": {
+    "sistema": "Windows 10",
+    "python": "3.11.9",
+    "pandas": "2.3.3",
+    "cpus": 12
+  },
+  "antes": {
+    "tiempos_s": {
+      "plata": [
+        27.214,
+        27.809,
+        26.498
+      ],
+      "oro": [
+        15.191,
+        13.166,
+        12.253
+      ],
+      "linaje": [
+        0.314,
+        0.279,
+        0.286
+      ]
+    },
+    "memoria_pico_mb": {
+      "plata": 49.7,
+      "oro": 16.8,
+      "linaje": 4.0
+    },
+    "huellas": {
+      "data/silver/sniim.csv": "087c1a12afd16e65",
+      "data/silver/open_meteo.csv": "3cb33734ff17080a",
+      "data/silver/banxico.csv": "7f4713f4b1fd1666",
+      "data/gold/sniim_diario_limpio.csv": "763ab90835b97798",
+      "data/gold/limon_semanal.csv": "098750889f766954",
+      "data/gold/limon_semanal_nacional.csv": "05060eeb0828803b",
+      "data/gold/parametros_normalizacion.json": "b648100c7963408f"
+    },
+    "avisos_en_bitacora_por_corrida": 3.0,
+    "inyeccion_fallas": {
+      "archivos_danados_inyectados": 3,
+      "codigo_salida": 1,
+      "estado": "error",
+      "errores_de_etapa": 1,
+      "detalle_errores": [
+        "plata: Unterminated string starting at: line 1 column 21 (char 20)"
+      ],
+      "oro_actualizado": false,
+      "archivos_danados_aislados": 0
+    },
+    "referencia": "e2"
+  },
+  "despues": {
+    "tiempos_s": {
+      "plata": [
+        25.106,
+        4.995,
+        5.012
+      ],
+      "oro": [
+        6.189,
+        4.08,
+        4.039
+      ],
+      "linaje": [
+        0.27,
+        0.275,
+        0.26
+      ]
+    },
+    "memoria_pico_mb": {
+      "plata": 55.6,
+      "oro": 14.6,
+      "linaje": 4.0
+    },
+    "huellas": {
+      "data/silver/sniim.csv": "087c1a12afd16e65",
+      "data/silver/open_meteo.csv": "3cb33734ff17080a",
+      "data/silver/banxico.csv": "7f4713f4b1fd1666",
+      "data/gold/sniim_diario_limpio.csv": "763ab90835b97798",
+      "data/gold/limon_semanal.csv": "098750889f766954",
+      "data/gold/limon_semanal_nacional.csv": "05060eeb0828803b",
+      "data/gold/parametros_normalizacion.json": "b648100c7963408f"
+    },
+    "avisos_en_bitacora_por_corrida": 1.0,
+    "inyeccion_fallas": {
+      "archivos_danados_inyectados": 3,
+      "codigo_salida": 0,
+      "estado": "ok",
+      "errores_de_etapa": 0,
+      "detalle_errores": [],
+      "oro_actualizado": true,
+      "archivos_danados_aislados": 3
+    },
+    "referencia": "código actual"
+  }
+}
