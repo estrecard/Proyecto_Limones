@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-27T08:37:56",
+  "fecha": "2026-11-28T07:52:31",
   "filas_oro": 3463,
   "columnas": {
     "archivos_bronce": {
@@ -10,7 +10,7 @@
       "pct_trazable": 100.0
     },
     "archivo_bronce_clima": {
-      "valores_con_dato": 3448,
+      "valores_con_dato": 3463,
       "sin_linaje": 0,
       "archivos_no_encontrados": 0,
       "ejemplos_no_encontrados": [],

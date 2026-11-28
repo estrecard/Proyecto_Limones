@@ -1,67 +1,67 @@
 {
-  "fecha": "27/11/2026 08:37",
+  "fecha": "28/11/2026 07:52",
   "conflictos": {
-    "registros_plata": 19307,
-    "llaves_unicas": 15344,
-    "llaves_con_varias_presentaciones": 3018,
+    "registros_plata": 19325,
+    "llaves_unicas": 15359,
+    "llaves_con_varias_presentaciones": 3020,
     "presentaciones": {
-      "Caja de 20 kg.": 6663,
-      "Caja de 15 kg.": 3522,
-      "Kilogramo": 3301,
-      "Arpilla de 15 kg.": 2525,
-      "Caja de 19 kg.": 2348,
-      "Caja de 13 kg.": 509,
+      "Caja de 20 kg.": 6669,
+      "Caja de 15 kg.": 3524,
+      "Kilogramo": 3305,
+      "Arpilla de 15 kg.": 2528,
+      "Caja de 19 kg.": 2350,
+      "Caja de 13 kg.": 510,
       "Arpilla de 13 kg.": 436,
       "Caja de 25 kg.": 3
     },
     "observaciones_texto_distintos": 17,
     "observaciones_categorias": {
-      "Sin observación": 19284,
+      "Sin observación": 19302,
       "Baja": 10,
       "Alza": 8,
       "Otra": 5
     }
   },
   "faltantes": {
-    "dias_habiles_calendario": 981,
-    "celdas_panel": 16748,
-    "faltantes": 1404,
-    "pct_faltante": 8.38,
+    "dias_habiles_calendario": 982,
+    "celdas_panel": 16765,
+    "faltantes": 1406,
+    "pct_faltante": 8.39,
     "pct_por_temporada": {
       "Alta oferta (may-sep)": 8.75,
       "Baja oferta (ene-abr)": 8.03,
-      "Transición (oct-dic)": 8.17
+      "Transición (oct-dic)": 8.18
     },
     "pct_por_dia_semana": {
-      "Jueves": 10.62,
+      "Jueves": 10.65,
       "Lunes": 11.33,
       "Martes": 4.81,
-      "Miércoles": 10.44,
-      "Viernes": 4.9
+      "Miércoles": 10.47,
+      "Viernes": 4.88
     },
     "series_mas_incompletas": {
       "Colima: Centros de distribución de Colima | Limón c/semilla # 5": 58.9,
       "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 5": 58.2,
-      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3": 42.9,
+      "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 3": 42.8,
       "Sonora: Central de Abasto de Cd. Obregón | Limón c/semilla # 4": 4.3,
       "Sinaloa: Zona de Abasto de Mazatlán | Limón c/semilla # 5": 3.9,
       "Durango: Centro de Distribución y Abasto de Gómez Palacio | Limón c/semilla # 5": 3.7
     },
     "pruebas": {
       "temporada": {
-        "chi2": 2.43,
+        "chi2": 2.4,
         "gl": 2,
-        "p_valor": 0.29683302213234974
+        "p_valor": 0.30176251456393227
       },
       "dia_semana": {
-        "chi2": 186.82,
+        "chi2": 188.68,
         "gl": 4,
-        "p_valor": 2.549835214443777e-39
+        "p_valor": 1.0192506672686148e-39
       },
       "precio_previo": {
         "mediana_antes_de_hueco": 20.53,
         "mediana_sin_hueco": 24.0,
-        "p_valor": 1.0863386533796832e-06
+        "p_valor": 1.1110478000419906e-06
       }
     },
     "faltantes_otras_fuentes": {
@@ -70,22 +70,22 @@
     }
   },
   "atipicos": {
-    "registros": 15344,
-    "pct_residuo_cero": 76.8,
-    "residuos_distintos_de_cero": 3567,
+    "registros": 15359,
+    "pct_residuo_cero": 76.7,
+    "residuos_distintos_de_cero": 3572,
     "mediana_pct": 0.2,
-    "mad_pct": 6.74,
+    "mad_pct": 6.72,
     "limites_iqr_pct": [
       -26.7,
       26.7
     ],
-    "umbral_z_pct": 35.2,
-    "marcados_z_robusto": 65,
-    "marcados_iqr": 146,
-    "marcados_ambos": 65,
-    "persistentes_no_corregidos": 62,
-    "marcados_ambos_corregidos": 3,
-    "pct_corregidos": 0.02,
+    "umbral_z_pct": 35.1,
+    "marcados_z_robusto": 64,
+    "marcados_iqr": 145,
+    "marcados_ambos": 64,
+    "persistentes_no_corregidos": 59,
+    "marcados_ambos_corregidos": 5,
+    "pct_corregidos": 0.03,
     "ejemplos": [
       {
         "fecha": "28/02/2023",
@@ -93,7 +93,7 @@
         "calibre": "#5",
         "precio_frec": 40.0,
         "tendencia_local": 20.0,
-        "z_robusto": 9.98
+        "z_robusto": 10.02
       },
       {
         "fecha": "05/06/2023",
@@ -101,7 +101,15 @@
         "calibre": "#5",
         "precio_frec": 35.68,
         "tendencia_local": 22.89,
-        "z_robusto": 5.57
+        "z_robusto": 5.59
+      },
+      {
+        "fecha": "17/11/2026",
+        "destino": "Colima: Centros de distribución de Colima",
+        "calibre": "#5",
+        "precio_frec": 21.0,
+        "tendencia_local": 36.0,
+        "z_robusto": -4.2
       },
       {
         "fecha": "11/03/2025",
@@ -109,12 +117,20 @@
         "calibre": "#5",
         "precio_frec": 36.67,
         "tendencia_local": 26.0,
-        "z_robusto": 4.08
+        "z_robusto": 4.1
+      },
+      {
+        "fecha": "13/11/2026",
+        "destino": "Colima: Centros de distribución de Colima",
+        "calibre": "#5",
+        "precio_frec": 22.0,
+        "tendencia_local": 36.0,
+        "z_robusto": -3.92
       }
     ]
   },
   "reduccion": {
-    "registros_diarios": 15344,
+    "registros_diarios": 15359,
     "registros_semanales": 3463,
     "factor_reduccion": 4.4,
     "series_validas": 19,
@@ -143,14 +159,14 @@
   },
   "integracion": {
     "filas": 3463,
-    "semanas_sin_clima": 15,
+    "semanas_sin_clima": 0,
     "semanas_sin_tipo_cambio": 0,
     "con_variables_geo": true
   },
   "discretizacion": {
     "lluvia_30d_cortes_mm": [
       4.1,
-      86.0
+      81.9
     ],
     "precio_cortes_kg": [
       20.8,
@@ -173,32 +189,32 @@
     "precio": {
       "min": 9.33,
       "max": 74.664,
-      "media": 25.3078,
-      "desv_std": 8.2854
+      "media": 25.3124,
+      "desv_std": 8.287
     },
     "lluvia_30d_mm": {
       "min": 0.0,
       "max": 438.6,
-      "media": 76.479,
-      "desv_std": 100.8322
+      "media": 76.2097,
+      "desv_std": 100.6963
     },
     "lluvia_semana_mm": {
       "min": 0.0,
       "max": 269.8,
-      "media": 18.1341,
-      "desv_std": 33.8149
+      "media": 18.0555,
+      "desv_std": 33.7626
     },
     "temp_media": {
       "min": 21.4,
       "max": 30.4714,
-      "media": 26.3003,
-      "desv_std": 1.7624
+      "media": 26.3051,
+      "desv_std": 1.7601
     },
     "tipo_cambio": {
       "min": 16.5262,
       "max": 20.6838,
-      "media": 18.2399,
-      "desv_std": 1.1228
+      "media": 18.24,
+      "desv_std": 1.1229
     }
   }
 }
